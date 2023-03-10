@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-dashboard.css" type="text/css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/magazin.avif" type = "image/x-icon">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Angajatii</span>
+                </a>
+                <!-- <span class="tooltip">Angajatii</span> -->
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafice</span>
+                </a>
+                <!-- <span class="tooltip">Grafice</span> -->
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Produse</span>
+                </a>
+                <!-- <span class="tooltip">Produse</span> -->
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle' ></i>
+                    <span class="link_name">Despre noi</span>
+                </a>
+                <!-- <span class="tooltip">Despre noi</span> -->
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Setari</span>
+                </a>
+                <!-- <span class="tooltip">Setari</span> -->
+            </li>
+        </ul>
+        
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Coockies</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
+        </div>
+        
+        
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="#" class="eng">ENG</a> |
+                    <a href="#" class="srb">SRB</a> |
+                    <a href="#" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MAIN -->
+
+        <div class="main">
+            <div class="dash-text">
+               <h1>Dashboard</h1>
+            </div>
+
+
+            <div class="wrap">
+                <div class="venitAnual">
+                    <div class="wrap-img">
+                        <h2 class="title">Venit Anual</h2>
+                        <img src="../images/euro.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="venit"></p>
+                </div>
+
+                <div class="venitLunar">
+                    <div class="wrap-img">
+                        <h2 class="title">Venit Lunar</h2>
+                        <img src="../images/euro.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="venitlunar"></p>
+                </div>
+
+                <div class="tranzacti">
+                    <div class="wrap-img">
+                        <h2 class="title">Tranzacti</h2>
+                        <img src="../images/tra.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="tranzacti"></p>
+                </div>
+
+                <div class="prVaLunar">
+                    <div class="wrap-img">
+                        <h2 class="title">Produse Vandute Lunar</h2>
+                        <img src="../images/salles.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="prVaLunar"></p>
+                </div>
+
+                <div class="prVaAnual">
+                    <div class="wrap-img">
+                        <h2 class="title">Produse Vandute Anual</h2>
+                        <img src="../images/sal1.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="prVaAnual"></p>
+                </div>
+            </div>
+
+            <!--OVDE IDE KOD ZA DVA GRAFIKA-->
+            <div class="chartCard">
+                <div class="chartBox">
+                    <canvas id="myChart" width="550px" height="500px"></canvas>
+                </div>
+                
+                <div class="chartBox1">
+                    <canvas id="piChart" width="550px" height="350px"></canvas>
+                </div>
+            </div>
+
+            <div class="line1"></div>
+            <div class="textCompaniei">
+                <p>
+                    <ins><b>Compania <a href="https://www.facebook.com/profile.php?id=100043243181057" target="_blank">"BONDI"</a></b></ins>
+                    este fondata in anul 2004. <mark>Compania "BONDI"</mark> este fondata de Dejan 
+                    Bondokic in acel an. Compania nu este mare, dar a avut 4 magazine, din care astazi avem 
+                    doar unul. Acest magazin este si astazi deschis pentru 
+                    toti si este situat in <img src="../images/srb.png" alt="srb flag" width="30px" height="30px"> 
+                    <a href="https://goo.gl/maps/GtZwVfaKApu3h7va7" target="_blank">Kladovo, Serbia.</a> 
+                    In aceasta companie lucreaza doar familie Bondokic fara angajati.  
+                </p>
+
+            </div>
+            <div class="line1"></div>
+
+            <div class="lincuriFirmelor">
+                <h2 align="center">Aica puteti gasi niste lincuri cu ce firem compania "BONDI" cooereaza</h2>
+                <div class="links" align="center">
+                    <a href="https://adora.rs/" target="_blank"><img src="../images/adora.png" alt="Adora" width="100px" height="100px"></a>
+                    <a href="https://www.colossus.rs/" target="_blank"><img src="../images/colosus.png" alt="Colosus" width="100px" height="100px"></a>
+                    <a href="https://varta.com/" target="_blank"><img src="../images/varta.avif" alt="Varta" width="100px" height="100px"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+            </div>
+        </footer>
+        
+    </section>
+
+
+    
+
+    <!--SCRIPTE PENTRU GRAFICE-->
+    <!--piChart-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+
+    <!--lineChart-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <!--scripte-->
+    <script src="script.js"></script>
+    <script src="grafice.js"></script>
+</body>
+</html>

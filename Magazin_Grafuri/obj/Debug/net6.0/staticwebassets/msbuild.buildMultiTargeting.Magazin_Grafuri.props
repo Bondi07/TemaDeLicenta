@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Magazin_Grafuri.props" />
+</Project>

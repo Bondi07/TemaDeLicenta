@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-AreaCharts.css" type="text/css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/iconarea.png" type = "image/x-icon">
+    <title>Area Charts</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Angajatii</span>
+                </a>
+                <!-- <span class="tooltip">Angajatii</span> -->
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafice</span>
+                </a>
+                <!-- <span class="tooltip">Grafice</span> -->
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Produse</span>
+                </a>
+                <!-- <span class="tooltip">Produse</span> -->
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle' ></i>
+                    <span class="link_name">Despre noi</span>
+                </a>
+                <!-- <span class="tooltip">Despre noi</span> -->
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Setari</span>
+                </a>
+                <!-- <span class="tooltip">Setari</span> -->
+            </li>
+        </ul>
+        
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Coockies</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
+        </div>
+        
+        
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="#" class="eng">ENG</a> |
+                    <a href="#" class="srb">SRB</a> |
+                    <a href="#" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MAIN -->
+
+        <div class="main">
+            <h1 class="area-text">Area Chart's</h1>
+        
+            <form>
+                <input type="button" value="Inapoi!" class="button" onclick="history.back()">
+            </form>
+
+            <div class="chart1">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div class="chart1">
+                <canvas id="canvas1"></canvas>
+            </div>
+
+            <div class="chart1">
+                <canvas id="canvas2"></canvas>
+            </div>
+        
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop">
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+            </div>
+        </footer>
+
+        </section>
+
+        <!--SCRIPTE PENTRU GRAFURI-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+
+        <!--SCRIPTE PENTRU JS SI HTML-->
+        <script src="script-AreaCharts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    --transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #417AC9;
+}
+.sidebar .logo-details{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar .logo-details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+.sidebar .logo-details .logo_name{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+
+}
+.lineBorder{
+    border-bottom: #11101d 3px solid;
+    padding-top: 10px;
+
+}
+.sidebar.close .logo-details .logo_name{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0s;
+    border:none;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+}
+.sidebar.close .nav-links li:hover{
+    border: none;
+}
+.sidebar.close .nav-links i:hover{
+    color: #11101d;
+    background-color: white;
+    border:none;
+}
+
+.sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px 0 150px 0;
+    overflow: auto;
+}
+.sidebar .nav-links{
+    overflow: visible;
+    padding-top: 50px;
+}
+/*
+.sidebar .nav-links li:hover{
+    background-color: white;
+}
+*/
+/*ne radi color za tkes kad predjes preko njega (li)*/
+
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    line-height: 80px;
+}
+.sidebar .nav-links li .icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.sidebar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .bottom-content {
+    color:white;
+    font-size: 15px;
+    bottom: 0;
+    display: inline;
+    position: absolute;
+    padding: 20px
+}
+/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
+/*
+
+.sidebar .nav-links  li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar.close  li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: var(--transition);
+    top:50%;
+    transform: translateY(-50%);
+}
+*/
+
+/*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
+/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
+.sidebar.close .bottom-content{
+    display: none;    
+}
+
+.sidebar .bottom-content a{
+    color: white;
+    font-size: 15px;
+}
+.sidebar .bottom-content a:hover{
+    color: red;
+    
+}
+
+.home-section{
+    position: relative;
+    background: #E4E9F7;
+    height: 100%;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.5s ease;
+}
+.home-section .line{
+    position: relative;
+    background: #1E409F;
+    height: 70px;
+    width: 100% ;
+    display: inline-flex;
+}
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+
+}
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+} 
+.home-section .home-content .bx-left-indent{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0 15px;
+    
+}
+.home-section .home-content2 .bx-sun, .bx-moon {
+    color: #11101d;
+    font-size: 35px;
+    margin: 0 15px;
+}
+.home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0 15px;
+}
+.home-section .home-content2 .limbi-straine{
+    font-size: 22px;
+    color: #ffffff;
+}
+.home-section .home-content2 .limbi-straine .eng:hover,
+.home-section .home-content2 .limbi-straine .srb:hover,
+.home-section .home-content2 .limbi-straine .ro:hover{
+    color: red;   
+}
+.home-section .home-content2 .limbi-straine .eng,
+.home-section .home-content2 .limbi-straine .srb,
+.home-section .home-content2 .limbi-straine .ro{
+    color: white;
+
+}
+.home-section .home-content2{
+    right: 0;
+    padding-right: 150px;
+    padding-top: 15px;
+    display: inline-flex;
+    position:absolute;
+}
+.home-section .home-content2 .box{
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+
+}
+.home-section .home-content2 .box i{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+}
+.home-section .home-content2 .limbi-straine{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.home-section .main{
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+.home-section .main .DespreNoi-text{
+    font-size: 30px;
+    color: black;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+}
+
+/*MAIN*/
+/* TEKST SA ANIMACIJOM*/
+.container{
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Roboto+Mono, monospace;
+    margin-top: 20px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+}
+.text{
+    font-weight: 100;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+}
+.dud{
+    color:#ff0303;
+}
+.pozaPanorama {
+    margin-top: 50px;
+    gap: 0;
+    background: #0099ff;
+    margin-right: 80px;
+    position: relative;
+    text-align: center;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 80px;
+    background: #E4E9F7;
+    opacity: 0.6;
+}
+svg{
+    margin-right: 80px;
+    gap: 0;
+}
+.textGlitch h1{
+    font-size: 40px;
+    margin-top:50px;
+    width: 350px;
+}
+.textGlitch h1:hover{
+    
+    text-shadow: red -3px 0,
+                 cyan 3px 0;
+}
+
+/*BIRAJ GDE CES ICI UZ POMOC MENIJA */
+.meniBirajGdeIdes{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.meniBirajGdeIdes a{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: color 0.5s linear;
+
+}
+.meniBirajGdeIdes a:hover{
+    color: red;
+    border-bottom: #000000 3px solid;
+}
+.meniBirajGdeIdes ul {
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+}
+.meniBirajGdeIdes ul li {
+    margin-left: 15px;
+}
+
+.cine{
+    font-size: 50PX;
+    font-family: 'Rajdhani' ;
+    font-weight: 900;
+}
+
+.wrap1{
+    display: inline-flex;
+    margin-top: 20px;
+}
+.pozadina1{
+    width: 800px;
+    height: 600px;
+    background: whitesmoke;
+    border-radius: 35px;
+    position: absolute;
+    opacity: 0.8;
+}
+.pozadina1 img{
+    border-radius: 35px ;
+    margin: 20px;
+}
+.pozadina2{
+    z-index: 9;
+    margin-left: 550px;
+    margin-top: 150px;
+    width: 500px;
+    height: 150px;
+}
+.text1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    background: #3A98B9;
+    margin-right: 10px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 40px;
+}
+/* O FIRMI 2 */
+.wrap2{
+    display: inline-flex;
+    margin-top: 400px;
+    background: #829460;
+    padding: 30px;
+    margin-right: 50px;
+    border-radius: 50px;
+}
+.poz2{
+    background: yellowgreen;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 60px;
+    border-style: dashed;
+}
+.text2{
+    padding: 20px;
+    font-family: 'Athiti', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 20px;
+}
+.text2 a{
+    color: blue;
+}
+.text2 a:hover{
+    color: red;
+}
+.slika img{
+    border-radius: 55px 40px 180px 90px;
+    border-color: #000000;
+    border-style: dashed;
+    margin-top: 30px;
+}
+/*tekst 3*/
+.wrap3{
+    display: inline-flex;
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+.text3{
+    background: teal;
+    font-size: 25px;
+    float: left;
+    width: 50%;
+    padding: 25px;
+    text-align: justify;
+    border-radius: 30px;
+    /* word-wrap: break-word; */
+}
+.slikaCeEste img{
+    border-radius: 0 55px 55px 0;
+    margin-left: 150px;
+}
+.wrapPoze{
+    margin-top: 80px;
+    display:block;
+    margin-left: 80px;
+
+}
+.wrapPoze img{
+    border-radius: 50px 0 0 0;
+}
+.wrapPoze img:nth-child(2){
+    border-radius: 0 ;
+}
+.wrapPoze img:nth-child(3){
+    border-radius: 0 50px 0 0;
+}
+.wrapPoze img:nth-child(4){
+    border-radius: 0 0 0 50px;
+}
+.wrapPoze img:nth-child(5){
+    border-radius: 0 ;
+}
+.wrapPoze img:nth-child(6){
+    border-radius: 0 0 50px 0;
+}
+/*slike vocnjaka mini album*/
+.row1 {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+.column1 {
+    -ms-flex: 50%; 
+    flex: 50%;
+    padding: 0 4px;
+}
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 450px;
+    border-radius: 50px ;
+}
+
+.naslov{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+.textCompaniei{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 20px;
+    text-align:justify;
+    margin-right: 40px;
+    font-family: 'Athiti' , sans-serif;
+}
+/*DESPRE APARTAMENTE*/
+.cazare{
+    font-size: 50px;
+    font-weight: 600;
+    width: 350px;
+    height: 150px;
+    margin-top: 50px;
+    background: #9DC08B;
+    position: relative;
+    padding: 20px;
+    border-radius: 25px;
+}
+.tacke img{
+    position: relative;
+    z-index: 2;
+}
+
+.wrappApartamente{
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.wrappApartamente img{
+    border-radius: 50px 0 0 0;
+}
+.wrappApartamente img:nth-child(2){
+    border-radius: 0 ;
+}
+.wrappApartamente img:nth-child(3){
+    border-radius: 0 50px 0 0;
+}
+.wrappApartamente img:nth-child(4){
+    border-radius: 0 0 0 50px;
+}
+.wrappApartamente img:nth-child(5){
+    border-radius: 0 ;
+}
+.wrappApartamente img:nth-child(6){
+    border-radius: 0 0 50px 0;
+}
+.textCazare{
+    font-size: 35px;
+    font-family:'Catamaran' , sans-serif;;
+    font-weight: 900;
+    text-align: justify;
+    margin-top: 100px;
+    background: #93BFCF;
+    padding: 30px;
+    border-radius: 35px;
+}
+.pozeApartamente{
+    margin-top: 80px;
+    display:block;
+    margin-left: 80px;
+}
+/*linkovi stanova*/
+.lincuriApartamente{
+    margin-top: 30px;
+}
+.lincuriApartamente a:hover{
+    color: red;
+}
+.lincuriApartamente a{
+    margin-left: 50px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+}
+.naslovApartamente{
+    display: inline-flex;
+    padding-top: 50px;
+}
+.naslovApartamente h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.okvirokoslikeBooking img{
+    border-radius: 50px;
+
+}
+.okvirokoslikeBooking{
+    width: 300px;
+    height: 200px;
+    background: #2F58CD;
+    padding: 20px;
+    border-radius: 50px;
+}
+/* ZA ISKACUCE PROZORE I TEKST I SLIKU U NJIMA TOOLTIP  */
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.tooltip1 img{
+    border-radius: 50px;
+    padding-top: 10px;
+}
+.tooltip1 .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #417AC9;
+    margin-top: 20px;
+    font-size: 25px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -130px;
+}
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+}
+/*TOOLTIP 2*/
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.tooltip2 img{
+    border-radius: 50px;
+    padding-top: 10px;
+}
+.tooltip2 .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #417AC9;
+    margin-top: 20px;
+    font-size: 25px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -130px;
+}
+.tooltip2:hover .tooltiptext {
+    visibility: visible;
+}
+/*TOOLTIP 3*/
+.tooltip3 {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.tooltip3 img{
+    border-radius: 50px;
+    padding-top: 10px;
+}
+.tooltip3 .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #417AC9;
+    margin-top: 20px;
+    font-size: 25px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -130px;
+}
+.tooltip3:hover .tooltiptext {
+    visibility: visible;
+}
+/* ZA TRECI TOOLTIP A;I DA BUDE GORE I DA PISE DA JE SAJT U IZRADI*/
+.tooltip3_1 {
+    position: relative;
+    display: inline-block;
+    
+}
+.tooltip3_1 .tooltiptext1 {
+    visibility: hidden;
+    width: 220px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip3_1 .tooltiptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.tooltip3_1:hover .tooltiptext1 {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aica punem image grid*/
+.row {
+    margin-top: 50px;
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-right: 50px;
+}
+/*pravi 4 kolone sa slikama*/ 
+.column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+iframe{
+    margin-top: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+}
+
+
+/*FOOTER*/
+/*GO TO TOP*/
+.buttonTop{
+    width: 70px;
+    height: 70px;
+    background: rgb(252, 252, 252);
+    border-radius: 15px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttonTop img{
+    text-align: center;
+}
+
+.fott{
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    margin-top: 50px;
+}   

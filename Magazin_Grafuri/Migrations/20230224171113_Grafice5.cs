@@ -1,0 +1,54 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace MagazinGrafuri.Migrations
+{
+    /// <inheritdoc />
+    public partial class Grafice5 : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AlterColumn<string>(
+                name: "Zi",
+                table: "Grafic8",
+                type: "longtext",
+                nullable: false,
+                oldClrType: typeof(int),
+                oldType: "int")
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "Zi",
+                table: "Grafic7",
+                type: "longtext",
+                nullable: false,
+                oldClrType: typeof(int),
+                oldType: "int")
+                .Annotation("MySql:CharSet", "utf8mb4");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AlterColumn<int>(
+                name: "Zi",
+                table: "Grafic8",
+                type: "int",
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "longtext")
+                .OldAnnotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.AlterColumn<int>(
+                name: "Zi",
+                table: "Grafic7",
+                type: "int",
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "longtext")
+                .OldAnnotation("MySql:CharSet", "utf8mb4");
+        }
+    }
+}
