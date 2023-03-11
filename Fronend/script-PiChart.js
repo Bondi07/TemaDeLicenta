@@ -38,7 +38,7 @@ const toggle = document.getElementById('toggleDark');
             chart3.style.background = '#E4E9F7';
 
         }else{
-            body.style.background = 'black';
+            body.style.background = '#121212';
             body.style.color = 'white';
             body.style.transform = '0.5s easy';
             box.style.background = 'white';

@@ -27,7 +27,7 @@ const toggle = document.getElementById('toggleDark');
             chart4.style.background = '#E4E9F7';
 
         }else{
-            body.style.background = 'black'; /* malo svetlija boja (#282A3A)*/
+            body.style.background = '#121212'; /* malo svetlija boja (#282A3A)*/
             body.style.color = 'white';
             body.style.transform = '0.5s easy';
             box.style.background = 'white';

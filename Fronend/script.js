@@ -56,6 +56,8 @@ const toggle = document.getElementById('toggleDark');
     box = body.querySelector('.box');
     body = body.querySelector('.home-section');
     text = body.querySelector('.dash-text');
+    chart = body.querySelector('#myChart');
+    chart1 = body.querySelector('#piChart');
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -65,12 +67,16 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            chart.style.background = '#E4E9F7';
+            chart1.style.background = '#E4E9F7';
         }else{
-            body.style.background = 'black';
+            body.style.background = '#121212';
             body.style.color = 'white';
             body.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            chart.style.background = 'white';
+            chart1.style.background = 'white';
         }
     })
 

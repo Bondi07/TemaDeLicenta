@@ -26,7 +26,7 @@ const toggle = document.getElementById('toggleDark');
             box.style.background = 'yellow';
             text.style.color = 'black';
         }else{
-            body.style.background = 'black';
+            body.style.background = '#121212';
             body.style.color = 'white';
             body.style.transform = '0.5s easy';
             box.style.background = 'white';

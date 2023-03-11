@@ -247,8 +247,7 @@
 .home-section .home-content2 .box i{
     text-align: center;
     margin: auto;
-    width: 50%;
-    padding: 5px;
+    padding: 7px;
 }
 .home-section .home-content2 .limbi-straine{
     text-align: center;
@@ -329,26 +328,35 @@ svg{
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 50px;
+    margin-right: 50px;
+    background: #ECF2FF;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
 .meniBirajGdeIdes a{
     color: black;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: bold;
-    transition: color 0.5s linear;
+    transition: color 0.2s linear;
+    border-bottom: 1.5px black solid;
 
 }
 .meniBirajGdeIdes a:hover{
     color: red;
-    border-bottom: #000000 3px solid;
+    border-bottom: #000000 3.5px solid;
 }
 .meniBirajGdeIdes ul {
     text-decoration: none;
     list-style: none;
     display: inline-flex;
+    
 }
 .meniBirajGdeIdes ul li {
     margin-left: 15px;
+    padding-top: 5px;
+
 }
 
 .cine{
@@ -383,13 +391,26 @@ svg{
 .text1{
     font-size: 18px;
     text-transform: uppercase;
-    font-family: Poppins;
+    font-family: 'Poppins';
     background: #3A98B9;
     margin-right: 10px;
     text-align: justify;
     padding: 20px;
     border-radius: 40px;
 }
+.text1 p{
+    background-position: left;
+    background-size: 0% 100%;
+    background-image :linear-gradient(#f6e05e, #f6e05e);
+    display :inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.text1 p:hover{
+    background-size: 100% 100%;
+}
+
+
 /* O FIRMI 2 */
 .wrap2{
     display: inline-flex;
@@ -412,6 +433,7 @@ svg{
     font-size: 30px;
     text-align: justify;
     margin-left: 20px;
+    color: black;
 }
 .text2 a{
     color: blue;
@@ -425,6 +447,47 @@ svg{
     border-style: dashed;
     margin-top: 30px;
 }
+/* RADNO VREME */
+.pozadinaTL{
+    z-index: 1;
+    position: relative;
+    border-radius: 35px;
+    background: #539165;
+    margin-right: 50px;
+
+}
+.timpulDeLucru{
+    margin-top: 50px;
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+}
+.timpulDeLucru h1{
+    font-size: 40px;
+    font-weight: 800;
+    border-radius: 35px;
+    background: #EB455F;
+    border-radius: 35px;
+    
+}
+.timp{
+    margin-top: 20px;
+}
+.timp .ora{
+    background: #3E54AC;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-right: 350px;
+}
+.timp h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.timp h3{
+    font-size: 45px;
+    font-weight: 600;
+}
+
 /*tekst 3*/
 .wrap3{
     display: inline-flex;
@@ -444,6 +507,21 @@ svg{
     border-radius: 30px;
     /* word-wrap: break-word; */
 }
+.text3 p{
+    color: transparent;
+    background-position: right;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgb(161, 204, 5), rgb(161, 204, 5));
+    display :inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.text3 p:hover{
+    color: black;
+    background-size: 0% 100%;
+}
+
+
 .slikaCeEste img{
     border-radius: 0 55px 55px 0;
     margin-left: 150px;
@@ -505,10 +583,29 @@ svg{
     margin-top: 30px;
     font-size: 25px;
     padding: 20px;
-    text-align:justify;
+    text-align: justify;
     margin-right: 40px;
     font-family: 'Athiti' , sans-serif;
+    color: black;
 }
+.textCompaniei p{
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #9ae6b4, yellow);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display :inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.textCompaniei p:hover{
+    background-size: 100% 100%;
+}
+
+
+
+
 /*DESPRE APARTAMENTE*/
 .cazare{
     font-size: 50px;
@@ -732,11 +829,23 @@ svg{
 .tooltip3_1:hover .tooltiptext1 {
     visibility: visible;
 }
-
-
-
-
-
+.textMaps{
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #82ce9d, yellow);
+    margin-right: 50px;
+    height: 200px;
+    padding: 30px;
+    border-radius: 50px;
+}
+.textMaps h1{
+    font-size: 35px;
+}
+.textMaps h4 a{
+    font-size: 20px;
+}
+.textMaps h4 a:hover{
+    color: red;
+}
 
 
 
@@ -773,6 +882,8 @@ iframe{
     padding-right: 50px;
     border-radius: 30px;
 }
+
+
 
 
 /*FOOTER*/

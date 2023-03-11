@@ -15,6 +15,14 @@ const toggle = document.getElementById('toggleDark');
     box = body.querySelector('.box');
     body = body.querySelector('.home-section');
     text = body.querySelector('.DespreNoi-text');
+    textShcimb = body.querySelector('.text');
+    linkuri = body.querySelector('.tooltip1 a');
+    linkuri1 = body.querySelector('.tooltip2 a');
+    linkuri2 = body.querySelector('.tooltip3 a');
+    textTooltip = body.querySelector('.tooltiptext1');
+    textt = body.querySelector('.text1');
+    text2 = body.querySelector('.text2');
+    textCompaniei = body.querySelector('.textCompaniei');
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -24,12 +32,26 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            textShcimb.style.color = 'black';
+            linkuri.style.color = 'black';
+            linkuri1.style.color = 'black';
+            linkuri2.style.color = 'black';
+            text2.style.color = 'black';
         }else{
-            body.style.background = 'black';
+            body.style.background = '#121212';
             body.style.color = 'white';
             body.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            textShcimb.style.color = 'white';
+            linkuri.style.color = 'white';
+            linkuri1.style.color = 'white';
+            linkuri2.style.color = 'white';
+            textTooltip.style.color = 'black';
+            textTooltip.style.background = 'white';
+            textt.style.color = 'black';
+            text2.style.color = 'black';
+            textCompaniei.style.color = '#4D455D';
         }
     })
 
@@ -54,6 +76,14 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+/* ZA MENJAJE POZADINE LINKOVA MENIJA */
+function mousOver(element){
+    element.style.color = 'red';
+}
+function mousOut(element){
+    element.style.color = 'white';
+}
 
 
 
