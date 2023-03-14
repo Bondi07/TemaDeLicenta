@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style-DespreNoi.css" type="text/css" >
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../images/aboutusIcon.png" type = "image/x-icon">
+    <script src="script-fontSize.js"></script>
     <title>Despre noi</title>
 </head>
-<body>
+<body onload="applyFontSize()">
 
     <div class="sidebar">
         <div class="logo-details">
@@ -49,7 +50,7 @@
             </li>
             <li>
                 <a href="DespreNoi.html">
-                    <i class='bx bx-info-circle' ></i>
+                    <i class='bx bx-info-circle'></i>
                     <span class="link_name">Despre noi</span>
                 </a>
                 <!-- <span class="tooltip">Despre noi</span> -->
@@ -63,13 +64,13 @@
             </li>
         </ul>
         
-        
         <div class="bottom-content">
             <a href="Coockies.html" class="coockie">Coockies</a> |
             <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
         </div>
-        
-        
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
     </div>
     
     <section class="home-section">
@@ -115,7 +116,7 @@
             </div>
 
 
-            <div class="meniBirajGdeIdes" onmouseover="mousOver(this)" onmouseout="mouseOut(this)">
+            <div class="meniBirajGdeIdes">
                 <table>
                     <ul>
                         <li><a href="#cine">CINE SUNTEM NOI</a></li>
@@ -273,13 +274,27 @@
                     
 
                     <div class="tooltip3">
-                        <div class="tooltip3_1">
-                            <a href="#">Apartament BONDI 3</a>
+                        <div class="tooltip3_1" >
+                            <button type="submit" class="btn" onclick="openPopup()">Apartament BONDI 3</button>
                             <span class="tooltiptext">Apartamne BONDI 3
                                 <img src="../despre noi/stan3Soba.jpg" alt="stan 3" width="200px" height="300px">
                             </span>
                             <span class="tooltiptext1">Site-ul este in constructie !</span>
                         </div>
+                    </div>
+
+
+                    <div class="popup" id="popup">
+                        <img src="../images/contacus.png" alt="contat us at bookin">
+                        <h2>Acest site este in constructie</h2>
+                        <p>
+                            Puteti afla toate detaliile despre acest apartament sunand Compania Bondi, sau trimitandu ne un e-mail
+                            pe adresa: <br>
+                            <a href="mailto:deajn.bondokic@gmail.com">dejan.bondokic@gmail.com</a>
+                        </p>
+                        <br>
+                        <h3>Multumim pentru intelegere !!</h3>
+                        <button type="button" onclick="closePopup()">INCHIDE</button>
                     </div>
 
                 </div>
@@ -304,10 +319,49 @@
                     si doua paduri. Desigur, este nevoie de multa munca si efort pentru a ajunge la acest nivel. Noi lucram in aceasta companie
                     in familie, singur, fara muncitori. Am avut multi muncitori care s-au schimbat, iar Dejan i-a schimbat 
                     din cauza multor probleme pe care le-au adus muncitorii, asa ca astazi firma <mark>"BONDI"</mark> functioneaza in spirit de familie si
-                    se pare ca asta este cel mai bine pentru noi. Astazi compania "BONDI" este cea mai cunoscuta compania din orasu, si toti stie cine este 
+                    se pare ca asta este cel mai bine pentru noi. Astazi compania <mark>"BONDI"</mark> este cea mai cunoscuta compania din orasu, si toti stie cine este 
                     <mark>BONDI</mark>.
                 </p>
             </div>
+
+
+            <div class="golas">
+                <h1>Obiectivele noastre</h1>
+            </div>
+            <div class="textObiective">
+                <p>
+                    Ca orice angajator, obiectivele noastre sunt uriase. Suntem fericiti ca am reusit pana acum, dar ne-am 
+                    dori sa continuam munca noastra buna si sa reusim si mai mult.
+                    Obiectivele noastre sunt sa ne extindem cat mai mult si sa ne inbunatatim munca. Sa deschidem un magazin 
+                    al nostru mai mare, sa nu platim chirie, si sa avem mai multe marfa. Sa deschidem poate mai un alt apartament 
+                    si sa imbunatatim productia de tuica. 
+                </p>
+            </div>
+
+            <div class="ceDorim">
+                <div class="avem">
+                    <h2>Noi avem</h2>
+                    <ul>
+                        <li>Un magazin</li>
+                        <li>Patru apartamente</li>
+                        <li>Doua masini</li>
+                        <li>Doua casi</li>
+                        <li>Trei livezi</li>
+                        <li>Doua paduri</li>
+                    </ul>
+                </div>
+                <div class="dorim">
+                    <h2>Ce dorim sa avem</h2>
+                    <ul>
+                        <li>Doua magazine</li>
+                        <li>Un apartament(casa) pe Dunere</li>
+                        <li>O piscina </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
 
             <!-- ALBUM SA SLIKAMA TREBA DA STOJI NA KRAJU SVEGA  -->
             <div class="row" id="album"> 
@@ -349,10 +403,10 @@
                 <h1>Pe noi ne puteti gasi oricand pe aceasta locatie in Kladovo,Serbia.</h1>
                 <h4><a href="#orar">Vedeti orarur nostru</a></h4>
             </div>
-<!--             
+
+
             <iframe id="harta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.625005441731!2d22.61279856041524!3d44.61120436774665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475233431d12421d%3A0x131f4e27b197e7dd!2sSTR%20Bondi!5e0!3m2!1ssr!2sro!4v1678285048600!5m2!1ssr!2sro" 
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
--->
 
             <!-- OVDE JE KOD ZA DONJU LINIJU TALASA -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" 

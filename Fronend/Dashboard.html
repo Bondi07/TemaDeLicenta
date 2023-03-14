@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style-dashboard.css" type="text/css" >
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../images/magazin.avif" type = "image/x-icon">
+    <script src="script-fontSize.js"></script>
     <title>Dashboard</title>
 </head>
-<body>
-
-    <div class="sidebar">
+<body onload="applyFontSize()">
+    <div class="sidebar">   
         <div class="logo-details">
             <i class='bx bxs-store'></i>            
             <span class="logo_name">BONDI</span>
@@ -69,7 +69,6 @@
             <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
         </div>
         
-        
     </div>
     
     <section class="home-section">
@@ -95,7 +94,7 @@
 
         <div class="main">
             <div class="dash-text">
-               <h1>Dashboard</h1>
+                <h1>Dashboard</h1>
             </div>
 
 
@@ -170,7 +169,7 @@
             <div class="line1"></div>
 
             <div class="lincuriFirmelor">
-                <h2 align="center">Aica puteti gasi niste lincuri cu ce firem compania "BONDI" cooereaza</h2>
+                <h2 align="center">Aica puteti gasi niste lincuri cu ce firem compania "BONDI" coopereaza</h2>
                 <div class="links" align="center">
                     <a href="https://adora.rs/" target="_blank"><img src="../images/adora.png" alt="Adora" width="100px" height="100px"></a>
                     <a href="https://www.colossus.rs/" target="_blank"><img src="../images/colosus.png" alt="Colosus" width="100px" height="100px"></a>
@@ -207,5 +206,7 @@
     <!--scripte-->
     <script src="script.js"></script>
     <script src="grafice.js"></script>
+    <!-- PENTRU SCHIMBAREA FONTULUI DIN PAGINA SETARI -->
+    <!-- <script src="script-Setari.js"></script> -->
 </body>
 </html>

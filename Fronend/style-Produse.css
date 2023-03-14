@@ -176,7 +176,7 @@
 .home-section .line{
     position: relative;
     background: #1E409F;
-    height: 70px;
+    height: 80px;
     width: 100% ;
     display: inline-flex;
 }
@@ -194,7 +194,7 @@
 .home-section .home-content .bx-left-indent{
     color: #ffffff;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 15px 0 0 15px;
     
 }
 .home-section .home-content2 .bx-sun, .bx-moon {
@@ -205,7 +205,7 @@
 .home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
     color: #ffffff;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 15px 0 0 15px;
 }
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;
@@ -274,11 +274,11 @@
     background: greenyellow;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    grid-gap: 50px;
+    grid-gap: 30px;
     margin: 50px auto;
     max-width: 1240px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .products .nume{
     text-align: center;
@@ -306,8 +306,6 @@
     margin-left: 80px;
 }
 
-
-
 /*GO TO TOP*/
 .buttonTop{
     width: 70px;
@@ -325,7 +323,6 @@
 
 }
 .buttonTop img{
-  
     text-align: center;
 }
 

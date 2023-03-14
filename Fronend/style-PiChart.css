@@ -176,7 +176,7 @@
 .home-section .line{
     position: relative;
     background: #1E409F;
-    height: 70px;
+    height: 80px;
     width: 100% ;
     display: inline-flex;
 }
@@ -194,7 +194,7 @@
 .home-section .home-content .bx-left-indent{
     color: #ffffff;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 15px 0 0 15px;
     
 }
 .home-section .home-content2 .bx-sun, .bx-moon {
@@ -205,7 +205,7 @@
 .home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
     color: #ffffff;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 15px 0 0 15px;
 }
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;

@@ -256,3 +256,6 @@ xmlhttp.onreadystatechange = function(){
     }
 }
 
+
+
+/* AREA CHART FROM CANVAS JS */

@@ -256,212 +256,49 @@ ins{
     padding-top: 20px;
 
 }
-.home-section .main .dash-text{
+.home-section .main .setari-text{
     font-size: 30px;
     color: black;
     border-bottom: black 4px solid;
     margin-right: 80px;
 }
+/*MAIN SECTION*/
+.test{
+    margin: 50px;
+}
+.test h2{
+    font-size: 35px;
+    border-bottom: #11101d 5px solid;
+    margin-right: 650px;
+}
 
-/*do ovde ide main posle toga ide za svakog posebno*/
-/* OVDE SU KARTICE I NJIHOV IZGLED*/
-.home-section .wrap{
+button{
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+button:hover{
+    background: #B3FFAE;
+    color: #11101d;
+}
+.testText{
     margin-top: 50px;
 }
-.home-section .main .wrap .venitAnual{
-    background-color: #E9F8F9;
-    width: 220px;
-    height: 150px;
-    border-radius: 15px; 
-    border-left: #1E409F 5px solid;
-}
-.home-section .main .wrap .venitLunar{
-    background-color: #E9F8F9;
-    width: 220px;
-    height: 150px;
-    border-radius: 25px; 
-    border-left: #EB455F 5px solid;
-}
-.home-section .main .wrap .tranzacti{
-    background-color: #E9F8F9;
-    width: 230px;
-    height: 150px;
-    border-radius: 25px;
-    border-left: #183A1D 5px solid; 
-}
-.home-section .main .wrap .prVaLunar{
-    background-color: #E9F8F9;
-    width: 230px;
-    height: 150px;
-    border-radius: 25px; 
-    border-left: #F99417 5px solid;
 
-}
-.home-section .main .wrap .prVaAnual{
-    background-color: #E9F8F9;
-    width: 230px;
-    height: 150px;
-    border-radius: 25px; 
-    border-left: #3C6255 5px solid;
 
-}
-/*za naslov kako da izgleda za svaku karticu*/
-.main .venitAnual .title{
-    color: black;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-top: 5px;
-    font-weight: 800;
-}
 
-.main .venitLunar .title{
-    color: black;
-    font-size: 20px;
-    padding-left: 13px;
-    padding-top: 5px;
-    font-weight: 800;
-}
-.main .tranzacti .title{
-    color: black;
-    font-size: 20px;
-    padding-left: 13px;
-    padding-top: 5px;
-    font-weight: 800;
-}
-.main .prVaAnual .title{
-    color: black;
-    font-size: 15px;
-    padding-left: 13px;
-    padding-top: 5px;
-    font-weight: 800;
-}
-.main .prVaLunar .title{
-    color: black;
-    font-size: 15px;
-    padding-left: 13px;
-    padding-top: 5px;
-    font-weight: 800;
-}
 
-.main .venitAnual .wrap-img{
-    display: inline-flex;
-}
-.main .venitLunar .wrap-img{
-    display: inline-flex;
-}
-.main .tranzacti .wrap-img{
-    display: inline-flex;
-}
-.main .prVaLunar .wrap-img{
-    display: inline-flex;
-}
-.main .prVaAnual .wrap-img{
-    display: inline-flex;
-}
 
-/*nije dobro namesteno za ikonicu treba da se podesi lepo*/
-.main .venitAnual img{
-    padding-left: 40px;
-    padding-top: 50px;
-    
-}
-/* za sliku za svaku karticu*/
-.main .venitLunar img{
-    padding-left: 40px;
-    padding-top: 50px;
-    
-}
-.main .tranzacti img{
-    padding-left: 80px;
-    padding-top: 50px;
-    
-}
-.main .prVaLunar img{
-    padding-top: 50px;
-    
-}
-.main .prVaAnual img{
-    padding-top: 50px;
-    
-}
-/*tekst uzet iz baze podataka*/
-.main .venitAnual #venit{
-    color: black;
-    font-size: 30px;
-    padding-left: 30px;
-}
-.main .venitLunar #venitlunar{
-    color: black;
-    font-size: 30px;
-    padding-left: 30px;
-}
-.main .tranzacti #tranzacti{
-    color: black;
-    font-size: 30px;
-    padding-left: 30px;
-}
 
-.main .prVaLunar #prVaLunar{
-    color: black;
-    font-size: 30px;
-    padding-left: 30px;
-}
-.main .prVaAnual  #prVaAnual{
-    color: black;
-    font-size: 30px;
-    padding-left: 30px;
-}
-/*wrap da bi sve kartice bile u jednom redu*/
-.main .wrap{
-    display: inline-flex;
-    gap: 13px;
-}
-
-/*GRAFOVI*/
-.chartCard{
-    display: inline-flex;
-    width: 100%;  
-}
-.chartCard .chartBox{
-    padding-top: 150px;
-
-}
-#piChart{
-    margin-left: 100px;
-    margin-top: 150px;
-}
-.line1{
-    border-bottom: black 3px solid;
-    padding-top: 50px;
-    margin-right: 80px;
-}
-.textCompaniei{
-    padding-top: 30px;
-    /* font-size: 30px; */
-    font-family: Montserrat;
-    text-align: justify;
-    padding-right: 70px;
-}
-.textCompaniei h4{
-    color: blue;
-    /* font-size: 20px; */
-    opacity: 0.7;
-    padding-top: 15px;
-
-}
-.textCompaniei a{
-    color: #417AC9;
-}
-.textCompaniei a:hover{
-    color: red;
-}
-.lincuriFirmelor{
-    padding-top: 30px;
-}
-.lincuriFirmelor .links img{
-    padding-top: 50px;
-    margin-left: 50px;
-}
 /*GO TO TOP*/
 .buttonTop{
     width: 70px;
@@ -476,16 +313,21 @@ ins{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .buttonTop img{
     text-align: center;
 }
+
 .fott{
     color: #11101d;
     font-size: 15px;
     background: whitesmoke;
     margin-top: 50px;
 }   
+
+
+
 
 
 

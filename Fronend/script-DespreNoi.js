@@ -77,13 +77,52 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
-/* ZA MENJAJE POZADINE LINKOVA MENIJA */
-function mousOver(element){
-    element.style.color = 'red';
+
+/* ZA POPUP MESAGE */
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
 }
-function mousOut(element){
-    element.style.color = 'white';
+function closePopup(){
+    popup.classList.remove("open-popup");
 }
+
+
+/* ZA SETTING POPUP MENU  */
+/*  NE RADI BTAPO  */
+let popup1 = document.getElementById("popup1");
+
+function openSettings(){
+    popup1.classList.add("open-popup1");
+}
+function closeSettings(){
+    popup1.classList.remove("open-popup1");
+}
+
+
+
+
+/* TEST TEST ZA MENJANJE FONT SIZE */
+
+// function changeStyle(){
+//     var element = document.getElementById("myWeb");
+//     element.style.fontSize = "100px";
+// }
+// function changeStyleToNormal(){
+//     var element = document.getElementById("myWeb");
+//     element.style.fontSize = "20px";
+
+// }
+
+// /* ZA MENJAJE POZADINE LINKOVA MENIJA */
+// function mousOver(element){
+//     element.style.color = 'red';
+// }
+// function mousOut(element){
+//     element.style.color = 'white';
+// }
 
 
 

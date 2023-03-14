@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-Produse.css" type="text/css" >
+    <link rel="stylesheet" href="style-Setari.css" type="text/css" >
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="../images/produse.png" type = "image/x-icon">
-    <title>Produse</title>
+    <link rel="icon" href="../images/setings.png" type = "image/x-icon">
+    <title>Setari</title>
 </head>
-<body>
+<body onload="applyFontSize()">
 
     <div class="sidebar">
         <div class="logo-details">
@@ -69,7 +69,6 @@
             <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
         </div>
         
-        
     </div>
     
     <section class="home-section">
@@ -91,21 +90,40 @@
             </div>
         </div>
 
+        <!--MAIN -->
+
         <div class="main">
-            <div class="produse-text">
-                <h1>Produse</h1>
+            <div class="setari-text">
+                <h1>Setari</h1>
             </div>
+        </div>
 
-            <div class="products">
-                <div class="okvir">
+        <div class="test">
+            <h2>Aici puteti alege font-size:</h2>
+            <button onclick="changeFontSize('20px')">Small</button>
+            <button onclick="changeFontSize('30px')">Medium</button>
+            <button onclick="changeFontSize('40px')">Large</button>
+            <div class="testText">
+                <h3>Asa o sa arate text dupa modificari</h3>
+                <p>
+                    This is some text on the page.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                    like Aldus PageMaker including versions of Lorem Ipsum.
 
-
-                </div>
+                </p>
             </div>
             
+
         </div>
 
 
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
             <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
@@ -116,11 +134,12 @@
                 <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
             </div>
         </footer>
-        
+
     </section>
 
-    <script src="script-Produse.js"></script>
+<script src="script-Setari.js"></script>
+<script src="script-fontSize.js"></script>
 
 </body>
 </html>
-            
+        

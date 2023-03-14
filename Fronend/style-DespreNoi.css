@@ -15,6 +15,7 @@
     font-family: 'Poppins', sans-serif;
     --transition: all 0.2s ease;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .sidebar{
     position: fixed;
@@ -162,16 +163,42 @@
 .sidebar.close .bottom-content{
     display: none;    
 }
-
+/*  ZA COOCKIE TEXT  */
 .sidebar .bottom-content a{
     color: white;
     font-size: 15px;
 }
 .sidebar .bottom-content a:hover{
     color: red;
-    
 }
 
+/* RADI NEKAKO DA LI JE DOBRO NE ZNAM */
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+
+/* HOME SECTION */
 .home-section{
     position: relative;
     background: #E4E9F7;
@@ -183,7 +210,7 @@
 .home-section .line{
     position: relative;
     background: #1E409F;
-    height: 70px;
+    height: 80px;
     width: 100% ;
     display: inline-flex;
 }
@@ -201,7 +228,7 @@
 .home-section .home-content .bx-left-indent{
     color: #ffffff;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 15px 0 0 15px;
     
 }
 .home-section .home-content2 .bx-sun, .bx-moon {
@@ -212,7 +239,7 @@
 .home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
     color: #ffffff;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 15px 0 0 15px;
 }
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;
@@ -263,7 +290,7 @@
     font-size: 30px;
     color: black;
     border-bottom: black 4px solid;
-    margin-right: 80px;
+    margin-right: 50px;
 }
 
 /*MAIN*/
@@ -293,7 +320,7 @@
     margin-top: 50px;
     gap: 0;
     background: #0099ff;
-    margin-right: 80px;
+    margin-right: 50px;
     position: relative;
     text-align: center;
 
@@ -309,7 +336,7 @@
     opacity: 0.6;
 }
 svg{
-    margin-right: 80px;
+    margin-right: 50px;
     gap: 0;
 }
 .textGlitch h1{
@@ -430,7 +457,7 @@ svg{
 .text2{
     padding: 20px;
     font-family: 'Athiti', sans-serif;
-    font-size: 30px;
+    /* font-size: 30px; */
     text-align: justify;
     margin-left: 20px;
     color: black;
@@ -474,8 +501,6 @@ svg{
     margin-top: 20px;
 }
 .timp .ora{
-    background: #3E54AC;
-    border-radius: 20px;
     margin-left: 300px;
     margin-right: 350px;
 }
@@ -572,40 +597,6 @@ svg{
     border-radius: 50px ;
 }
 
-.naslov{
-    margin-top: 50px;
-    font-size: 50px;
-    border-bottom: black 4px solid;
-    margin-right: 80px;
-    margin-left: 20px;
-}
-.textCompaniei{
-    margin-top: 30px;
-    font-size: 25px;
-    padding: 20px;
-    text-align: justify;
-    margin-right: 40px;
-    font-family: 'Athiti' , sans-serif;
-    color: black;
-}
-.textCompaniei p{
-    background-position: left;
-    background-size: 0% 100%;
-    background-image: linear-gradient(to right, #9ae6b4, yellow);
-    padding-bottom: 4px;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    display :inline;
-    background-repeat: no-repeat;
-    transition: all 500ms ease-in-out;
-}
-.textCompaniei p:hover{
-    background-size: 100% 100%;
-}
-
-
-
-
 /*DESPRE APARTAMENTE*/
 .cazare{
     font-size: 50px;
@@ -646,7 +637,7 @@ svg{
     border-radius: 0 0 50px 0;
 }
 .textCazare{
-    font-size: 35px;
+    /* font-size: 35px; */
     font-family:'Catamaran' , sans-serif;;
     font-weight: 900;
     text-align: justify;
@@ -829,6 +820,187 @@ svg{
 .tooltip3_1:hover .tooltiptext1 {
     visibility: visible;
 }
+
+/* popup measge*/
+.btn{
+    padding: 10px 60px;
+    background-color: #E4E9F7;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 30px;
+}
+.btn:hover{
+    color: red;
+}
+.popup{
+    /* margin-top: 900px; */
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 56%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -20%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #417AC9;
+    padding: 20px;
+}
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.popup p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p a{
+    font-size: 18px;
+    color: blue;
+    margin: 30px 0 10px;
+
+}
+.popup a:hover{
+    color: red;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TEKST O KOMPANIJI BONDI*/
+.naslov{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+.textCompaniei{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 20px;
+    text-align: justify;
+    margin-right: 50px;
+    font-family: 'Athiti' , sans-serif;
+    color: black;
+}
+.textCompaniei p{
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #9ae6b4, yellow);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.textCompaniei p:hover{
+    background-size: 100% 100%;
+}
+
+/* TESKT O NASIM CILJEVIMA I USPEHU*/
+.golas{
+    font-size: 35px;
+    font-weight: 500;
+    background:  linear-gradient(to right, #9ae6b4, #FFEA20);
+    border-radius: 50px;
+    width: 550px;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    color: #2C3333;
+    margin-top: 20px;
+}
+.textObiective{
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.textObiective p{
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    text-align: justify;
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to left, #FFEA20, #FF6D28);
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+} 
+.textObiective p:hover{
+    background-position: right;
+    background-size: 100% 100%;
+}
+
+.ceDorim{
+    display: inline-flex;
+    padding: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.ceDorim h2{
+    font-size: 30px;
+    border-bottom: 3px solid black;
+}
+.ceDorim .avem li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+.ceDorim .dorim {
+    margin-left: 180px;
+}
+.ceDorim .dorim ul{
+    padding-top: 50px;
+}
+.ceDorim .avem ul{
+    padding-top: 50px;
+
+}
+.ceDorim .dorim li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+
+/* MAPS */
 .textMaps{
     margin-top: 50px;
     background-image: linear-gradient(to right, #82ce9d, yellow);
@@ -846,14 +1018,6 @@ svg{
 .textMaps h4 a:hover{
     color: red;
 }
-
-
-
-
-
-
-
-
 
 /*aica punem image grid*/
 .row {
@@ -883,9 +1047,6 @@ iframe{
     border-radius: 30px;
 }
 
-
-
-
 /*FOOTER*/
 /*GO TO TOP*/
 .buttonTop{
@@ -913,3 +1074,7 @@ iframe{
     background: whitesmoke;
     margin-top: 50px;
 }   
+
+
+
+
