@@ -127,6 +127,32 @@ ins{
     position: absolute;
     padding: 20px
 }
+
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+
 /*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
 /*
 
@@ -239,6 +265,7 @@ ins{
     height: 50px;
     border-radius: 10px;
     margin-right: 50px;
+    font-size: 10px;
 
 }
 .home-section .home-content2 .box i{
@@ -274,6 +301,7 @@ ins{
     height: 150px;
     border-radius: 15px; 
     border-left: #1E409F 5px solid;
+    font-size: 0;
 }
 .home-section .main .wrap .venitLunar{
     background-color: #E9F8F9;
@@ -281,6 +309,7 @@ ins{
     height: 150px;
     border-radius: 25px; 
     border-left: #EB455F 5px solid;
+    font-size: 0;
 }
 .home-section .main .wrap .tranzacti{
     background-color: #E9F8F9;
@@ -288,6 +317,7 @@ ins{
     height: 150px;
     border-radius: 25px;
     border-left: #183A1D 5px solid; 
+    font-size: 0;
 }
 .home-section .main .wrap .prVaLunar{
     background-color: #E9F8F9;
@@ -295,7 +325,7 @@ ins{
     height: 150px;
     border-radius: 25px; 
     border-left: #F99417 5px solid;
-
+    font-size: 0;
 }
 .home-section .main .wrap .prVaAnual{
     background-color: #E9F8F9;
@@ -303,7 +333,7 @@ ins{
     height: 150px;
     border-radius: 25px; 
     border-left: #3C6255 5px solid;
-
+    font-size: 0;
 }
 /*za naslov kako da izgleda za svaku karticu*/
 .main .venitAnual .title{

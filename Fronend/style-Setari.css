@@ -92,8 +92,8 @@ ins{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 .sidebar .nav-links li i{
     height: 50px;
     min-width: 78px;
@@ -166,9 +166,33 @@ ins{
 }
 .sidebar .bottom-content a:hover{
     color: red;
-    
 }
 
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+/* HOME SECTION */
 .home-section{
     position: relative;
     background: #E4E9F7;
@@ -239,7 +263,7 @@ ins{
     height: 50px;
     border-radius: 10px;
     margin-right: 50px;
-
+    font-size: 10px;
 }
 .home-section .home-content2 .box i{
     text-align: center;
@@ -264,12 +288,13 @@ ins{
 }
 /*MAIN SECTION*/
 .test{
-    margin: 50px;
+    margin-top: 50px;
+    margin-right: 350px;
 }
 .test h2{
     font-size: 35px;
     border-bottom: #11101d 5px solid;
-    margin-right: 650px;
+
 }
 
 button{
@@ -294,11 +319,150 @@ button:hover{
     margin-top: 50px;
 }
 
+.text{
+    border: #11101d 3px solid;
+    border-style: dashed;
+    padding: 10px;
+    margin-top: 20px;
+}
+.text1 h2{
+    border-bottom: 5px black solid;
+}
+.schimbaCuloarea{
+    margin-top: 150px;
+    margin-right: 350px;
+}
+.dupaShimbarea h3{
+    margin-top: 20px;
 
+}
+.textColor{
+    border: #11101d 3px solid;
+    border-style: dashed;
+    margin-top: 50px;
+    padding: 20px;
+}
+.schimbaCuloarea .red{
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: red;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.schimbaCuloarea .blue{
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: blue;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.schimbaCuloarea .green{
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: green;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.schimbaCuloarea .orange{
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: orange;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.schimbaCuloarea .black{
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: black;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.schimbaCuloarea .black:hover{
+    background: #2C3333;
+}
+.schimbaCuloarea .orange:hover{
+    background: #FFB26B;
+}
+.schimbaCuloarea .green:hover {
+    background: #9DC08B;
+}
+.schimbaCuloarea .blue:hover{
+    background: #62CDFF;
+}
+.schimbaCuloarea .red:hover{
+    background: #E0144C;
+}
 
+/* FONT FAMILY */
+.schimbareaFontFamily{
+    margin-top: 50px;
 
+}
+.schimbareaFontFamily .text2 h2{
+    margin-top: 100px;
+    border-bottom: #11101d 5px solid;
+    margin-right: 300px;
+}   
+.dupaShimbareaFontului h3{
+    margin-top: 50px;
+}
+.dupaShimbareaFontului{
+    margin-right: 300px;
+}
+.textFamily{
+    margin-top: 50px;
+    border: #11101d 3px solid;
+    border-style: dashed;
+    padding: 20px;
+}
+.text2 button{
+    width: 250px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: black;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.text2 button:hover{
+    background: #2C3333;
+}
 
-
+/* FOOTER */
 /*GO TO TOP*/
 .buttonTop{
     width: 70px;
@@ -315,10 +479,15 @@ button:hover{
     justify-content: center;
 
 }
+.buttonTop button:hover{
+    color: white;
+}
+#myBtn:hover{
+    background: white;
+}
 .buttonTop img{
     text-align: center;
 }
-
 .fott{
     color: #11101d;
     font-size: 15px;

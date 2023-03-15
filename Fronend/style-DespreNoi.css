@@ -269,6 +269,7 @@
     height: 50px;
     border-radius: 10px;
     margin-right: 50px;
+    font-size: 10px;
 
 }
 .home-section .home-content2 .box i{
@@ -343,6 +344,7 @@ svg{
     font-size: 40px;
     margin-top:50px;
     width: 350px;
+    color: black;
 }
 .textGlitch h1:hover{
     
@@ -453,6 +455,7 @@ svg{
     margin-right: 50px;
     border-radius: 60px;
     border-style: dashed;
+    border-color: #000000;
 }
 .text2{
     padding: 20px;
@@ -460,7 +463,6 @@ svg{
     /* font-size: 30px; */
     text-align: justify;
     margin-left: 20px;
-    color: black;
 }
 .text2 a{
     color: blue;
@@ -488,6 +490,7 @@ svg{
     z-index: 2;
     position: relative;
     padding: 20px;
+    color: black;
 }
 .timpulDeLucru h1{
     font-size: 40px;

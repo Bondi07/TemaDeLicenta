@@ -9,7 +9,7 @@
     <link rel="icon" href="../images/setings.png" type = "image/x-icon">
     <title>Setari</title>
 </head>
-<body onload="applyFontSize()">
+<body onload="applyChanges()">
 
     <div class="sidebar">
         <div class="logo-details">
@@ -68,6 +68,9 @@
             <a href="Coockies.html" class="coockie">Coockies</a> |
             <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
         </div>
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
         
     </div>
     
@@ -96,35 +99,70 @@
             <div class="setari-text">
                 <h1>Setari</h1>
             </div>
-        </div>
+        
 
-        <div class="test">
-            <h2>Aici puteti alege font-size:</h2>
-            <button onclick="changeFontSize('20px')">Small</button>
-            <button onclick="changeFontSize('30px')">Medium</button>
-            <button onclick="changeFontSize('40px')">Large</button>
-            <div class="testText">
-                <h3>Asa o sa arate text dupa modificari</h3>
-                <p>
+            <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-SIZE -->
+            <div class="test">
+                <h2>Aici puteti alege font-size:</h2>
+                <button onclick="changeFontSize('20px')">Small</button>
+                <button onclick="changeFontSize('30px')">Medium</button>
+                <button onclick="changeFontSize('40px')">Large</button>
+                <div class="testText">
+                    <h3>Asa o sa arate text dupa modificari:</h3>
+                    <p class="text">
+                        This is some text on the page.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-COLOR -->
+            <div class="schimbaCuloarea">
+                <div class="text1">
+                    <h2>Aica puteti schimba culoarea textului</h2>
+                    <button onclick="changeColor('red')" class="red">Red</button>
+                    <button onclick="changeColor('blue')" class="blue">Blue</button>
+                    <button onclick="changeColor('green')" class="green">Green</button>
+                    <button onclick="changeColor('orange')" class="orange">Orange</button>
+                    <button onclick="changeColor('black')" class="black">Black</button>
+                </div>
+                <div class="dupaShimbarea">
+                    <h3>Asa o sa arate text dupa modificari:</h3>
+                    <p class="textColor">
+                        This is some text on the page.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-FAMILY -->
+            <div class="schimbareaFontFamily">
+                <div class="text2">
+                    <h2>Aica puteti schimba font-family textului</h2>
+                    <button onclick="changeFontFamily('Sono, sans-serif')">Sono</button>
+                    <button onclick="changeFontFamily('Source Code Pro, monospace')">Source Code Pro</button>
+                    <button onclick="changeFontFamily('Caveat, cursive')">Caveat</button>
+                </div>
+            </div>
+            <div class="dupaShimbareaFontului">
+                <h3>Asa o sa arate text dupa modificari:</h3>
+                <p class="textFamily">
                     This is some text on the page.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
                 </p>
             </div>
-            
+
+
+
+
+
 
         </div>
 
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-
+        
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
             <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
         </button>
@@ -138,7 +176,7 @@
     </section>
 
 <script src="script-Setari.js"></script>
-<script src="script-fontSize.js"></script>
+<script src="script-schimbari.js"></script>
 
 </body>
 </html>

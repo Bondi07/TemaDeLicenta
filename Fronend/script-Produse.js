@@ -80,7 +80,7 @@ http.onload = function(){
             out +=  `
                 <div class="product">
                     <div class="okvir">
-                        <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="300px">
+                        <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
                         <p class=nume>${item.nume}</p>
                         <p class=cantitate>${item.cantitate}</p>
                         <p class=pret>${item.pret} RON </p>

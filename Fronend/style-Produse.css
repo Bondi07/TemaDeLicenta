@@ -164,6 +164,30 @@
     color: red;
     
 }
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
 
 .home-section{
     position: relative;
@@ -235,6 +259,7 @@
     height: 50px;
     border-radius: 10px;
     margin-right: 50px;
+    font-size: 10px;
 
 }
 .home-section .home-content2 .box i{
@@ -284,17 +309,18 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 .products .cantitate{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+
 }
 .products .pret{
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     color: red;
     padding-top: 30px;
@@ -304,6 +330,8 @@
 .products img{
     align-items: center;
     margin-left: 80px;
+    border-radius: 15px;
+    background-color: white;
 }
 
 /*GO TO TOP*/
