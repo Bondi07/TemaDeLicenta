@@ -8,11 +8,18 @@ sidebarBtn.addEventListener("click", ()=>{
 });
 
 /*DARK MODE*/
+
 const toggle = document.getElementById('toggleDark');
     body = document.querySelector('body');
     box = body.querySelector('.box');
     body = body.querySelector('.home-section');
-    text = body.querySelector('.Graftext');
+    text = body.querySelector('.coockies-text');
+    header = body.querySelector('.heder');
+    text1 = body.querySelector('.text1');
+    text2 = body.querySelector('.text2');
+    text3 = body.querySelector('.text3');
+    text4 = body.querySelector('.text4');
+
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -22,14 +29,27 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            header.style.color = 'black';
+            text1.style.color = 'black';
+            text2.style.color = 'black';
+            text3.style.color = 'black';
+            text4.style.color = 'black';
+
         }else{
             body.style.background = '#121212';
             body.style.color = 'white';
             body.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            header.style.color = 'white';
+            text1.style.color = 'white';
+            text2.style.color = 'white';
+            text3.style.color = 'white';
+            text4.style.color = 'white';
+
         }
     })
+
 
 /*za menjanje ikonice menija*/    
 const toggleMenu = document.getElementById('right');

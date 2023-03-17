@@ -53,6 +53,15 @@ const toggleMenu = document.getElementById('right');
 /* GO TO TOP BUTTON */
 const scrollToTopButton = document.getElementById('myBtn');
 
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+}
+
 scrollToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top:0,

@@ -6,7 +6,7 @@
     padding: 0%;
     margin: 0%;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
 }
 .sidebar{
@@ -38,6 +38,7 @@
     font-weight: 600;
     transition: 0.3s ease;
     transition-delay: 0.1s;
+    font-family: 'Poppins', sans-serif;
 
 }
 .lineBorder{
@@ -67,6 +68,7 @@
     height: 100%;
     padding-top: 30px 0 150px 0;
     overflow: auto;
+    font-family: 'Poppins', sans-serif;
 }
 .sidebar .nav-links{
     overflow: visible;
@@ -121,7 +123,8 @@
     bottom: 0;
     display: inline;
     position: absolute;
-    padding: 20px
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 /*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
 /*
@@ -234,6 +237,7 @@
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;
     color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
 }
 .home-section .home-content2 .limbi-straine .eng:hover,
 .home-section .home-content2 .limbi-straine .srb:hover,
@@ -342,16 +346,20 @@
     border-radius: 15px;
     bottom: 0;
     right: 0;
-    position: absolute;
-    margin-bottom: 50px;
+    position: fixed;
+    margin-bottom: 30px;
     margin-right: 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
-
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    outline: none;
+    opacity: 0.6;
 }
-.buttonTop img{
-    text-align: center;
+.buttonTop:hover{
+    background: whitesmoke;
+    opacity: 1;
 }
 
 /*FOOTER*/
@@ -360,4 +368,6 @@
     font-size: 15px;
     background: whitesmoke;
     margin-top: 50px;
+    font-family:'Poppins', sans-serif; 
+
 }   

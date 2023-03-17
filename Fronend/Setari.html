@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style-Setari.css" type="text/css" >
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../images/setings.png" type = "image/x-icon">
+    <script src="script-schimbari.js"></script>
     <title>Setari</title>
 </head>
 <body onload="applyChanges()">
@@ -65,8 +66,8 @@
         
         
         <div class="bottom-content">
-            <a href="Coockies.html" class="coockie">Coockies</a> |
-            <a href="PrivacyPolice.html" class="prpolice">Privacy police</a>
+            <a href="Coockies.html" class="coockie">Cookie</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Privacy policy</a>
         </div>
         <div class="bt2">
             <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
@@ -108,7 +109,7 @@
                 <button onclick="changeFontSize('30px')">Medium</button>
                 <button onclick="changeFontSize('40px')">Large</button>
                 <div class="testText">
-                    <h3>Asa o sa arate text dupa modificari:</h3>
+                    <h3>Asa va arate text dupa modificari:</h3>
                     <p class="text">
                         This is some text on the page.
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -129,7 +130,7 @@
                     <button onclick="changeColor('black')" class="black">Black</button>
                 </div>
                 <div class="dupaShimbarea">
-                    <h3>Asa o sa arate text dupa modificari:</h3>
+                    <h3>Asa va arate text dupa modificari:</h3>
                     <p class="textColor">
                         This is some text on the page.
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
@@ -142,17 +143,21 @@
             <div class="schimbareaFontFamily">
                 <div class="text2">
                     <h2>Aica puteti schimba font-family textului</h2>
-                    <button onclick="changeFontFamily('Sono, sans-serif')">Sono</button>
-                    <button onclick="changeFontFamily('Source Code Pro, monospace')">Source Code Pro</button>
-                    <button onclick="changeFontFamily('Caveat, cursive')">Caveat</button>
+                    <div class="gridBtn"> 
+                        <button onclick="changeFontFamily('Poppins, sans-serif')">Poppins</button>
+                        <button onclick="changeFontFamily('Sono, sans-serif')">Sono</button>
+                        <button onclick="changeFontFamily('Source Code Pro, monospace')">Source Code Pro</button>
+                        <button onclick="changeFontFamily('Caveat, cursive')">Caveat</button>
+                    </div>
                 </div>
-            </div>
-            <div class="dupaShimbareaFontului">
-                <h3>Asa o sa arate text dupa modificari:</h3>
-                <p class="textFamily">
-                    This is some text on the page.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
-                </p>
+            
+                <div class="dupaShimbareaFontului">
+                    <h3>Asa va arate text dupa modificari:</h3>
+                    <p class="textFamily">
+                        This is some text on the page.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                    </p>
+                </div>
             </div>
 
 
@@ -163,7 +168,7 @@
         </div>
 
         
-        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop">
             <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
         </button>
 

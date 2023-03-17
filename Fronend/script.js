@@ -1,13 +1,3 @@
-/* PENTRU A LUA DATELE DIN .NET */
-/*1*/
-
-/*fetch("https://localhost:7111/api/Magazin/Dashboard").then
-(function (res){
-    return res.json();
-}).then(function(data){
-    console.log(data);
-});
- */
 /* MERGE */
 /* OVDE SE UZIMAJU PODACI IZ BAZE PODATAKA I STAVLJAJU SE U KARTICE */
 fetch("https://localhost:7111/api/Magazin/Dashboard").then
@@ -44,7 +34,7 @@ fetch("https://localhost:7111/api/Magazin/Dashboard").then
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".bx-left-indent");
 console.log(sidebarBtn);
-sidebarBtn.addEventListener("click", ()=>{
+sidebarBtn.addEventListener("click", () => {
     sidebar.classList.toggle("close");
 
 });
@@ -97,6 +87,15 @@ const toggleMenu = document.getElementById('right');
 /* GO TO TOP BUTTON */
 const scrollToTopButton = document.getElementById('myBtn');
 
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+}
+
 scrollToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top:0,
@@ -104,6 +103,28 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+
+
+/* PENTRU COOKIES */
+const cookieBox = document.querySelector(".wrapper"),
+    buttons = document.querySelectorAll(".button");
+
+const executeCodes = () =>{
+    if (document.cookie.includes("bondi")) return;
+    cookieBox.classList.add("show");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            cookieBox.classList.remove("show");
+
+            if(button.id == "acceptBtn"){
+                document.cookie = "cookieBy= bondi; max-age=" + 60 * 60 * 24 * 30;
+            }
+        });
+    }); 
+};
+
+window.addEventListener("load", executeCodes)
 
 
 

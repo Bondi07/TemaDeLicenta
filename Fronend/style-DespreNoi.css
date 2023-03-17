@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -46,6 +46,7 @@
     font-weight: 600;
     transition: 0.3s ease;
     transition-delay: 0.1s;
+    font-family: 'Poppins', sans-serif;
 
 }
 .lineBorder{
@@ -75,6 +76,7 @@
     height: 100%;
     padding-top: 30px 0 150px 0;
     overflow: auto;
+    font-family: 'Poppins', sans-serif;
 }
 .sidebar .nav-links{
     overflow: visible;
@@ -129,7 +131,8 @@
     bottom: 0;
     display: inline;
     position: absolute;
-    padding: 20px
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 /*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
 /*
@@ -244,6 +247,7 @@
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;
     color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
 }
 .home-section .home-content2 .limbi-straine .eng:hover,
 .home-section .home-content2 .limbi-straine .srb:hover,
@@ -345,6 +349,7 @@ svg{
     margin-top:50px;
     width: 350px;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 .textGlitch h1:hover{
     
@@ -370,6 +375,7 @@ svg{
     font-weight: bold;
     transition: color 0.2s linear;
     border-bottom: 1.5px black solid;
+    font-family: 'Poppins', sans-serif;
 
 }
 .meniBirajGdeIdes a:hover{
@@ -385,12 +391,10 @@ svg{
 .meniBirajGdeIdes ul li {
     margin-left: 15px;
     padding-top: 5px;
-
 }
-
 .cine{
     font-size: 50PX;
-    font-family: 'Rajdhani' ;
+    font-family: 'Poppins', sans-serif;    
     font-weight: 900;
 }
 
@@ -420,7 +424,7 @@ svg{
 .text1{
     font-size: 18px;
     text-transform: uppercase;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     background: #3A98B9;
     margin-right: 10px;
     text-align: justify;
@@ -459,8 +463,8 @@ svg{
 }
 .text2{
     padding: 20px;
-    font-family: 'Athiti', sans-serif;
-    /* font-size: 30px; */
+    font-family: 'Poppins', sans-serif;;
+    font-size: 30px; 
     text-align: justify;
     margin-left: 20px;
 }
@@ -491,6 +495,7 @@ svg{
     position: relative;
     padding: 20px;
     color: black;
+
 }
 .timpulDeLucru h1{
     font-size: 40px;
@@ -533,7 +538,8 @@ svg{
     padding: 25px;
     text-align: justify;
     border-radius: 30px;
-    /* word-wrap: break-word; */
+    font-family:'Poppins', sans-serif;
+    word-wrap: break-word;
 }
 .text3 p{
     color: transparent;
@@ -548,8 +554,6 @@ svg{
     color: black;
     background-size: 0% 100%;
 }
-
-
 .slikaCeEste img{
     border-radius: 0 55px 55px 0;
     margin-left: 150px;
@@ -558,7 +562,6 @@ svg{
     margin-top: 80px;
     display:block;
     margin-left: 80px;
-
 }
 .wrapPoze img{
     border-radius: 50px 0 0 0;
@@ -616,7 +619,6 @@ svg{
     position: relative;
     z-index: 2;
 }
-
 .wrappApartamente{
     padding-top: 50px;
     padding-right: 50px;
@@ -657,6 +659,7 @@ svg{
 /*linkovi stanova*/
 .lincuriApartamente{
     margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 .lincuriApartamente a:hover{
     color: red;
@@ -666,6 +669,7 @@ svg{
     color: #000000;
     font-size: 25px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 }
 .naslovApartamente{
     display: inline-flex;
@@ -713,12 +717,12 @@ svg{
     margin-top: 20px;
     font-size: 25px;
 
-    /* Position the tooltip */
+    /* POZITIE TOOLTIPULUI */
     position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -130px;
+    margin-left: -150px;
 }
 .tooltip1:hover .tooltiptext {
     visibility: visible;
@@ -746,12 +750,12 @@ svg{
     margin-top: 20px;
     font-size: 25px;
 
-    /* Position the tooltip */
+   /* POZITIE TOOLTIPULUI */
     position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -130px;
+    margin-left: -150px;
 }
 .tooltip2:hover .tooltiptext {
     visibility: visible;
@@ -762,7 +766,12 @@ svg{
     display: inline-block;
     margin-left: 50px;
     border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
 }
+.tooltip3 button{
+    font-family: 'Poppins', sans-serif;
+}
+
 .tooltip3 img{
     border-radius: 50px;
     padding-top: 10px;
@@ -779,17 +788,17 @@ svg{
     margin-top: 20px;
     font-size: 25px;
 
-    /* Position the tooltip */
+    /* POZITIE TOOLTIPULUI */
     position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -130px;
+    margin-left: -170px;
 }
 .tooltip3:hover .tooltiptext {
     visibility: visible;
 }
-/* ZA TRECI TOOLTIP A;I DA BUDE GORE I DA PISE DA JE SAJT U IZRADI*/
+/* ZA TRECI TOOLTIP ALI DA BUDE GORE I DA PISE DA JE SAJT U IZRADI*/
 .tooltip3_1 {
     position: relative;
     display: inline-block;
@@ -808,7 +817,7 @@ svg{
     z-index: 1;
     bottom: 150%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -100px;
 }
 .tooltip3_1 .tooltiptext1::after {
     content: "";
@@ -919,7 +928,7 @@ svg{
     padding: 20px;
     text-align: justify;
     margin-right: 50px;
-    font-family: 'Athiti' , sans-serif;
+    font-family: 'Poppins', sans-serif;    
     color: black;
 }
 .textCompaniei p{
@@ -1059,16 +1068,20 @@ iframe{
     border-radius: 15px;
     bottom: 0;
     right: 0;
-    position: absolute;
-    margin-bottom: 50px;
+    position: fixed;
+    margin-bottom: 30px;
     margin-right: 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
-
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    outline: none;
+    opacity: 0.6;
 }
-.buttonTop img{
-    text-align: center;
+.buttonTop:hover{
+    background: whitesmoke;
+    opacity: 1;
 }
 
 .fott{
@@ -1076,6 +1089,8 @@ iframe{
     font-size: 15px;
     background: whitesmoke;
     margin-top: 50px;
+    font-family:'Poppins', sans-serif; 
+
 }   
 
 

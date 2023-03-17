@@ -9,6 +9,7 @@
     /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
 }
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -63,7 +64,6 @@
     background-color: white;
     border:none;
 }
-
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;
@@ -74,11 +74,7 @@
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
-}
-*/
+
 /*ne radi color za tkes kad predjes preko njega (li)*/
 
 .sidebar .nav-links li{
@@ -90,8 +86,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 .sidebar .nav-links li i{
     height: 50px;
     min-width: 78px;
@@ -116,6 +112,7 @@
 .sidebar.close .nav-links li a .link_name{
     opacity: 0;
     pointer-events: none;
+
 }
 .sidebar .bottom-content {
     color:white;
@@ -126,11 +123,9 @@
     padding: 20px;
     font-family: 'Poppins', sans-serif;
 }
-
 /*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
-/*
 
-.sidebar .nav-links  li .tooltip{
+/* .sidebar .nav-links  li .tooltip{
     position: absolute;
     top: -20px;
     left: 80px;
@@ -151,8 +146,11 @@
     transition: var(--transition);
     top:50%;
     transform: translateY(-50%);
-}
-*/
+    z-index: -9999;
+    position: absolute;
+
+} */
+
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
@@ -166,7 +164,6 @@
 }
 .sidebar .bottom-content a:hover{
     color: red;
-    
 }
 
 /*   ZA COOCKIES */
@@ -192,8 +189,9 @@
 .sidebar.close .bt2 i:hover{
     border: 2px  black solid ;
     color: red;
+    /* color: #534340; */
 }
-
+/* HOME SECTION */
 .home-section{
     position: relative;
     background: #E4E9F7;
@@ -282,101 +280,144 @@
     padding-top: 20px;
 
 }
-
-
-/* MAIN */
-.home-section .main .angajatii-text{
+.home-section .main .PrivacePolice-text{
     font-size: 30px;
     color: black;
     border-bottom: black 4px solid;
     margin-right: 80px;
 }
 
-/* TABELA KOJA TREBA BITI IZBRIANA*/ 
-
-
-/*ANGAJATII*/
-.main .angajatii{
-    
-    grid-gap: 50px;
-    margin: 50px auto;
-    max-width: 1240px;
-    padding: 20px;
-    
-    
+/* HOME SECTION */
+.text-header{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #111;
+    margin-top: 50px;
+    padding-top: 50px;
 }
-/* OKVIR ZA JEDNOG RADINKA*/
-.angajatii .okvir{
-    display: inline-flex;
-    background: #E9F8F9;
-    width: 100%;
-    border-radius: 35px;
-    height: 450px;
-} 
-.angajatii .datele{
-    margin-left: 20px;
-    /*line-height: 10px;*/
-    margin-top: 10px;
-    text-align: center;
-    line-height: 50px;
-
+.tx1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    line-height: 40px;
+    padding: 30px;
+    text-align: justify;
 }
-.angajatii .nume{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-
-}  
-.angajatii .prenume{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    border-radius: 35px 35px 0 0;
-    border-bottom: #11101d dashed;
-}
-.angajatii .oras{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    
-}
-.angajatii .salariu{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    border-radius: 0 0 35px 35px;
+.tx2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
 
 }
-.angajatii .pozitie{
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    background: #DC0000;
-    border-radius: 35px;
-    margin-top: 30px;
-    text-align: center;
-    height: 70px;
-    padding-top: 10px;
-} 
+.tx3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
 
-.angajatii .poza{
-    display: inline-flex;
-    border-radius: 35px;
-    border-color: #11101d;
+}
+.tx4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx8{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx9{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx10{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.tx11{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+a:link {
+    color: #417AC9;
+}
+a:hover {
+    color : red;
+    text-decoration : none;
+    background:none;
 }
 
+
+
+
+/* FOOTER */
 /*GO TO TOP*/
 .buttonTop{
     width: 70px;
@@ -409,5 +450,3 @@
     font-family:'Poppins', sans-serif; 
 
 }   
-
-

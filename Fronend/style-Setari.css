@@ -6,7 +6,7 @@
     padding: 0%;
     margin: 0%;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
 }
 ins{
@@ -42,6 +42,7 @@ ins{
     font-weight: 600;
     transition: 0.3s ease;
     transition-delay: 0.1s;
+    font-family: 'Poppins', sans-serif;
 
 }
 .lineBorder{
@@ -66,21 +67,17 @@ ins{
     background-color: white;
     border:none;
 }
-
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;
     overflow: auto;
+    font-family: 'Poppins', sans-serif;
 }
 .sidebar .nav-links{
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
-}
-*/
+
 /*ne radi color za tkes kad predjes preko njega (li)*/
 
 .sidebar .nav-links li{
@@ -118,6 +115,7 @@ ins{
 .sidebar.close .nav-links li a .link_name{
     opacity: 0;
     pointer-events: none;
+
 }
 .sidebar .bottom-content {
     color:white;
@@ -125,12 +123,12 @@ ins{
     bottom: 0;
     display: inline;
     position: absolute;
-    padding: 20px
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 /*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
-/*
 
-.sidebar .nav-links  li .tooltip{
+/* .sidebar .nav-links  li .tooltip{
     position: absolute;
     top: -20px;
     left: 80px;
@@ -151,8 +149,11 @@ ins{
     transition: var(--transition);
     top:50%;
     transform: translateY(-50%);
-}
-*/
+    z-index: -9999;
+    position: absolute;
+
+} */
+
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
@@ -191,6 +192,7 @@ ins{
 .sidebar.close .bt2 i:hover{
     border: 2px  black solid ;
     color: red;
+    /* color: #534340; */
 }
 /* HOME SECTION */
 .home-section{
@@ -238,6 +240,7 @@ ins{
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;
     color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
 }
 .home-section .home-content2 .limbi-straine .eng:hover,
 .home-section .home-content2 .limbi-straine .srb:hover,
@@ -426,7 +429,7 @@ button:hover{
 /* FONT FAMILY */
 .schimbareaFontFamily{
     margin-top: 50px;
-
+    margin-right: 350px;
 }
 .schimbareaFontFamily .text2 h2{
     margin-top: 100px;
@@ -449,7 +452,7 @@ button:hover{
     width: 250px;
     margin-top: 50px;
     padding: 10px 0;
-    background: black;
+    background: #2E4F4F;
     color: #fff;
     border: 0;
     outline: none;
@@ -461,6 +464,10 @@ button:hover{
 .text2 button:hover{
     background: #2C3333;
 }
+.gridBtn{
+    display:grid;
+    grid-template-columns: auto auto;
+}
 
 /* FOOTER */
 /*GO TO TOP*/
@@ -471,32 +478,27 @@ button:hover{
     border-radius: 15px;
     bottom: 0;
     right: 0;
-    position: absolute;
-    margin-bottom: 50px;
+    position: fixed;
+    margin-bottom: 30px;
     margin-right: 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    outline: none;
+    opacity: 0.6;
+}
+.buttonTop:hover{
+    background: whitesmoke;
+    opacity: 1;
+}
 
-}
-.buttonTop button:hover{
-    color: white;
-}
-#myBtn:hover{
-    background: white;
-}
-.buttonTop img{
-    text-align: center;
-}
 .fott{
     color: #11101d;
     font-size: 15px;
     background: whitesmoke;
     margin-top: 50px;
+    font-family:'Poppins', sans-serif; 
+
 }   
-
-
-
-
-
-

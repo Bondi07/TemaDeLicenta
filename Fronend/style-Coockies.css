@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
 
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
@@ -16,6 +16,7 @@
     height: 100%;
     width: 260px;
     background: #417AC9;
+    font-family: 'Poppins', sans-serif;
 }
 .sidebar .logo-details{
     height: 100px;
@@ -39,7 +40,6 @@
     transition: 0.3s ease;
     transition-delay: 0.1s;
     font-family: 'Poppins', sans-serif;
-
 }
 .lineBorder{
     border-bottom: #11101d 3px solid;
@@ -127,6 +127,31 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+
 /*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
 /*
 
@@ -167,31 +192,6 @@
 .sidebar .bottom-content a:hover{
     color: red;
     
-}
-
-/*   ZA COOCKIES */
-.sidebar .bt2 i{
-    bottom: 0;
-    padding: 20px;
-    color: black;
-
-}
-.sidebar.close .bt2 i{
-    height: 30px;
-    width: 30px;
-    font-size: 20px;
-    color: black;
-    border-radius: 20px;
-    background: white;
-    margin-left: 15px;
-    position: absolute;
-    margin-bottom: 10px;
-    font-size: 30px;
-    padding: 10px;
-}
-.sidebar.close .bt2 i:hover{
-    border: 2px  black solid ;
-    color: red;
 }
 
 .home-section{
@@ -239,7 +239,7 @@
 .home-section .home-content2 .limbi-straine{
     font-size: 22px;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 .home-section .home-content2 .limbi-straine .eng:hover,
 .home-section .home-content2 .limbi-straine .srb:hover,
@@ -266,6 +266,7 @@
     border-radius: 10px;
     margin-right: 50px;
     font-size: 10px;
+
 }
 .home-section .home-content2 .box i{
     text-align: center;
@@ -282,101 +283,84 @@
     padding-top: 20px;
 
 }
-
-
-/* MAIN */
-.home-section .main .angajatii-text{
+.home-section .main .coockies-text{
     font-size: 30px;
     color: black;
     border-bottom: black 4px solid;
     margin-right: 80px;
+    font-family: 'Poppins', sans-serif; 
 }
 
-/* TABELA KOJA TREBA BITI IZBRIANA*/ 
+/* HOME SECTION */
 
-
-/*ANGAJATII*/
-.main .angajatii{
-    
-    grid-gap: 50px;
-    margin: 50px auto;
-    max-width: 1240px;
-    padding: 20px;
-    
-    
-}
-/* OKVIR ZA JEDNOG RADINKA*/
-.angajatii .okvir{
-    display: inline-flex;
-    background: #E9F8F9;
-    width: 100%;
-    border-radius: 35px;
-    height: 450px;
-} 
-.angajatii .datele{
-    margin-left: 20px;
-    /*line-height: 10px;*/
-    margin-top: 10px;
-    text-align: center;
-    line-height: 50px;
-
-}
-.angajatii .nume{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-
-}  
-.angajatii .prenume{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    border-radius: 35px 35px 0 0;
-    border-bottom: #11101d dashed;
-}
-.angajatii .oras{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    
-}
-.angajatii .salariu{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    border-radius: 0 0 35px 35px;
-
-}
-.angajatii .pozitie{
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    background: #DC0000;
-    border-radius: 35px;
+.heder{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #111;
     margin-top: 30px;
-    text-align: center;
-    height: 70px;
-    padding-top: 10px;
-} 
+    padding-top: 50px;
 
-.angajatii .poza{
-    display: inline-flex;
-    border-radius: 35px;
-    border-color: #11101d;
+}
+.text1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    margin-top: 10px;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.text2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    margin-top: 10px;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+
+}
+.text3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    margin-top: 10px;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+.text4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111;
+    margin-top: 10px;
+    padding: 30px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+a:hover {
+    color : #a43b55;
+    text-decoration : none;
+    background:none;
+}
+a{
+    color: #417AC9;
 }
 
+
+
+
+
+/* FOOTER */
 /*GO TO TOP*/
 .buttonTop{
     width: 70px;
@@ -407,7 +391,6 @@
     background: whitesmoke;
     margin-top: 50px;
     font-family:'Poppins', sans-serif; 
-
 }   
 
 
