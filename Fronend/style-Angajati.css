@@ -320,6 +320,7 @@
     text-align: center;
     line-height: 50px;
 
+
 }
 .angajatii .nume{
     padding-top: 30px;
@@ -375,6 +376,51 @@
     display: inline-flex;
     border-radius: 35px;
     border-color: #11101d;
+    background: #1E409F;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.okvir .btn button{
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    background: #19A7CE;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+.okvir .btn button:hover{
+    background: red;
+}
+.angajatii .okvir .btn button{
+    position: relative;
+    margin-top: 390px;
+    margin-left: 320px;
+}
+.content{
+    display: none;
+    width: 950px;
+    height: 150px;
+    background: #6375a4;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+.content h2{
+    padding-top: 10px;
+
+}
+.content p {
+    padding-top: 10px;
+
 }
 
 /*GO TO TOP*/

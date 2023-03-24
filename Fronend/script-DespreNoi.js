@@ -16,13 +16,10 @@ const toggle = document.getElementById('toggleDark');
     body = body.querySelector('.home-section');
     text = body.querySelector('.DespreNoi-text');
     textShcimb = body.querySelector('.text');
-    linkuri = body.querySelector('.tooltip1 a');
-    linkuri1 = body.querySelector('.tooltip2 a');
-    linkuri2 = body.querySelector('.tooltip3 a');
     textTooltip = body.querySelector('.tooltiptext1');
     textt = body.querySelector('.text1');
     text2 = body.querySelector('.text2');
-    textCompaniei = body.querySelector('.textCompaniei');
+
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -33,9 +30,6 @@ const toggle = document.getElementById('toggleDark');
             box.style.background = 'yellow';
             text.style.color = 'black';
             textShcimb.style.color = 'black';
-            linkuri.style.color = 'black';
-            linkuri1.style.color = 'black';
-            linkuri2.style.color = 'black';
             text2.style.color = 'black';
         }else{
             body.style.background = '#121212';
@@ -44,14 +38,11 @@ const toggle = document.getElementById('toggleDark');
             box.style.background = 'white';
             text.style.color = 'white';
             textShcimb.style.color = 'white';
-            linkuri.style.color = 'white';
-            linkuri1.style.color = 'white';
-            linkuri2.style.color = 'white';
             textTooltip.style.color = 'black';
             textTooltip.style.background = 'white';
             textt.style.color = 'black';
             text2.style.color = 'black';
-            textCompaniei.style.color = '#4D455D';
+
         }
     })
 
@@ -96,18 +87,6 @@ function openPopup(){
 }
 function closePopup(){
     popup.classList.remove("open-popup");
-}
-
-
-/* ZA SETTING POPUP MENU  */
-/*  NE RADI BTAPO  */
-let popup1 = document.getElementById("popup1");
-
-function openSettings(){
-    popup1.classList.add("open-popup1");
-}
-function closeSettings(){
-    popup1.classList.remove("open-popup1");
 }
 
 

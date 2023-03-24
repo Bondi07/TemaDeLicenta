@@ -89,17 +89,31 @@ http.onload = function(){
 
             out +=  `
                 <div class="angajatii">
-                  <div class="okvir">
-                    <img class="poza" src="../imagesAngajatii/${item.prenume}.jpg" alt="poze" width="300px" height="450px">
-                    <div class="datele">
-                      <p class=prenume>Prenume: ${item.prenume}</p>
-                      <p class=nume>Nume: ${item.nume}</p> 
-                      <p class=oras>Oras: ${item.oras}</p>
-                      <p class=salariu>Salariu: ${item.salariu} RON</p>
-                      <p class=pozitie>Pozitie: ${item.pozitie}</p>
+                    <div class="okvir">
+                        <img class="poza" src="../imagesAngajatii/${item.prenume}.jpg" alt="poze" width="300px" height="400px">
+                        <div class="datele">
+                        <p class=prenume>Prenume: ${item.prenume}</p>
+                        <p class=nume>Nume: ${item.nume}</p> 
+                        <p class=oras>Oras: ${item.oras}</p>
+                        <p class=salariu>Salariu: ${item.salariu} RON</p>
+                        <p class=pozitie>Pozitie: ${item.pozitie}</p>
+                        </div>
+                        <div class="btn">
+                            <button onclick="myFunction()">Info</button>
+                        </div>
+                    </div>  
+                    <div class="content" id="content">   
+                        <h2>Mai multe detali despre angjat:</h2>
+                        <p>
+                            Nikola este primul fiu al lui Dejan si Dragica. S-a născut în 2000 și are 23 de ani. 
+                            Nikola este muncitor, dar preferă programarea și tehnologia computerelor. În copilărie, 
+                            a practicat fotbalul și mai târziu a studiat programarea la universitate.
+                        </p>
                     </div>
-                  </div>    
+
                 </div>
+                
+
             `; 
         }
 
@@ -107,3 +121,16 @@ http.onload = function(){
         console.log(out);
     }
 }
+
+
+
+/* ZA POKAZIVANJE KONTEJNERA SA INFORAMCIJAMA O RANIKU  */
+function myFunction() {
+    var x = document.getElementById("content");
+    if (x.style.display == "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+

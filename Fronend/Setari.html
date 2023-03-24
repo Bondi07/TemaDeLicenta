@@ -105,9 +105,19 @@
             <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-SIZE -->
             <div class="test">
                 <h2>Aici puteti alege font-size:</h2>
-                <button onclick="changeFontSize('20px')">Small</button>
-                <button onclick="changeFontSize('30px')">Medium</button>
-                <button onclick="changeFontSize('40px')">Large</button>
+                <div class="tooltip1">
+                    <button onclick="changeFontSize('20px')">Small</button>
+                    <span class="tooltiptext1">Text proba</span>
+                </div>
+                <div class="tooltip2">
+                    <button onclick="changeFontSize('30px')">Medium</button>
+                    <span class="tooltiptext2">Text proba</span>
+                </div>
+                <div class="tooltip3">
+                    <button onclick="changeFontSize('40px')">Large</button>
+                    <span class="tooltiptext3">Text proba</span>
+                </div>
+                
                 <div class="testText">
                     <h3>Asa va arate text dupa modificari:</h3>
                     <p class="text">
@@ -143,11 +153,23 @@
             <div class="schimbareaFontFamily">
                 <div class="text2">
                     <h2>Aica puteti schimba font-family textului</h2>
-                    <div class="gridBtn"> 
-                        <button onclick="changeFontFamily('Poppins, sans-serif')">Poppins</button>
-                        <button onclick="changeFontFamily('Sono, sans-serif')">Sono</button>
-                        <button onclick="changeFontFamily('Source Code Pro, monospace')">Source Code Pro</button>
-                        <button onclick="changeFontFamily('Caveat, cursive')">Caveat</button>
+                    <div class="gridBtn">
+                        <div class="tooltip4">
+                            <button onclick="changeFontFamily('Poppins, sans-serif')">Poppins</button>
+                            <span class="tooltiptext4">Text proba</span>
+                        </div>
+                        <div class="tooltip5">
+                            <button onclick="changeFontFamily('Sono, sans-serif')">Sono</button>
+                            <span class="tooltiptext5">Text proba</span>
+                        </div>
+                        <div class="tooltip6">
+                            <button onclick="changeFontFamily('Source Code Pro, monospace')">Source Code Pro</button>
+                            <span class="tooltiptext6">Text proba</span>
+                        </div>
+                        <div class="tooltip7">
+                            <button onclick="changeFontFamily('Caveat, cursive')">Caveat</button>
+                            <span class="tooltiptext7">Text proba</span>
+                        </div>
                     </div>
                 </div>
             

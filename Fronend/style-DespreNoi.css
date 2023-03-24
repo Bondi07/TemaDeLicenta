@@ -393,9 +393,14 @@ svg{
     padding-top: 5px;
 }
 .cine{
-    font-size: 50PX;
+    font-size: 50px;
     font-family: 'Poppins', sans-serif;    
     font-weight: 900;
+}
+.cine h1::selection{
+    color: #F6F1F1;
+    background: #3A98B9;
+
 }
 
 .wrap1{
@@ -660,6 +665,9 @@ svg{
 .lincuriApartamente{
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
+    background: #E4E9F7;
+    padding: 10px;
+    border-radius: 10px;
 }
 .lincuriApartamente a:hover{
     color: red;
@@ -682,6 +690,10 @@ svg{
     justify-content: center;
     align-items: center;
     padding-left: 20px;
+}
+.naslovApartamente h1::selection{
+    color: #F6F1F1;
+    background: #5CB8E4;
 }
 .okvirokoslikeBooking img{
     border-radius: 50px;
@@ -801,8 +813,8 @@ svg{
 /* ZA TRECI TOOLTIP ALI DA BUDE GORE I DA PISE DA JE SAJT U IZRADI*/
 .tooltip3_1 {
     position: relative;
-    display: inline-block;
-    
+    display: inline;
+
 }
 .tooltip3_1 .tooltiptext1 {
     visibility: hidden;
@@ -930,6 +942,9 @@ svg{
     margin-right: 50px;
     font-family: 'Poppins', sans-serif;    
     color: black;
+    background: #E4E9F7;
+    border-radius: 15px;
+
 }
 .textCompaniei p{
     background-position: left;
@@ -962,6 +977,9 @@ svg{
     padding: 20px;
     margin-top: 10px;
     margin-right: 50px;
+    background: #E4E9F7;
+    border-radius: 15px;
+
 }
 .textObiective p{
     font-size: 25px;
