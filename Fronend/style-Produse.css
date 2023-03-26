@@ -301,6 +301,7 @@
 .products .okvir{
     /* background: #E9F8F9; */
     background: greenyellow;
+    /* background: whitesmoke; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 30px;
@@ -308,6 +309,9 @@
     max-width: 1240px;
     padding-top: 20px;
     padding-bottom: 10px;
+    border-radius: 50px 20px 50px 20px;
+    border-color: #609966 #E90064 #E90064 #609966;
+    border-style: solid;
 }
 .products .nume{
     text-align: center;

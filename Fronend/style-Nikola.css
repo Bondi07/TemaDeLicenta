@@ -281,257 +281,97 @@
 .home-section .main{
     padding-left: 50px;
     padding-top: 20px;
-
 }
-
-
 /* MAIN */
-.home-section .main .angajatii-text{
+.home-section .main .angajat1-text{
     font-size: 30px;
     color: black;
     border-bottom: black 4px solid;
     margin-right: 80px;
 }
 
-/* TABELA KOJA TREBA BITI IZBRIANA*/ 
-
-
-/*ANGAJATII*/
-.main .angajatii{
-    
-    grid-gap: 50px;
-    margin: 50px auto;
-    max-width: 1240px;
-    padding: 20px;
-    
-    
-}
-/* OKVIR ZA JEDNOG RADINKA*/
-.angajatii .okvir{
-    display: inline-flex;
-    background: #E9F8F9;
-    width: 100%;
-    border-radius: 35px;
-    height: 450px;
-} 
-.angajatii .datele{
-    margin-left: 20px;
-    /*line-height: 10px;*/
-    margin-top: 10px;
-    text-align: center;
-    line-height: 50px;
-
-
-}
-.angajatii .nume{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-
-}  
-.angajatii .prenume{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    border-radius: 35px 35px 0 0;
-    border-bottom: #11101d dashed;
-}
-.angajatii .oras{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    
-}
-.angajatii .salariu{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 600;
-    background: yellow;
-    width: 300px;
-    align-items: center;
-    border-radius: 0 0 35px 35px;
-
-}
-.angajatii .pozitie{
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    background: #DC0000;
-    border-radius: 35px;
-    margin-top: 30px;
-    text-align: center;
-    height: 70px;
-    padding-top: 10px;
-} 
-
-.angajatii .poza{
-    display: inline-flex;
-    border-radius: 35px;
-    border-color: #11101d;
-    background: #1E409F;
-    border-radius: 25px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-/* KONTEJNER U KOJIMA JE TEKST ALI KOJI JE KOD OBRIASN (PROBAA) */
-.okvir a{
-    /* width: 200px; */
-    bottom: 10px;
-    right: 10px;
-    font-size: 15px;
+/* MAIN CONTETN */
+.button{
+    width: 120px;
+    height: 50px;
     background: #FFDE00;
-    color: black;
-    border: 0;
-    outline: none;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-
-}
-.okvir a:hover{
-    background: red;
-}
-.angajatii .okvir a{
-    position: relative;
-    margin-top: 390px;
-    margin-left: 320px;
-}
-/* LINKOVI DO ODREDJENE OSOBE */
-.lincuriAngajatii{
-    background: #E4E9F7;
-    margin-right: 50px;
-    border-radius: 20px;
-    padding: 30px;
-
-}
-.lincuriAngajatii h2{
-    background: #1E409F;
-    color: white;
     border-radius: 25px;
-    height: 80px;   
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 30px;
-
-}
-.lincuriAngajatii .linkovi a{
-    display: block;
-    line-height: 50px;
-    width: 100px;
-    font-size: 30px;
-}
-.lincuriAngajatii .linkovi a:hover{
-    color: red;
-}
-.linkovi h3{
+    margin-top: 50px;
     color: black;
-    font-size: 35px;
+    font-size: 20px; 
 }
-/* TOOLTIP DA IZADJE SLIKA */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    width: 200px;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
 
-    position: absolute;
+/* OSNOVNE INFORMACIJE O NIKOLI */
+/* WRAP */
+.wrap{
+    display: inline-flex;
+}
+/* SLIKA */
+.poza{
     z-index: 1;
-    top: -80px;
-    left: 105%;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-/* tooltip marko*/
-.tooltip1 {
-    position: relative;
-    display: inline-block;
-}
-.tooltip1 .tooltiptext1 {
-    visibility: hidden;
-    width: 300px;
-    width: 200px;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
     position: absolute;
-    z-index: 1;
-    top: -80px;
-    left: 105%;
+    margin-left: 700px;
 }
-.tooltip1:hover .tooltiptext1 {
-    visibility: visible;
-}
-
-/* tooltip dejan*/
-.tooltip2 {
-    position: relative;
-    display: inline-block;
-}
-.tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    width: 300px;
-    width: 200px;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
+.poza img{
+    background: #E4E9F7;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 35px;
+    z-index: 2;
     position: absolute;
-    z-index: 1;
-    top: -80px;
-    left: 105%;
 }
-.tooltip2:hover .tooltiptext2 {
-    visibility: visible;
-}
-
-/* tooltip dragica*/
-.tooltip3 {
-    position: relative;
-    display: inline-block;
-}
-.tooltip3 .tooltiptext3 {
-    visibility: hidden;
-    width: 300px;
-    width: 200px;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
+/* TROUGAO */
+.triangle {
+    padding-left: 50px;
+    border-left: 100px solid #ff4136;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-top: 100px solid transparent;
+    z-index: 10;
     position: absolute;
-    z-index: 1;
-    top: -100px;
-    left: 105%;
 }
-.tooltip3:hover .tooltiptext3 {
-    visibility: visible;
+/* KRUG */
+.circle {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #3d9970; 
+    z-index: 5;
+    position: absolute;
 }
+/* INFORMACIEJ */
+.despre{
+    margin-top: 20px;
+    font-size: 20px;   
+    font-family: 'Popins' sans-serif;
+}
+.despre ul{
+    list-style: none;
+    padding: 20px;
+
+}
+.despre h3{
+    line-height: 40px;
+    border-bottom: #11101d 2px solid;
+    width: 150px;
+    padding-top: 20px;
+}
+.osnocneInformacije{
+    background: #E4E9F7;
+    color: black;
+    font-size: 30px;
+    text-align: justify;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+
+}
+.osnocneInformacije p{
+    padding-top: 20px;
+    padding: 10px;  
+    font-size: 20px;
+}
+
 
 /*GO TO TOP*/
 .buttonTop{
@@ -565,5 +405,4 @@
     font-family:'Poppins', sans-serif; 
 
 }   
-
 
