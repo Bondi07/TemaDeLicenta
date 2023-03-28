@@ -348,7 +348,6 @@
 .despre ul{
     list-style: none;
     padding: 20px;
-
 }
 .despre h3{
     line-height: 40px;
@@ -359,18 +358,173 @@
 .osnocneInformacije{
     background: #E4E9F7;
     color: black;
-    font-size: 30px;
+    /* font-size: 20px; */
     text-align: justify;
     margin-right: 50px;
     margin-top: 20px;
-    
-
 }
 .osnocneInformacije p{
     padding-top: 20px;
     padding: 10px;  
+
+}
+/* ram za sliku */
+.ram{
+    position: absolute;
+    z-index: 0;
+}
+.ramzasliku{
+    position: absolute;
+    z-index: 1;
+}
+/* MALI NIKOLA */
+.maliNikola{
+    position: absolute;
+    z-index: 99;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.maliNikolaText{
+    margin-top: 50px;
+    display: inline-flex;
+}
+.tekstOMalomNikola{
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 400px;
+    padding-top: 40px;
     font-size: 20px;
 }
+.tekstOMalomNikola p{
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.tekstOMalomNikola h2{
+    border-bottom: #E6B325 4px solid;
+    margin-right: 50px;
+    font-size: 35px;
+}
+/* OSNOVNA SKOLA */
+.osnovnaSkola{
+    margin-top: 150px;
+    margin-right: 50px;
+}
+.osnovnaSkola h2{
+    font-size: 35px;
+    border-bottom: #3d9970 5px solid;
+    margin-right: 50px;
+}
+.osnovnaSkola p{
+    text-align: justify;
+    padding-top: 20px;
+}
+.osnovnaSkola a:link{
+    color: #1E409F;
+    font-size: 22px;
+    border-bottom: #11101d 2px solid;
+}
+.osnovnaSkola a:hover{
+    color: #ff4136;
+}
+.slikeOsnovna{
+    margin-top: 50px;
+    margin-left: 8px;
+}
+.slikeOsnovna img{
+    border-radius: 15px;
+}
+.slikeOsnovna img:hover{
+    border-radius: 20px;
+    opacity: 0.8;
+    box-shadow: -30px 10px 12px #000000;
+}
+/* SREDNJA SKOLA */
+.srednjaSkola{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.srednjaSkola h2{
+    font-size: 40px;
+    border-bottom: darkslategrey 5px solid;
+    margin-right: 50px;
+}
+.srednjaSkola p{
+    padding-top: 20px;
+    text-align: justify;
+}
+.srednjaSkola img{
+    border-radius: 20px;
+}
+.srednjaSkola img:hover{
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: -30px 20px 12px #567189;
+}
+.slikeSrednja{
+    margin-top: 50px;
+}
+.srednjaSkola a:link{
+    color: #1E409F;
+    font-size: 22px;
+    border-bottom: #11101d 2px solid;
+}
+.srednjaSkola a:hover{
+    color: #ff4136;
+}
+.slikeDiplomaSrednja{
+    margin-top: 50px;
+    
+}
+.slikeDiplomaSrednja img{
+    border-radius: 20px;
+}
+.slikeDiplomaSrednja img:hover{
+    border-radius: 20px;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: -30px 20px 12px #000000;
+    width: 570px;
+    height: 470px;
+}
+/* FAKULTET */
+.fakultet{
+    margin-top: 50px;
+}
+.fakultet p{
+    padding-top: 20px;
+    margin-right: 50px;
+    text-align: justify;
+}
+.fakultet h2{
+    font-size: 40px;
+    border-bottom: darkblue 5px solid;
+    margin-right: 50px;
+}
+.slikeFakultet img{
+    border-radius: 20px;
+}
+.slikeFakultet img:hover{
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: -30px 20px 12px #567189;
+    width: 520px;
+    height: 420px;
+}
+.slikeFakultet{
+    margin-top: 50px;
+}
+.fakultet a:link{
+    color: #1E409F;
+    font-size: 22px;
+    border-bottom: #11101d 2px solid;
+}
+.fakultet a:hover{
+    color: #ff4136;
+}
+/* DEO O POSLU */
+
+
 
 
 /*GO TO TOP*/
