@@ -406,8 +406,9 @@
     font-size: 35px;
 }
 /* OSNOVNA SKOLA */
+/* MARGIN TOP KAD SU ISKLJUCENA PODEASVANJA IMAM PROBLEM SA MARGINE TOP !!!!??? */
 .osnovnaSkola{
-    margin-top: 150px;
+    margin-top: 250px;
     margin-right: 50px;
 }
 .osnovnaSkola h2{
@@ -523,10 +524,108 @@
     color: #ff4136;
 }
 /* DEO O POSLU */
+.posao{
+    margin-top: 50px;
+}
+.posao h2{
+    border-bottom: #000000 3px solid;
+    margin-right: 450px;
+    font-size: 40px;
+}
+.posao h3{
+    padding-top: 50px;
+}
+.posao .text{
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: justify;
+}
+.posao .slikaHtml{
+    position: absolute;
+    z-index: 3;
+    margin-left: 750px;
+}
+.text2{
+    padding-top: 50px;
+}
+/* FOOTBALL */
+.uvodFudbal{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: #000000 3px solid;
+    margin-right: 400px;
+    margin-left: 400px;
 
+}
+.animacijaFootball{
+    display: inline-flex;
+}
+marquee{
+    margin-top: 50px;
+}
+.textFudbal{
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.imagesFootball img{
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.imagesFootball img:hover{
+    box-shadow: -20px 5px 12px #000000;
+}
+.naslovTravel{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: #000000 3px solid;
+    margin-right: 700px;
+}
+.textTravel{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    margin-right: 50px;
+}
+.imagesTravel{
+    margin-top: 50px;
+}
+.imagesTravel img{
+    border-radius: 20px;
 
+}
+.imagesTravel img:hover{
+    box-shadow: -10px 5px 10px #000000;
+}
+.generalText{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.generalTx{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+.textG{ 
+    margin-top: 50px;
+    text-align: justify;
 
+}
+.textMusic{
+    margin-top: 20px;
+    text-align: justify;
+}
+.slikeGeneral{
+    margin-top: 50px;
+}
+.slikeGeneral img{
+    border-radius: 20px;
+}
+.slikeGeneral img:hover{
+    box-shadow: -10px 5px 10px #000000;
+}
 /*GO TO TOP*/
 .buttonTop{
     width: 70px;
