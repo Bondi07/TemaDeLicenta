@@ -309,8 +309,7 @@
     max-width: 1240px;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-radius: 50px 20px 50px 20px;
-    border-color: #609966 #E90064 #E90064 #609966;
+    border-radius: 50px 20px 50px 20px; 
     border-style: solid;
 }
 .products .nume{

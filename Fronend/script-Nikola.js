@@ -15,7 +15,11 @@ const toggle = document.getElementById('toggleDark');
     box = body.querySelector('.box');
     body = body.querySelector('.home-section');
     text = body.querySelector('.angajat1-text');
-
+    marq = body.querySelector('marquee');
+    travel = body.querySelector('.containerTravel marquee');
+    imgFudbal = body.querySelector('#gol');
+    marq2 = body.querySelector('#marq2');
+    animacijaFudbal = body.querySelector('.animacijaFootball');
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -25,6 +29,11 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            marq.style.background = '#E4E9F7';
+            travel.style.background = '#E4E9F7';
+            imgFudbal.style.background = '#E4E9F7';
+            marq2.style.background = '#E4E9F7';
+            animacijaFudbal.style.background = '#E4E9F7';
 
         }else{
             body.style.background = '#121212';
@@ -32,7 +41,13 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            marq.style.background = 'white';
+            travel.style.background = 'white';
+            imgFudbal.style.background = 'white';
+            marq2.style.background = 'white';
+            animacijaFudbal.style.background = 'white';
 
+            
         }
     })
 

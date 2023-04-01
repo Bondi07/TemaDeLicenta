@@ -300,6 +300,9 @@
     color: black;
     font-size: 20px; 
 }
+.button:hover{
+    background: #FED049;
+}
 
 /* OSNOVNE INFORMACIJE O NIKOLI */
 /* WRAP */
@@ -356,8 +359,7 @@
     padding-top: 20px;
 }
 .osnocneInformacije{
-    background: #E4E9F7;
-    color: black;
+    
     /* font-size: 20px; */
     text-align: justify;
     margin-right: 50px;
@@ -575,6 +577,7 @@ marquee{
 .imagesFootball img:hover{
     box-shadow: -20px 5px 12px #000000;
 }
+/* TRAVEL */
 .naslovTravel{
     margin-top: 50px;
     font-size: 50px;
@@ -592,11 +595,13 @@ marquee{
 }
 .imagesTravel img{
     border-radius: 20px;
-
 }
 .imagesTravel img:hover{
     box-shadow: -10px 5px 10px #000000;
 }
+
+
+/* GENERAL TEXT */
 .generalText{
     margin-top: 50px;
     margin-right: 50px;

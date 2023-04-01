@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
 
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
@@ -64,7 +64,6 @@
     background-color: white;
     border:none;
 }
-
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;
@@ -295,15 +294,202 @@
 .button{
     width: 120px;
     height: 50px;
-    background: black;
+    background: #FFDE00;
     border-radius: 25px;
-    border-color: white;
     margin-top: 50px;
-    color: white;
+    color: black;
     font-size: 20px; 
 }
+.button:hover{
+    background: #FED049;
+}
+/* UVOD OSNOVNE IFNORMACIJE */
+.wrap{
+    display: inline-flex;
+}
+/* SLIKA */
+.poza{
+    z-index: 1;
+    position: absolute;
+    margin-left: 700px;
+}
+.poza img{
+    background: #E4E9F7;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 35px;
+    z-index: 2;
+    position: absolute;
+}
+/* INFORMACIEJ */
+.despre{
+    margin-top: 20px;
+    font-size: 20px;   
+    font-family: 'Popins' sans-serif;
+}
+.despre ul{
+    list-style: none;
+    padding: 20px;
+}
+.despre h3{
+    line-height: 40px;
+    border-bottom: #11101d 2px solid;
+    width: 150px;
+    padding-top: 20px;
+}
+/* OSNOVEN INFORMACIJE O MARKU */
+.osnocneInformacije{
+    text-align: justify;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.osnocneInformacije p{
+    padding-top: 20px;
+    padding: 10px;  
 
+}
+/* ram za sliku */
+.ram{
+    position: absolute;
+    z-index: 0;
+}
+.ramzasliku{
+    position: absolute;
+    z-index: 1;
+}
+/* MALI NIKOLA */
+.maliMarko{
+    position: absolute;
+    z-index: 99;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.maliMarkoText{
+    margin-top: 50px;
+    display: inline-flex;
+}
+.tekstOMalomMarku{
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 400px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.tekstOMalomMarku p{
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
 
+}
+.tekstOMalomMarku h2{
+    border-bottom: #E1701A 4px solid;
+    margin-right: 50px;
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+/* OSNOVNA SKOLA */
+.textOsnovna a{
+    color: red;
+}
+.textOsnovna a:hover{
+    color: #FC5404;
+}
+.textOsnovna a:visited{
+    color: #417AC9;
+}
+.osnovna{
+    margin-top: 400px;
+    margin-right: 50px;
+}
+.naslovOsnovna{
+    font-size: 35px;
+    border-bottom: yellowgreen 3px solid;
+    margin-right: 50px;
+}
+.textOsnovna{
+    padding-top: 50px;
+    text-align: justify;
+}
+.slikeOSnovna img{
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.slikeOSnovna img:hover{
+    box-shadow: -20px 10px 12px #000000;
+}
+/* SREDNJA SKOLA */
+.srednja{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.naslovSrednja{
+    font-size: 35px;
+    border-bottom: tomato 3px solid;
+    margin-right: 50px;
+}
+.textSrednja{
+    margin-top: 50px;
+    text-align: justify;
+}
+.slikeSrednja img{
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.slikeSrednja img:hover{
+    box-shadow: -20px 10px 12px #000000;
+}
+.FaksPosao{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.FaksPosao h1{
+    font-size: 50px;
+    border-bottom: #FFDE00 5px solid;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.text{
+    margin-top: 50px;
+    text-align: justify;
+}
+/* POZADINA SA BOJOM I NEKIM OBLIKOM Z-INDEX */
+.pozadina{
+    margin-top: 50px;
+    background-color: #E1701A;
+    width: 1120px;
+    height: 750px;
+    border-radius: 15px;
+}
+.slikaRadnja {   
+    padding: 50px;
+
+}
+.slikaRadnja img{
+    border-radius: 25px;
+    position: absolute;
+    z-index: 99;
+}
+.slikaRadnja .tackice img{
+    position: absolute;
+    z-index: 10;
+    margin-left: 650px; 
+    margin-top: 300px;
+}
+.textGeneral{
+    margin-top: 200px;
+    margin-right: 50px;
+}
+.naslovTextG{
+    font-size: 35px;
+    border-bottom: brown 3px solid;
+    margin-right: 350px;
+}
+.textGe{
+    margin-top: 50px;
+    text-align: justify;
+    
+}
 
 /*GO TO TOP*/
 .buttonTop{
