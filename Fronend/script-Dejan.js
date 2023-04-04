@@ -15,6 +15,7 @@ const toggle = document.getElementById('toggleDark');
     box = body.querySelector('.box');
     body = body.querySelector('.home-section');
     text = body.querySelector('.angajat3-text');
+    textB = body.querySelector('.text-box');
 
 
     toggle.addEventListener('click', function(){
@@ -25,6 +26,7 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            textB.style.color = 'black';
 
         }else{
             body.style.background = '#121212';
@@ -32,6 +34,7 @@ const toggle = document.getElementById('toggleDark');
             body.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            textB.style.color = 'black';
 
         }
     })

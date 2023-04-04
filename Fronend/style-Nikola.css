@@ -358,6 +358,7 @@
     width: 150px;
     padding-top: 20px;
 }
+/* OSNOVNE INFORMACIJE O OSOBI */
 .osnocneInformacije{
     
     /* font-size: 20px; */
@@ -422,9 +423,8 @@
     text-align: justify;
     padding-top: 20px;
 }
-.osnovnaSkola a:link{
+.osnovnaSkola a{
     color: #1E409F;
-    font-size: 22px;
     border-bottom: #11101d 2px solid;
 }
 .osnovnaSkola a:hover{

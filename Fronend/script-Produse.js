@@ -86,6 +86,7 @@ http.onload = function(){
         let i = 0;
         for(let item of products){
 
+            /*  OVDE MORA DA BUDE I DA PISE PRODUCT A NE PRODUCTS JE NECE DA RADI INACE   */
             out +=  `
                 <div class="product">
                     <div class="okvir">
@@ -104,3 +105,15 @@ http.onload = function(){
         console.log(out);
     }
 }
+
+
+
+
+/* pagination */
+
+
+
+
+
+
+
