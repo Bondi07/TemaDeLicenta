@@ -92,4 +92,4 @@ scrollToTopButton.addEventListener('click', () => {
 });
 
 
-
+/* MENJATI BOJU KAD JE DUGME KLINKUTO */

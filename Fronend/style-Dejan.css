@@ -610,11 +610,44 @@
     border-right: 15px solid white;
     left: -13px;
 }
+/* PUTOVANJA */
+.putovanje{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.naslovPutovanje h2{
+    margin-top: 30px;
+    font-size: 40px;
+    border-bottom: #7AA874 3px solid;
 
+}
+.textPutovanje{
+    margin-top: 50px;
+    text-align: justify;
+}
+/* GDE JE BIO */
+.gdeJeBio{
+    margin-top: 50px;
+}
+.gdeJeBio h2{
+    justify-content: center;
+    align-items: center;
+    border-bottom: yellowgreen 3px  solid;
+    margin-right: 350px;
+    margin-left: 350px;
+}   
+.lista{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: auto auto;
+}
+.lista ul{
+    list-style: none;
+    margin-top: 100px;
+    margin-left: 150px;
+    line-height: 80px;
 
-
-
-
+}
 
 
 

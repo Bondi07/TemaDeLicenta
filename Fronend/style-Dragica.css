@@ -295,14 +295,16 @@
 .button{
     width: 120px;
     height: 50px;
-    background: black;
+    background: #FFDE00;
     border-radius: 25px;
-    border-color: white;
     margin-top: 50px;
-    color: white;
+    color: black;
     font-size: 20px; 
 }
-
+.button:hover{
+    background: #FED049;
+}
+/* MAIN SECTION */
 
 
 /*GO TO TOP*/
