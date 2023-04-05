@@ -305,6 +305,104 @@
     background: #FED049;
 }
 /* MAIN SECTION */
+.wrap{
+    display: inline-flex;
+}
+/* SLIKA */
+.poza{
+    z-index: 1;
+    position: absolute;
+    margin-left: 700px;
+}
+.poza img{
+    background: #E4E9F7;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 35px;
+    z-index: 2;
+    position: absolute;
+}
+/* INFORMACIEJ */
+.despre{
+    margin-top: 20px;
+    font-size: 20px;   
+    font-family: 'Popins' sans-serif;
+}
+.despre ul{
+    list-style: none;
+    padding: 20px;
+}
+.despre h3{
+    line-height: 40px;
+    border-bottom: #11101d 2px solid;
+    width: 150px;
+    padding-top: 20px;
+}
+.naslovUvodniText{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: #FED049 3px solid;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.textUvod{
+    text-align: justify;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+/* OSNOVNA SKOLA */
+.onsovnaSkola{
+    margin-top: 50px;
+    margin-right: 50px;
+
+}
+.naslovOsnovnaSkola h2{
+    font-size: 40px;
+    margin-top: 50px;
+    border-bottom: #9A208C 3px solid;
+
+}
+.textOS{
+    text-align: justify;
+    margin-top: 50px;
+}
+/* SREDNJA SKOLA */
+.srednajSK{
+    margin-right: 50px;
+}
+.naslov{
+    margin-top: 50px;
+    font-size: 40px;
+    border-bottom: #66347F 3px solid;
+}
+.text{
+    text-align: justify;
+    margin-top: 50px;
+
+}
+.srednajSK img{
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.srednajSK img:hover{
+    box-shadow: -30px 10px 12px #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*GO TO TOP*/
