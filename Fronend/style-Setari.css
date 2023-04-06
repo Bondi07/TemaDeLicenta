@@ -63,7 +63,10 @@ ins{
 
 
 /* DODATO TEST */
-
+.active {
+    background-color: #2E4F4F;
+    color: white;
+}
 /* DO OVDE JE DODATO */
 
 .sidebar.close .nav-links li:hover{
@@ -267,6 +270,31 @@ ins{
     color: black;
     border-bottom: black 4px solid;
     margin-right: 80px;
+}
+/* ADMIN PAGE BUTTON */
+.setari-text{
+    display: inline-flex;
+}
+.btn-right button{   
+    width: 180px;
+    height: 50px;
+    background: #1E409F;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    display: inline-flex;
+    margin-left: 800px;
+}
+.btn-right button:hover{
+    background: #417AC9;
+}
+.btn-right img{
+    padding-right:5px ;
 }
 
 /*MAIN SECTION*/

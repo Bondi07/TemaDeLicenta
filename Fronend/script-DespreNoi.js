@@ -186,3 +186,26 @@ const next = () => {
     counter = (counter + 1) % phrases.length
 }
 next()
+
+
+/* TRIMITE MESAJ WITH FORM   */
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "nikola.bondokic72@gmail.com",
+        Password : "******",
+        To : 'nikola.bondokic72@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Mesaj din forma Contact us",
+        Body : "Nume" + document.getElementById("nume").value   
+            + "<br> Prenume:" + document.getElementById("prenume").value 
+            + "<br> E-mail:" + document.getElementById("email").value 
+            + "<br> Nr.Telefon :" + document.getElementById("nrTelefon").value
+            + "<br> Mesaj:" + document.getElementById("mesaj").value
+
+    }).then(
+        message => alert("Mesajul a fost trimis cu succes !")
+    );
+
+
+}

@@ -1077,6 +1077,95 @@ iframe{
     padding-right: 50px;
     border-radius: 30px;
 }
+/* CONTACT US FORM */
+.infoDesprenoi{
+    margin-top: 80px;
+    font-size: 40px;
+
+}
+.FormaIntrebari{
+    margin-top: 100px;
+    display: inline-flex;
+    width: 100%;
+}
+.info{
+    width: 50%;
+    border: #000000 3px solid;
+    background: #C7E9B0;
+    border-radius: 15px 0 0 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    line-height: 50px;
+}
+.info h3{
+    font-size: 30px;
+    border-bottom: #000000 2px solid;
+    margin-right: 250px;
+}
+.info h2{
+    padding-top: 20px;
+    font-size: 25px;
+    
+}
+.info a{
+    color: red;
+
+}
+.info a:hover{
+    color: #19A7CE;
+}
+.container1{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #053742;
+    border-radius: 0 15px 15px 0;
+    margin-right: 10px;
+}
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 1px black solid;
+    margin:10px 0;
+    padding: 20px;
+    outline: none;
+    background: #F7F7F7;
+    font-size: 16px;
+}
+form input:hover, form textarea:hover{
+    background: #A2DBFA;
+}
+form input:active, form textarea:active{
+    background: #A2DBFA;
+}
+form button{
+    padding: 15px;
+    background: #539165;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
 
 /*FOOTER*/
 /*GO TO TOP*/

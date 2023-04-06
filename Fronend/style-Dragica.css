@@ -389,10 +389,46 @@
 }
 .srednajSK img:hover{
     box-shadow: -30px 10px 12px #000000;
-
 }
-
-
+/* PUTOVANJA */
+.putovanja{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.putovanja h2{
+    font-size: 40px;
+    margin-top: 50px;
+    border-bottom: #93BFCF 3px solid;
+}
+.textPutovanja{
+    margin-top: 50px;
+    text-align: justify;
+}
+/* GDE JE BIO */
+.gdeJeBio{
+    margin-top: 50px;
+}
+.gdeJeBio h2{
+    justify-content: center;
+    align-items: center;
+    border-bottom: yellowgreen 3px  solid;
+    margin-right: 350px;
+    margin-left: 350px;
+}   
+.lista{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: auto auto;
+}
+.lista ul{
+    list-style: none;
+    margin-top: 100px;
+    margin-left: 150px;
+    line-height: 80px;
+}
+.lista li::marker{
+    content: ' ▶️ ';
+}
 
 
 
