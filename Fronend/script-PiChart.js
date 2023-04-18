@@ -118,18 +118,31 @@ xmlhttp.onreadystatechange = function(){
               label: 'Vanzari',
               data: vanzari,
               borderWidth: 4,
-              borderColor: '#939B62',
+              borderColor: 'white',
               backgroundColor: '#1F8A70'
             },
             {
                 label: 'Profit pe zi',
                 data: profitPeZi,
                 borderWidth: 4,
-                borderColor: '#FEC868',
+                borderColor: 'white',
                 backgroundColor: '#FF8B13'
               }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "#159895",
+                  text: 'Profituri intr-o singura zi pe parcursul saptamanii si vanzari totale intr-o zi',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 20  
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0
@@ -178,11 +191,24 @@ xmlhttp.onreadystatechange = function(){
                 label: 'Profit pe zi',
                 data: vanzariPeZi,
                 borderWidth: 4,
-                borderColor: '#FEC868',
+                borderColor: '#00235B',
                 backgroundColor: ['#FF8B13', '#EB455F', '#698269', '#20262E', '#A31ACB', '#3C79F5']
               }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "#159895",
+                  text: 'Castiguri pe parcursul unei zile',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 30
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0
@@ -231,11 +257,24 @@ xmlhttp.onreadystatechange = function(){
                 label: 'Vizite pe o zi',
                 data: vizite,
                 borderWidth: 4,
-                borderColor: '#FFFF',
+                borderColor: 'black',
                 backgroundColor: ['#5D3891', '#C92C6D', '#84D2C5', '#F99417', '#3CCF4E', '#000000']
               }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "#159895",
+                  text: 'Numarul de vizite pe parcursul unei zile pe saptamana',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 30
+                }
+              }
+            },
             title: {
                 display: true,
                 text: "Vanzarile pe o zi"
@@ -301,18 +340,27 @@ xmlhttp.onreadystatechange = function(){
             labels: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
             datasets: [
             {
-                // label: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
+                label: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
                 data: [venitAnual, venitLunar, tranzactie, produseVanduteLunar],
-                borderWidth: 4,
-                borderColor: '#FFFF',
+                borderWidth: 5,
+                borderColor: 'black',
                 backgroundColor: ['#5D3891', '#C92C6D', '#84D2C5', '#F99417', '#3CCF4E', '#000000']
             }]
           },
           options: {
-            title: {
-                display: true,
-                text: "Vanzarile pe o zi"
-              },
+            plugins: {
+              title: {
+                  display: true,
+                  color: "#159895",
+                  text: 'Numarul de produse vandute lunar, venit anual, venit lunar si numar de tranzacti intro luna',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 25
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0

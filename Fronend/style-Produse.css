@@ -300,8 +300,7 @@
 }
 .products .okvir{
     /* background: #E9F8F9; */
-    background: greenyellow;
-    /* background: whitesmoke; */
+    background: #417AC9;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 30px;
@@ -309,8 +308,10 @@
     max-width: 1240px;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-radius: 50px 20px 50px 20px; 
+    border-radius: 50px; 
     border-style: solid;
+    border-color: #11101d;
+    /*box-shadow: 10px 10px 10px #000000;*/ 
 }
 .products .nume{
     text-align: center;
@@ -327,12 +328,10 @@
 }
 .products .pret{
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     color: red;
     padding-top: 30px;
-    text-shadow: 0 5px 5px rgba( 0,  0,  0,  0.2);
-
 }
 .products img{
     align-items: center;

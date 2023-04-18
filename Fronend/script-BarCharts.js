@@ -126,6 +126,19 @@ xmlhttp.onreadystatechange = function(){
             ]
             },
             options: {
+              plugins: {
+                title: {
+                    display: true,
+                    color: "blue",
+                    text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 20
+                  }
+                }
+              },
               scales: {
                 y: {
                   beginAtZero: true
@@ -169,6 +182,19 @@ xmlhttp.onreadystatechange = function(){
               }]
             },
             options: {
+              plugins: {
+                title: {
+                    display: true,
+                    color: "blue",
+                    text: 'Castiguri pe parcursul unei zile din intreaga saptamana',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 30
+                  }
+                }
+              },
               scales: {
                 y: {
                   beginAtZero: true
@@ -204,7 +230,7 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'bar',
             data: {
-              labels: [1, 2, 3, 4],
+              labels: [1, 2],
               datasets: [{
                 label: 'Numar total de angajati',
                 data: nrTotalDeAngajati,
@@ -228,8 +254,21 @@ xmlhttp.onreadystatechange = function(){
               }]
             },
             options: {
-                indexAxis: 'y',
-              scales: {
+              plugins: {
+                title: {
+                    display: true,
+                    color: "blue",
+                    text: 'Numarul de angajati, numarul de masini si numarul de magazine din firma "BONDI"',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 20
+                  }
+                }
+              },
+              indexAxis: 'x',
+              scales:{
                 y: {
                   beginAtZero: true,
                 }
@@ -271,7 +310,20 @@ xmlhttp.onreadystatechange = function(){
               }]
             },
             options: {
-                indexAxis: 'y',
+              plugins: {
+                title: {
+                    display: true,
+                    color: "blue",
+                    text: 'Numar de vizite in fiecare zi in magazinul nostru',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 30
+                  }
+                }
+              },
+              indexAxis: 'y',
               scales: {
                 y: {
                   beginAtZero: true,
@@ -321,7 +373,20 @@ xmlhttp.onreadystatechange = function(){
               }]
             },
             options: {
-                indexAxis: 'x',
+              plugins: {
+                title: {
+                    display: true,
+                    color: "blue",
+                    text: 'Castiguri pe tot parcursul anului 2021 in dinari (DIN)',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 30
+                  }
+                }
+              },
+              indexAxis: 'x',
               scales: {
                 y: {
                   beginAtZero: true,

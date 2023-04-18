@@ -124,6 +124,19 @@ xmlhttp.onreadystatechange = function(){
               }]
             },
             options: {
+              plugins: {
+                title: {
+                    display: true,
+                    color: "green",
+                    text: 'Bani cheltuiti pe marfa in ',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 30
+                  }
+                }
+              },
               scales: {
                 y: {
                   beginAtZero: true,
@@ -174,6 +187,19 @@ xmlhttp.onreadystatechange = function(){
               }]
             },
             options: {
+              plugins: {
+                title: {
+                    display: true,
+                    color: "green",
+                    text: 'Diferenta dintre clientii multumiti si clientii nemultumiti ',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 30
+                  }
+                }
+              },
               scales: {
                 y: {
                   beginAtZero: true,
@@ -214,43 +240,55 @@ xmlhttp.onreadystatechange = function(){
         });
         console.log(clientiDinAustria);
 
-        
         const ctx = document.getElementById('canvas2').
         getContext("2d");
 
         new Chart(ctx, {
-            type: 'radar',/* radar (area graf chart tipe) */
+            type: 'polarArea',/* radar (area graf chart tipe) */
             data: {
-              labels: [0, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000],
-
+              labels: ['Clienti din Serbia', 'Clienti din Romania', 'Clienti din Bulgaria', 'Clienti din Austria' ],
               datasets: [
               {
                 label: 'Clienti din Serbia',
                 data: clientiDinSerbia,
                 borderWidth: 4,
-                borderColor: '#FED049'
+                //backgroundColor: '#FF6D60'
               },
               {
                 label: 'Clienti din Romania',
                 data: clientiDinRomani,
                 borderWidth: 4,
-                borderColor: '#F55050'
+                //  backgroundColor: '#41644A'
+
               },
               {
                 label: 'Clienti din Bulgaria',
                 data: clientiDinBulgaria,
                 borderWidth: 4,
-                borderColor: '#301E67'
+                color:'#301E67'
+                //backgroundColor: '#301E67'
               },
               {
                 label: 'Clienti din Austria',
                 data: clientiDinAustria,
                 borderWidth: 4,
-                borderColor: '#BFDB38',
-                backgroundColor: '#ffff'
+                backgroundColor: '#05BFDB'
               }]
             },
             options: {
+              plugins: {
+                title: {
+                    display: true,
+                    color: "green",
+                    text: 'Clientii nostri din diverse tari Europene',
+                    padding: {
+                      bottom: 40
+                  },
+                  font: {
+                    size: 30
+                  }
+                }
+              },
               scales: {
                 x: {
                   beginAtZero: true

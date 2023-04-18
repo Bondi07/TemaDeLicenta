@@ -124,6 +124,19 @@ xmlhttp.onreadystatechange = function(){
               }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "red",
+                  text: 'Profituri intr-o singura zi pe parcursul saptamanii',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 30  
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0
@@ -156,8 +169,6 @@ xmlhttp.onreadystatechange = function(){
             return elem.vanzariTotale; 
         });
         console.log(vanzariTotale);
-        
-
 
         const ctx = document.getElementById('canvas1');
         new Chart(ctx, {
@@ -172,6 +183,19 @@ xmlhttp.onreadystatechange = function(){
             }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "red",
+                  text: 'Castiguri pe parcursul unei luni a anului',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 30
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0
@@ -206,8 +230,6 @@ xmlhttp.onreadystatechange = function(){
         });
         console.log(vanzariTotale);
         
-
-
         const ctx = document.getElementById('canvas2');
         new Chart(ctx, {
           type: 'line',
@@ -221,6 +243,19 @@ xmlhttp.onreadystatechange = function(){
             }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "red",
+                  text: 'Castiguri pe tot parcursul anului 2021',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 30
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0
@@ -280,6 +315,19 @@ xmlhttp.onreadystatechange = function(){
             }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "red",
+                  text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 20
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0
@@ -327,6 +375,19 @@ xmlhttp.onreadystatechange = function(){
             }]
           },
           options: {
+            plugins: {
+              title: {
+                  display: true,
+                  color: "red",
+                  text: 'Castiguri pe parcursul unei zile',
+                  padding: {
+                    bottom: 40
+                },
+                font: {
+                  size: 30
+                }
+              }
+            },
             elements:{
                 line:{
                     tension:0

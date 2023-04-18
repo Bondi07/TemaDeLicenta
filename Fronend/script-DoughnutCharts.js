@@ -111,37 +111,49 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'doughnut',
             data: {
-              labels: zi,
-              datasets: [{
-                label: 'Bani cheltuiti pe marfa',
-                data: sumaMarfa,
-                borderWidth: 4,
-                borderColor: 'red',
-                backgroundColor: '#1F8A70'
-              },
-              {
-                label: 'Profit',
-                data: profit,
-                borderWidth: 4,
-                borderColor: 'red',
-                backgroundColor: '#537FE7'
-
-              }
-            ]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true
+                labels: zi,
+                datasets: [{
+                    label: 'Bani cheltuiti pe marfa',
+                    data: sumaMarfa,
+                    borderWidth: 4,
+                    borderColor: 'red',
+                    backgroundColor: '#1F8A70'
                 },
-                x: {
+                {
+                    label: 'Profit',
+                    data: profit,
+                    borderWidth: 4,
+                    borderColor: 'red',
+                    backgroundColor: '#537FE7'
+                }
+                ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            color: "#E21818",
+                            text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                            padding: {
+                                bottom: 40
+                            },
+                            font: {
+                                size: 20
+                            }
+                        }
+                    },
+                scales: {
+                    y: {
                     beginAtZero: true
-                  }
-              }
-            }
-          });
+                    },
+                    x: {
+                        beginAtZero: true
+                    }
+                }
+                }
+            });
+        }
     }
-}
 
 /* charts 2*/
 var xmlhttp = new XMLHttpRequest();
@@ -176,27 +188,40 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'doughnut',
             data: {
-              labels: ['Venit anuale', 'Vanzari lunare', 'Tranzacti', 'Produse vandute lunar'],
-              datasets: [{
-                label: [],
-                data: [venitAnual,venitLunar,tranzactie,produseVanduteLunar],
-                borderWidth: 4,
-                borderColor: 'red',
-                backgroundColor: ['#1F8A70', '#537FE7', '#609EA2', '#FC7300']
-            }]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true
+                labels: ['Venit anuale', 'Vanzari lunare', 'Tranzacti', 'Produse vandute lunar'],
+                datasets: [{
+                    label: [],
+                    data: [venitAnual,venitLunar,tranzactie,produseVanduteLunar],
+                    borderWidth: 4,
+                    borderColor: 'red',
+                    backgroundColor: ['#1F8A70', '#537FE7', '#609EA2', '#FC7300']
+                }]
                 },
-                x: {
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            color: "#E21818",
+                            text: 'Numarul de produse vandute lunar, venit anual, venit lunar si numar de tranzacti intro luna',
+                            padding: {
+                                bottom: 40
+                            },
+                            font: {
+                                size: 25
+                            }
+                        }
+                    },
+                scales: {
+                    y: {
                     beginAtZero: true
-                  }
-              }
-            }
-          });
-    }
+                    },
+                    x: {
+                        beginAtZero: true
+                    }
+                }
+                }
+            });
+        }
 }
 
 /* charts 3 */
@@ -232,40 +257,53 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'doughnut',
             data: {
-              labels: zi,
-              datasets: [{
-                label: 'Vanzari',
-                data: vanzari,
-                borderWidth: 4,
-                borderColor: 'black',
-                backgroundColor: '#FDD36A'
-            },
-            {
-                label: 'Produse vandute',
-                data: produseVandute,
-                borderWidth: 4,
-                borderColor: 'black',
-                backgroundColor: '#F16767'
-            },{
-                label: 'Profit pe zi',
-                data: profitPeZi,
-                borderWidth: 4,
-                borderColor: 'black',
-                backgroundColor: '#263159'
-            }]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true
+                labels: zi,
+                datasets: [{
+                    label: 'Vanzari',
+                    data: vanzari,
+                    borderWidth: 4,
+                    borderColor: 'black',
+                    backgroundColor: '#FDD36A'
                 },
-                x: {
+                {
+                    label: 'Produse vandute',
+                    data: produseVandute,
+                    borderWidth: 4,
+                    borderColor: 'black',
+                    backgroundColor: '#F16767'
+                },{
+                    label: 'Profit pe zi',
+                    data: profitPeZi,
+                    borderWidth: 4,
+                    borderColor: 'black',
+                    backgroundColor: '#263159'
+                }]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            color: "#E21818",
+                            text: 'Profituri intr-o singura zi pe parcursul saptamanii',
+                            padding: {
+                                bottom: 40
+                            },
+                            font: {
+                                size: 30  
+                            }
+                        }
+                    },
+                scales: {
+                    y: {
                     beginAtZero: true
-                  }
-              }
-            }
-          });
-    }
+                    },
+                    x: {
+                        beginAtZero: true
+                    }
+                }
+                }
+            });
+        }
 }
 
 /* charts 4 */
@@ -293,24 +331,37 @@ xmlhttp.onreadystatechange = function(){
             type: 'doughnut',
             data: {
             labels: luna ,
-              datasets: [{
-                label: 'Vanzari totale',
-                data: vanzariTotale,
-                borderWidth: 4,
-                borderColor: 'blac',
-                backgroundColor: '#DC0000'
-            }]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true
+                datasets: [{
+                    label: 'Vanzari totale',
+                    data: vanzariTotale,
+                    borderWidth: 4,
+                    borderColor: 'blac',
+                    backgroundColor: '#DC0000'
+                }]
                 },
-                x: {
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            color: "#E21818",
+                            text: 'Castiguri pe parcursul unei luni a anului',
+                            padding: {
+                                bottom: 40
+                            },
+                            font: {
+                            size: 30
+                            }
+                        }
+                    },
+                scales: {
+                    y: {
                     beginAtZero: true
-                  }
-              }
+                    },
+                    x: {
+                        beginAtZero: true
+                    }
+                }
             }
-          });
+        });
     }
 }
