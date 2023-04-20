@@ -113,5 +113,3 @@ http.onload = function(){
         console.log(out);
     }
 }
-
-

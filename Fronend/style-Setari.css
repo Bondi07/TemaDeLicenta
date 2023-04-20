@@ -9,10 +9,6 @@
     /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
 }
-ins{
-    color:red;
-    background: #eaff00;;
-}
 .sidebar{
     position: fixed;
     top: 0;
@@ -56,18 +52,15 @@ ins{
     transition-delay: 0s;
     border:none;
 }
-.sidebar .nav-links li:hover{
-    border: black 1px solid;
+/* KADA JE AKTIVAN STRANICA DA ZNAS GDE SI */
+ul li a.active{
     background: #62CDFF;
 }
-
-
-/* DODATO TEST */
-.active {
-    background-color: #2E4F4F;
-    color: white;
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
 }
-/* DO OVDE JE DODATO */
+
 
 .sidebar.close .nav-links li:hover{
     border: none;

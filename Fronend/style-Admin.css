@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #E4E9F7;
+}
+.plavaLinija{
+    width: 100%;
+    height: 80px;
+    background: #1E409F;
+}
+.plavaLinija h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.mainSection{
+    margin-left: 50px;
+
+}   
+.logout button{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #1E409F;
+    margin-top: 50px;
+}
+.logout button a{
+    color: white;
+    text-decoration: none;
+}
+.logout button:hover{
+    background: #417AC9;
+}
+.adminText h1{
+    font-size: 50px;
+    color: black;
+    border-bottom: black 5px solid;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOTTER */
+.fott{
+    height: 30px;
+    padding-top: 15px;
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    font-family:'Poppins', sans-serif; 
+}   
+

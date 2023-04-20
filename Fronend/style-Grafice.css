@@ -79,6 +79,14 @@
 }
 */
 /*ne radi color za tkes kad predjes preko njega (li)*/
+/* DODATO ZA MENJANJE BOJE LI A */
+ul li a.active{
+    background: #62CDFF;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
+}
 
 .sidebar .nav-links li{
     position: relative;
