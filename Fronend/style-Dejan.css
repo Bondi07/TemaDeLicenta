@@ -57,11 +57,16 @@
 .sidebar.close .nav-links li:hover{
     border: none;
 }
-.sidebar.close .nav-links i:hover{
-    color: #11101d;
-    background-color: white;
-    border:none;
+/* KADA JE AKTIVAN STRANICA DA ZNAS GDE SI */
+ul li a.active{
+    background: #62CDFF;
 }
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
+}
+
+
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;

@@ -90,12 +90,12 @@ http.onload = function(){
             out +=  `
                 <div class="angajatii">
                     <div class="okvir">
-                        <img class="poza" src="../imagesAngajatii/${item.prenume}.jpg" alt="poze" width="300px" height="400px">
+                        <img class="poza" src="../imagesAngajatii/${item.prenume}.jpg" alt="poze" width="300px" height="450px">
                         <div class="datele">
                             <p class=prenume>Prenume: ${item.prenume}</p>
                             <p class=nume>Nume: ${item.nume}</p> 
                             <p class=oras>Oras: ${item.oras}</p>
-                            <p class=salariu>Salariu: ${item.salariu} RON</p>
+                            <p class=email>E-mail: ${item.email}</p>
                             <p class=pozitie>Pozitie: ${item.pozitie}</p>
                         </div>
 

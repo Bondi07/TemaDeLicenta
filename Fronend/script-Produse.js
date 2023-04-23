@@ -92,7 +92,7 @@ http.onload = function(){
                     <div class="okvir">
                         <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
                         <p class=nume>${item.nume}</p>
-                        <p class=cantitate>${item.cantitate}</p>
+                        <p class=cantitate>Cantitate: ${item.cantitate}</p>
                         <p class=pret>${item.pret} RON </p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ http.onload = function(){
         }
 
         document.querySelector(".products").innerHTML = out;
-        console.log(out);
+        
     }
 }
 
@@ -110,9 +110,6 @@ http.onload = function(){
 
 
 /* pagination */
-
-
-
 
 
 

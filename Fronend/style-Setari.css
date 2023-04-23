@@ -60,16 +60,16 @@ ul li a.active{
     border: black 1px solid;
     background: rgba(255, 255, 255, 0.393);
 }
-
-
 .sidebar.close .nav-links li:hover{
     border: none;
 }
-.sidebar.close .nav-links i:hover{
+
+/* .sidebar.close .nav-links i:hover{
     color: #11101d;
     background-color: white;
     border:none;
-}
+} */
+
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;

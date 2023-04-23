@@ -6,6 +6,8 @@
         public string  Nume { get; set; }
         public string Prenume { get; set; }
         public string Oras { get; set; }
+
+        public string Email { get; set; }      
         public DateTime  DataAngajari { get; set; }
         public int Salariu { get; set; }
         public DateTime DataNasterii { get; set; }

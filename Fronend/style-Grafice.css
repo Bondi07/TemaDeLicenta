@@ -57,11 +57,6 @@
 .sidebar.close .nav-links li:hover{
     border: none;
 }
-.sidebar.close .nav-links i:hover{
-    color: #11101d;
-    background-color: white;
-    border:none;
-}
 
 .sidebar .nav-links{
     height: 100%;

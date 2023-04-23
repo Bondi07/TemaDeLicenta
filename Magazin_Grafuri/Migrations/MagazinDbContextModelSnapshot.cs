@@ -31,6 +31,10 @@ namespace MagazinGrafuri.Migrations
                     b.Property<DateTime>("DataNasterii")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Nume")
                         .IsRequired()
                         .HasColumnType("longtext");

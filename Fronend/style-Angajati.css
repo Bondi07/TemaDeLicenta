@@ -59,11 +59,6 @@
 .sidebar.close .nav-links li:hover{
     border: none;
 }
-.sidebar.close .nav-links i:hover{
-    color: #11101d;
-    background-color: white;
-    border:none;
-}
 
 .sidebar .nav-links{
     height: 100%;
@@ -322,16 +317,14 @@ ul li a.active{
     background: #E9F8F9;
     width: 100%;
     border-radius: 35px;
-    height: 450px;
+    height: 550px;
 } 
 .angajatii .datele{
     margin-left: 20px;
     /*line-height: 10px;*/
-    margin-top: 10px;
+    margin-top: 40px;
     text-align: center;
     line-height: 50px;
-
-
 }
 .angajatii .nume{
     padding-top: 30px;
@@ -361,7 +354,7 @@ ul li a.active{
     align-items: center;
     
 }
-.angajatii .salariu{
+.angajatii .email{
     padding-top: 30px;
     font-size: 30px;
     font-weight: 600;
@@ -369,8 +362,8 @@ ul li a.active{
     width: 300px;
     align-items: center;
     border-radius: 0 0 35px 35px;
-
 }
+
 .angajatii .pozitie{
     font-size: 30px;
     font-weight: 800;
@@ -390,12 +383,11 @@ ul li a.active{
     background: #1E409F;
     border-radius: 25px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* KONTEJNER U KOJIMA JE TEKST ALI KOJI JE KOD OBRIASN (PROBAA) */
 .okvir a{
-    /* width: 200px; */
     bottom: 10px;
     right: 10px;
     font-size: 15px;
@@ -414,7 +406,7 @@ ul li a.active{
 }
 .angajatii .okvir a{
     position: relative;
-    margin-top: 390px;
+    margin-top: 500px;
     margin-left: 320px;
 }
 /* LINKOVI DO ODREDJENE OSOBE */
