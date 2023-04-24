@@ -88,8 +88,8 @@ http.onload = function(){
 
             /*  OVDE MORA DA BUDE I DA PISE PRODUCT A NE PRODUCTS JE NECE DA RADI INACE   */
             out +=  `
-                <div class="product">
-                    <div class="okvir">
+                <div class="product"  id="products">
+                    <div class="okvir" id="product">
                         <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
                         <p class=nume>${item.nume}</p>
                         <p class=cantitate>Cantitate: ${item.cantitate}</p>
@@ -107,6 +107,26 @@ http.onload = function(){
 }
 
 
+
+/* SEARCH BAR */
+
+document.querySelector('#search').addEventListener('input', filterList);
+
+function filterList(){
+
+    const searchInput = document.querySelector('#search');
+    const filter = searchInput.value.toLowerCase();
+    const listItems = document.querySelectorAll('.okvir');
+
+    listItems.forEach((item) => {
+        let text = item.textContent;
+        if(text.toLowerCase().includes(filter.toLowerCase())){
+            item.style.display = '';
+        }else{
+            item.style.display = 'none';
+        }
+    });
+}
 
 
 /* pagination */

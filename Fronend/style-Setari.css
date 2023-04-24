@@ -282,6 +282,10 @@ ul li a.active{
     float: right;
     display: inline-flex;
     margin-left: 800px;
+
+}
+.sidebar.close .btn-right button{
+    margin-left: 800px;
 }
 .btn-right button:hover{
     background: #417AC9;

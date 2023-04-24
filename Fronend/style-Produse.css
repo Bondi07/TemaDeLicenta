@@ -292,6 +292,25 @@ ul li a.active{
 }
 
 /*MAIN*/
+/* SEARCH BAR */
+input{
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
+}
+input:hover{
+    background: lightblue;
+}
+input:active{
+    background: lightblue;
+}
+
 .main .products{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
