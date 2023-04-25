@@ -334,6 +334,7 @@ input:active{
     border-style: solid;
     border-color: #11101d;
     /*box-shadow: 10px 10px 10px #000000;*/ 
+
 }
 .products .nume{
     text-align: center;
@@ -344,7 +345,7 @@ input:active{
 }
 .products .cantitate{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 
 }

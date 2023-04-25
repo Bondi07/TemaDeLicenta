@@ -128,7 +128,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Bani cheltuiti pe marfa in ',
+                    text: 'Bani cheltuiti pe marfa si profit',
                     padding: {
                       bottom: 40
                   },

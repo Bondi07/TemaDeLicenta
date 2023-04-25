@@ -398,6 +398,26 @@ a:hover{
 .doughnutGrafs img{
     border-radius: 10px 80px 10px 80px;
 } 
+
+.mixedCharts{
+    width: 400px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    border-radius: 80px 10px 80px 10px;
+    border-style: solid;
+    border-color:#301E67 #567189 #567189 #301E67;
+    border-width: 5px;
+    border-width: 5px;
+    color: #11101d; 
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.mixedCharts img{
+    border-radius: 80px 10px 80px 10px;
+} 
+
+
 /*BUTTON TO TOP*/
 .buttonTop{
     width: 70px;

@@ -41,14 +41,67 @@ body{
     color: black;
     border-bottom: black 5px solid;
     margin-right: 150px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
-
-
-
-
-
-
+/* .CSV FILE PART */
+.csvSection{
+    margin-top: 350px;
+}
+.csvSection h2{
+    font-size: 40px;
+}
+.csvSection input{
+    margin-top: 50px;
+    
+}
+tr:nth-child(1){
+    background: #11101d !important;
+    color: white !important;
+    font-size: 22px !important;
+    height: 30px;
+}
+tr:nth-child(even){
+    background: gray;
+}
+tr:nth-child(odd){
+    background: white;
+}
+.buttonImport{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    color: red;
+    font-size: 30px;
+}
+.alegeFisieru{
+    margin-top: 50px;
+    height: 40px;
+    color: red;
+    font-size: 25px;
+}
+.reloadPage{
+    height: 40px;
+    color: red;
+    font-size: 25px;
+}
+table{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.alege{
+    margin-top: 100px;
+}
+.alege h2{
+    font-size: 40px;
+}
+.alege label{
+    font-size: 35px;
+}
+.alege select{
+    font-size: 20px;
+}
 
 
 

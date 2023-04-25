@@ -131,5 +131,3 @@ function filterList(){
 
 /* pagination */
 
-
-
