@@ -52,3 +52,6 @@ C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\obj\Debug\net6.0\refint\Maga
 C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\obj\Debug\net6.0\Magazin_Grafuri.pdb
 C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\obj\Debug\net6.0\Magazin_Grafuri.genruntimeconfig.cache
 C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\obj\Debug\net6.0\ref\Magazin_Grafuri.dll
+C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\bin\Debug\net6.0\ExcelDataReader.dll
+C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\bin\Debug\net6.0\ExcelDataReader.DataSet.dll
+C:\Users\NikB\Desktop\TemaDeLicenta\Magazin_Grafuri\bin\Debug\net6.0\CsvHelper.dll

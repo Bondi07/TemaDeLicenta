@@ -7,8 +7,5 @@
         public string Zi { get; set; }
 
         public int  VanzariPeZi { get; set; }
-
-            
-
     }
 }

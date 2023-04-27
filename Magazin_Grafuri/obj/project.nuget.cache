@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/rAYYZqwmvMrkEN96sPTv9dcn42OiUxEFhhgJ/V2+92NGlh0LYFreScm+4wZ1BUnZHx78gQ0xN2kD7e3ivoMPA==",
+  "dgSpecHash": "Ipz2JW74t8koL5Zds5YSWEp0bjm/T4AHZ9R8xWzp5LR8WknQ89iblD+2R28kJw0LDnSmLpiv/yL1XM2Bgzz1Eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\NikB\\Desktop\\TemaDeLicenta\\Magazin_Grafuri\\Magazin_Grafuri.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NikB\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\NikB\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\NikB\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\NikB\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\NikB\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "C:\\Users\\NikB\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",

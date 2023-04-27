@@ -124,6 +124,7 @@ ins{
     position: absolute;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
 }
 
 
@@ -463,7 +464,6 @@ ul li a.active{
 }
 .chartCard .chartBox{
     padding-top: 150px;
-
 }
 #piChart{
     margin-left: 100px;
@@ -636,6 +636,19 @@ header h2{
     color: #2D2727;
 
 }
+/* IZGLED ZA VELIKI EKRAN  */
+/* @media only screen  and (min-width: 1024px){
+    .main .wrap{
+        gap: 50px;
+    }
+    .chartBox{
+        margin-left: 150px;
+    }
+    .sidebar .nav-links li{
+        line-height: 100px;
+    }
+
+}  */
 
 
 /* FOOTER*/
@@ -669,8 +682,8 @@ header h2{
     background: whitesmoke;
     margin-top: 50px;
     font-family:'Poppins', sans-serif; 
-
 }   
+
 
 
 

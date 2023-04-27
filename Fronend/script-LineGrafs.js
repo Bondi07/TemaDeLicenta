@@ -94,15 +94,15 @@ xmlhttp.onreadystatechange = function(){
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
+        
         var vanzari = data.map(function(elem){
             return elem.vanzari; 
         });
-        console.log(vanzari[0]);
+
         var profitPeZi = data.map(function(elem){
             return elem.profitPeZi; 
         });
-        console.log(profitPeZi[0]);
+
 
 
         const ctx = document.getElementById('canvas');
@@ -161,14 +161,15 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
         var luna = data.map(function(elem){
             return elem.luna; 
         });
-        console.log(luna);
+        
         var vanzariTotale = data.map(function(elem){
             return elem.vanzariTotale; 
         });
-        console.log(vanzariTotale);
+
 
         const ctx = document.getElementById('canvas1');
         new Chart(ctx, {
@@ -223,12 +224,12 @@ xmlhttp.onreadystatechange = function(){
         var an = data.map(function(elem){
             return elem.an; 
         });
-        console.log(an);
+        
 
         var vanzariTotale = data.map(function(elem){
             return elem.vanzariTotale; 
         });
-        console.log(vanzariTotale);
+        
         
         const ctx = document.getElementById('canvas2');
         new Chart(ctx, {
@@ -355,12 +356,12 @@ xmlhttp.onreadystatechange = function(){
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
+        
 
         var vanzariPeZi = data.map(function(elem){
             return elem.vanzariPeZi; 
         });
-        console.log(vanzariPeZi);
+        
 
         const ctx = document.getElementById('canvas4');
         new Chart(ctx, {

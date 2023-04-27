@@ -89,22 +89,20 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
+        
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
-        var zi = data.map(function(elem){
-            return elem.zi; 
-        });
-        console.log(sumaMarfa);
+        
         var sumaMarfa = data.map(function(elem){
             return elem.sumaMarfa; 
         });
-        console.log(profit);
+        
         var profit = data.map(function(elem){
             return elem.profit; 
         });
-        console.log(profit);
+        
     
         const ctx = document.getElementById('canvas');
         new Chart(ctx, {
@@ -158,14 +156,15 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
+        
         var vanzariPeZi = data.map(function(elem){
             return elem.vanzariPeZi; 
         });
-        console.log(vanzariPeZi);
+
         
         const ctx = document.getElementById('canvas1');
         new Chart(ctx, {
@@ -213,18 +212,19 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
         var nrTotalDeAngajati = data.map(function(elem){
             return elem.nrTotalDeAngajati; 
         });
-        console.log(nrTotalDeAngajati);
+        
         var nrDeMagazine = data.map(function(elem){
             return elem.nrDeMagazine; 
         });
-        console.log(nrDeMagazine);
+        
         var nrDeMasini = data.map(function(elem){
             return elem.nrDeMasini; 
         });
-        console.log(nrDeMasini);
+      
 
         const ctx = document.getElementById('canvas2');
         new Chart(ctx, {
@@ -286,14 +286,15 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
+
         var vizite = data.map(function(elem){
             return elem.vizite; 
         });
-        console.log(vizite);
+
 
         const ctx = document.getElementById('canvas3');
         new Chart(ctx, {
@@ -346,17 +347,14 @@ xmlhttp.onreadystatechange = function(){
         var an = data.map(function(elem){
             return elem.an; 
         });
-        console.log(an);
-
+        
         var vanzariTotale = data.map(function(elem){
             return elem.vanzariTotale; 
         });
-        console.log(vanzariTotale);
 
         var luna = data.map(function(elem){
           return elem.luna; 
         });
-        console.log(luna);
 
         const ctx = document.getElementById('canvas4');
         new Chart(ctx, {

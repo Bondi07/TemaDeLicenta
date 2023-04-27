@@ -57,5 +57,6 @@ namespace Magazin_Grafuri.ConexiuneBazaDeDate
 
         public List<Grafic8> GetGrafic8();
 
+        public bool ImportTable(IFormFile tableData, string tableName);
     }
 }

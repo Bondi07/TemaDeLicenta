@@ -15,7 +15,7 @@ namespace Magazin_Grafuri.Context
         public DbSet<Dashboard> Dashboard { get; set; }
         public DbSet<Produse> Produse { get; set; }
         public DbSet<VanzariSaptamanale> VanzariSaptamanale { get; set; }
-        public DbSet<VanzariTotale> VanzariToatale { get; set; }
+        public DbSet<VanzariTotale> VanzariTotale { get; set; }
 
         public DbSet<Grafic1> Grafic1 { get; set;}
         public DbSet<Grafic2> Grafic2 { get; set;}

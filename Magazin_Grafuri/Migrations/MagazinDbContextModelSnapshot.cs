@@ -335,7 +335,7 @@ namespace MagazinGrafuri.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("VanzariToatale");
+                    b.ToTable("VanzariTotale");
                 });
 #pragma warning restore 612, 618
         }

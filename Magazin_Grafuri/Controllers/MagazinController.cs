@@ -217,5 +217,18 @@ namespace Magazin_Grafuri.Controllers
         {
             return Ok(conexiuneBD.GetGrafic8());
         }
+
+        [HttpPost]
+        [Route("ImportTable")]
+        public IActionResult ImportTable(IFormFile table, [FromForm] string tableName)
+        {
+            var response = conexiuneBD.ImportTable(table, tableName);
+            if (response)
+            {
+                return Ok("Tabel importat cu succes!");
+            }
+            return Ok("Tabel nu este importat !");
+        }
+
     }
 }
