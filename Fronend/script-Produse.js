@@ -170,6 +170,7 @@ function fetchData() {
             totalPages = Math.ceil(totalProduse / itemsPerPage);
             displayData(data);
             createPaginationButtons();
+            window.scrollTo(0, 0);
     })
     .catch(error => console.error(error));
     console.log(itemsPerPage);
