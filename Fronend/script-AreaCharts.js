@@ -91,17 +91,15 @@ xmlhttp.onreadystatechange = function(){
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
         
         var sumaMarfa = data.map(function(elem){
             return elem.sumaMarfa; 
         });
-        console.log(sumaMarfa);
-
+        
         var profit = data.map(function(elem){
             return elem.profit; 
         });
-        console.log(profit);
+        
 
         const ctx = document.getElementById('canvas');
         new Chart(ctx, {
@@ -159,12 +157,10 @@ xmlhttp.onreadystatechange = function(){
         var clientiMultumiti = data.map(function(elem){
             return elem.clientiMultumiti; 
         });
-        console.log(clientiMultumiti);
         
         var clientiNemultumiti = data.map(function(elem){
             return elem.clientiNemultumiti; 
         });
-        console.log(clientiNemultumiti);
 
         
         const ctx = document.getElementById('canvas1');
@@ -183,7 +179,9 @@ xmlhttp.onreadystatechange = function(){
                 label: 'Clienti ne multumiti',
                 data: clientiNemultumiti,
                 borderWidth: 4,
-                borderColor: '#F55050'
+                borderColor: 'red',
+                backgroundColor: '#89375F'
+
               }]
             },
             options: {
@@ -223,22 +221,22 @@ xmlhttp.onreadystatechange = function(){
         var clientiDinSerbia = data.map(function(elem){
             return elem.clientiDinSerbia; 
         });
-        console.log(clientiDinSerbia);
+        
         
         var clientiDinRomani = data.map(function(elem){
             return elem.clientiDinRomani; 
         });
-        console.log(clientiDinRomani);
+        
 
         var clientiDinBulgaria = data.map(function(elem){
           return elem.clientiDinBulgaria; 
         });
-        console.log(clientiDinBulgaria);
+
 
         var clientiDinAustria = data.map(function(elem){
           return elem.clientiDinAustria; 
         });
-        console.log(clientiDinAustria);
+        
 
         const ctx = document.getElementById('canvas2').
         getContext("2d");
@@ -252,27 +250,30 @@ xmlhttp.onreadystatechange = function(){
                 label: 'Clienti din Serbia',
                 data: clientiDinSerbia,
                 borderWidth: 4,
-                //backgroundColor: '#FF6D60'
+                borderColor: '#0B2447'
+                
               },
               {
                 label: 'Clienti din Romania',
                 data: clientiDinRomani,
                 borderWidth: 4,
-                //  backgroundColor: '#41644A'
+                borderColor: 'red'
 
               },
               {
                 label: 'Clienti din Bulgaria',
                 data: clientiDinBulgaria,
                 borderWidth: 4,
-                color:'#301E67'
-                //backgroundColor: '#301E67'
+                color:'#301E67',
+                // borderColor: 'green',
+                above: 'green'
               },
               {
                 label: 'Clienti din Austria',
                 data: clientiDinAustria,
                 borderWidth: 4,
-                backgroundColor: '#05BFDB'
+                backgroundColor: '#05BFDB',
+                borderColor: 'black'
               }]
             },
             options: {
@@ -290,6 +291,11 @@ xmlhttp.onreadystatechange = function(){
                 }
               },
               scales: {
+                // r:{
+                //   grid:{
+                //     display:false
+                //   }
+                // },
                 x: {
                   beginAtZero: true
                 },
@@ -303,5 +309,3 @@ xmlhttp.onreadystatechange = function(){
 }
 
 
-
-/* AREA CHART FROM CANVAS JS */

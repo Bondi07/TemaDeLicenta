@@ -90,23 +90,20 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
-        var zi = data.map(function(elem){
-            return elem.zi; 
-        });
-        console.log(sumaMarfa);
+
         var sumaMarfa = data.map(function(elem){
             return elem.sumaMarfa; 
         });
-        console.log(profit);
+
         var profit = data.map(function(elem){
             return elem.profit; 
         });
-        console.log(profit);
-    
+
+
         const ctx = document.getElementById('canvas');
         new Chart(ctx, {
             type: 'doughnut',
@@ -167,22 +164,18 @@ xmlhttp.onreadystatechange = function(){
         var venitAnual = data.map(function(elem){
             return elem.venitAnual; 
         });
-        console.log(venitAnual);
 
         var venitLunar = data.map(function(elem){
             return elem.venitLunar; 
         });
-        console.log(venitLunar);
 
         var tranzactie = data.map(function(elem){
             return elem.tranzactie; 
         });
-        console.log(tranzactie);
 
         var produseVanduteLunar = data.map(function(elem){
             return elem.produseVanduteLunar; 
         });
-        console.log(produseVanduteLunar);
     
         const ctx = document.getElementById('canvas1');
         new Chart(ctx, {
@@ -236,22 +229,18 @@ xmlhttp.onreadystatechange = function(){
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
 
         var vanzari = data.map(function(elem){
             return elem.vanzari; 
         });
-        console.log(vanzari);
 
         var produseVandute = data.map(function(elem){
             return elem.produseVandute; 
         });
-        console.log(produseVandute);
 
         var profitPeZi = data.map(function(elem){
             return elem.profitPeZi; 
         });
-        console.log(profitPeZi);
     
         const ctx = document.getElementById('canvas2');
         new Chart(ctx, {
@@ -318,13 +307,10 @@ xmlhttp.onreadystatechange = function(){
         var luna = data.map(function(elem){
             return elem.luna; 
         });
-        console.log(luna);
 
         var vanzariTotale = data.map(function(elem){
             return elem.vanzariTotale; 
         });
-        console.log(vanzariTotale);
-
 
         const ctx = document.getElementById('canvas3');
         new Chart(ctx, {

@@ -206,6 +206,4 @@ function sendEmail(){
     }).then(
         message => alert("Mesajul a fost trimis cu succes !")
     );
-
-
 }

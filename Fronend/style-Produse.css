@@ -321,7 +321,6 @@ input:active{
     
 }
 .products .okvir{
-    /* background: #E9F8F9; */
     background: #417AC9;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -333,7 +332,6 @@ input:active{
     border-radius: 50px; 
     border-style: solid;
     border-color: #11101d;
-    /*box-shadow: 10px 10px 10px #000000;*/ 
 
 }
 .products .nume{
@@ -363,9 +361,46 @@ input:active{
     background-color: white;
 }
 
-
-
 /* DODATO ZA PAGINARE */
+
+#pagination-container {
+    position: absolute;
+    display: inline-flex;
+    bottom: 50px;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 2px;
+    padding: 5px 10px;
+    width: 50px;
+    height: 50px;
+}
+button:hover {
+    background-color: #f5f5f5;
+}
+button.active {
+    background-color: #ddd;
+}
+button.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+
+
+
+
 
 
 /*GO TO TOP*/

@@ -93,20 +93,18 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
     if(this.readyState ==  4 && this.status == 200){
         var data = JSON.parse(this.responseText);
+
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
         
         var vanzari = data.map(function(elem){
             return elem.vanzari; 
         });
-        console.log(vanzari);
 
         var profitPeZi = data.map(function(elem){
             return elem.profitPeZi; 
         });
-        console.log(profitPeZi);
 
 
         const ctx = document.getElementById('canvas');
@@ -173,13 +171,10 @@ xmlhttp.onreadystatechange = function(){
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
 
         var vanzariPeZi = data.map(function(elem){
             return elem.vanzariPeZi; 
         });
-        console.log(vanzariPeZi);
-
 
         const ctx = document.getElementById('canvas1');
         new Chart(ctx, {
@@ -239,12 +234,10 @@ xmlhttp.onreadystatechange = function(){
         var zi = data.map(function(elem){
             return elem.zi; 
         });
-        console.log(zi);
 
         var vizite = data.map(function(elem){
             return elem.vizite; 
         });
-        console.log(vizite);
 
 
         const ctx = document.getElementById('canvas2');
@@ -310,27 +303,18 @@ xmlhttp.onreadystatechange = function(){
         var venitAnual = data.map(function(elem){
             return elem.venitAnual; 
         });
-        console.log(venitAnual);
 
         var venitLunar = data.map(function(elem){
             return elem.venitLunar; 
         });
-        console.log(venitLunar);
 
         var tranzactie = data.map(function(elem){
             return elem.tranzactie; 
         });
-        console.log(tranzactie);
 
         var produseVanduteLunar = data.map(function(elem){
             return elem.produseVanduteLunar; 
         });
-        console.log(produseVanduteLunar);
-
-        var produseVanduteAnual = data.map(function(elem){
-            return elem.produseVanduteAnual; 
-        });
-        console.log(produseVanduteAnual);
 
 
         const ctx = document.getElementById('canvas3');

@@ -141,11 +141,17 @@ namespace Magazin_Grafuri.Controllers
 
         [HttpGet]
         [Route("Produse")]
-        public IActionResult GetProduse()
+        public IActionResult GetProduse([FromQuery] string take, string skip)
         {
-            return Ok(conexiuneBD.GetProduse());
+            return Ok(conexiuneBD.GetProduse(Convert.ToInt32(take), Convert.ToInt32(skip)));
         }
 
+        [HttpGet]
+        [Route("TotalProduse")]
+        public IActionResult GetTotalProduse()
+        {
+            return Ok(conexiuneBD.GetTotalProduse());
+        }
 
         [HttpGet]
         [Route("VanzariSaptamanale")]

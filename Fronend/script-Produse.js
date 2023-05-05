@@ -12,23 +12,23 @@ sidebarBtn.addEventListener("click", ()=>{
 /*DARK MODE*/
 
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.produse-text');
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const text = body.querySelector('.produse-text');
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#E4E9F7';
+            body1.style.color = 'black';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#121212';
+            body1.style.color = 'white';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
         }
@@ -70,41 +70,43 @@ scrollToTopButton.addEventListener('click', () => {
 
 /* DODAVANJE PRODUKTA */
 
-let http = new XMLHttpRequest();
+// let http = new XMLHttpRequest();
 
-http.open('get', 'https://localhost:7111/api/Magazin/Produse', true );
+// http.open('get', 'https://localhost:7111/api/Magazin/Produse', true );
 
-http.send();
-http.onload = function(){
+// http.send();
+// http.onload = function(){
 
-    if(this.readyState == 4 && this.status == 200){
+//     if(this.readyState == 4 && this.status == 200){
 
-        let products = JSON.parse(this.responseText);
+//         let products = JSON.parse(this.responseText);
 
-        let out = "";
-        /* za svaku od slika */
-        let i = 0;
-        for(let item of products){
+//         let out = "";
+//         /* za svaku od slika */
+//         let i = 0;
+//         for(let item of products){
 
-            /*  OVDE MORA DA BUDE I DA PISE PRODUCT A NE PRODUCTS JE NECE DA RADI INACE   */
-            out +=  `
-                <div class="product"  id="products">
-                    <div class="okvir" id="product">
-                        <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
-                        <p class=nume>${item.nume}</p>
-                        <p class=cantitate>Cantitate: ${item.cantitate}</p>
-                        <p class=pret>${item.pret} RON </p>
-                    </div>
-                </div>
-            `; 
-            /* za menjanje slika */
-            i = i + 1;
-        }
+//             /*  OVDE MORA DA BUDE I DA PISE PRODUCT A NE PRODUCTS JE NECE DA RADI INACE   */
+//             out +=  `
+//                 <div class="product"  id="products">
+//                     <div class="okvir" id="prod">
+//                         <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
+//                         <p class=nume>${item.nume}</p>
+//                         <p class=cantitate>Cantitate: ${item.cantitate}</p>
+//                         <p class=pret>${item.pret} RON </p>
+//                     </div>
+//                 </div>
+//                 <div id="pagination-container"></div>
 
-        document.querySelector(".products").innerHTML = out;
+//             `; 
+//             /* za menjanje slika */
+//             i = i + 1;
+//         }
+
+//         document.querySelector(".products").innerHTML = out;
         
-    }
-}
+//     }
+// }
 
 
 
@@ -121,7 +123,7 @@ function filterList(){
     listItems.forEach((item) => {
         let text = item.textContent;
         if(text.toLowerCase().includes(filter.toLowerCase())){
-            item.style.display = '';
+            item.style.display = 'grid';
         }else{
             item.style.display = 'none';
         }
@@ -131,3 +133,90 @@ function filterList(){
 
 /* pagination */
 
+
+const endpoint = 'https://localhost:7111/api/Magazin/Produse';
+    const itemsPerPage = 15;
+    let currentPage = 0;
+    let totalPages;
+    let totalProduse;
+
+function fetchData() {
+    const url = `${endpoint}?take=${itemsPerPage}&skip=${currentPage * itemsPerPage}`;
+    try {
+        fetch('https://localhost:7111/api/Magazin/TotalProduse')
+            .then(response => response.json())
+            .then(nrProduse => {
+                if (nrProduse && nrProduse.numar) {
+                    totalProduse = nrProduse.numar;
+                } else {
+                    console.error('Data is not in the expected format:', nrProduse);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        } catch (error) {
+            console.error('Error:', error);
+        }
+        if (typeof totalPages === 'undefined' || typeof totalProduse === 'undefined') {
+            totalProduse = 124;
+        }
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log('data:', data);
+            console.log('Total pages:', totalPages);
+            totalPages = Math.ceil(totalProduse / itemsPerPage);
+            displayData(data);
+            createPaginationButtons();
+    })
+    .catch(error => console.error(error));
+    console.log(itemsPerPage);
+    console.log(itemsPerPage);
+    console.log("data");
+}
+
+
+function displayData(data) {
+console.log('displaying data:', data);
+const container = document.getElementById("prod");
+container.innerHTML = "";
+
+let out = "";
+data.forEach(item => {
+    out += `
+            <div class="product" id="products">
+                <div class="okvir" id="prod">
+                <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
+                <p class=nume>${item.nume}</p>
+                <p class=cantitate>Cantitate: ${item.cantitate}</p>
+                <p class=pret>${item.pret} RON </p>
+                </div>
+            </div>
+            <div id="pagination-container"></div>
+        `;
+    });
+    document.querySelector(".products").innerHTML = out;
+}
+
+function createPaginationButtons() {
+    const container = document.getElementById("pagination-container");
+    container.innerHTML = ""; 
+
+    for (let i = 0; i <= totalPages-1; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = i + 1;
+        btn.classList.add("pagination-btn");
+        if (i === currentPage) {
+            btn.classList.add("active");
+        }
+        btn.addEventListener("click", () => {
+            currentPage = i;
+            fetchData();
+        });
+        container.appendChild(btn);
+    }
+}
+
+fetchData();

@@ -20,6 +20,9 @@ const toggle = document.getElementById('toggleDark');
     chart2 = body.querySelector('#canvas2');
     chart3 = body.querySelector('#canvas3');
     chart4 = body.querySelector('#canvas4');
+    chart5 = body.querySelector('#canvas5');
+    chart6 = body.querySelector('#canvas6');
+    chart7 = body.querySelector('#canvas7');
 
 
     toggle.addEventListener('click', function(){
@@ -37,6 +40,9 @@ const toggle = document.getElementById('toggleDark');
             chart2.style.background = '#E4E9F7';
             chart3.style.background = '#E4E9F7';
             chart4.style.background = '#E4E9F7';
+            chart5.style.background = '#E4E9F7';
+            chart6.style.background = '#E4E9F7';
+            chart7.style.background = '#E4E9F7';
         }else{
             body.style.background = '#121212';
             body.style.color = 'white';
@@ -49,6 +55,9 @@ const toggle = document.getElementById('toggleDark');
             chart2.style.background = 'white';
             chart3.style.background = 'white';
             chart4.style.background = 'white';
+            chart5.style.background = 'white';
+            chart6.style.background = 'white';
+            chart7.style.background = 'white';
         }
     })
 
@@ -96,7 +105,6 @@ xmlhttp.onreadystatechange = function(){
             return elem.clientiMultumiti; 
         });
         
-
         var clientiNemultumiti = data.map(function(elem){
             return elem.clientiNemultumiti; 
         });

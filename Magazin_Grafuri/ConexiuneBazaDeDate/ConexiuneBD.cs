@@ -2,6 +2,7 @@
 using CsvHelper.Configuration;
 using ExcelDataReader;
 using Magazin_Grafuri.Context;
+using Magazin_Grafuri.Raspunsuri;
 using Magazin_Grafuri.Tabele;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -121,9 +122,14 @@ namespace Magazin_Grafuri.ConexiuneBazaDeDate
             return dbContext.Dashboard.ToList();
         }
 
-        public List<Produse> GetProduse()
+        public List<Produse> GetProduse(int take, int skip)
         {
-            return dbContext.Produse.ToList();
+            return dbContext.Produse.Skip(skip).Take(take).ToList();
+        }
+
+        public TotalProduse GetTotalProduse()
+        {
+            return new TotalProduse { Numar = dbContext.Produse.Count() };
         }
 
         public List<VanzariSaptamanale> GetVanzariSaptamanale()

@@ -1,4 +1,5 @@
-﻿using Magazin_Grafuri.Tabele;
+﻿using Magazin_Grafuri.Raspunsuri;
+using Magazin_Grafuri.Tabele;
 
 namespace Magazin_Grafuri.ConexiuneBazaDeDate
 {
@@ -35,7 +36,8 @@ namespace Magazin_Grafuri.ConexiuneBazaDeDate
 
         public List<Dashboard> GetDashboard();
 
-        public List<Produse> GetProduse();
+        public List<Produse> GetProduse(int take, int skip);
+        public TotalProduse GetTotalProduse();
 
         public List<VanzariSaptamanale> GetVanzariSaptamanale();
 
