@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    /* font-family: 'Poppins', sans-serif; */
+    --transition: all 0.2s ease;
+}
+a:visited{
+    color: whitesmoke;
+}
+ins{
+    color:red;
+    background: #eaff00;;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #417AC9;
+}
+.sidebar .logo-details{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar .logo-details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+.sidebar .logo-details .logo_name{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+    font-family: 'Poppins', sans-serif;
+
+}
+.lineBorder{
+    border-bottom: #11101d 3px solid;
+    padding-top: 10px;
+
+}
+.sidebar.close .logo-details .logo_name{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0s;
+    border:none;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+}
+.sidebar.close .nav-links li:hover{
+    border: none;
+}
+
+.sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px 0 150px 0;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar .nav-links{
+    overflow: visible;
+    padding-top: 50px;
+}
+/*
+.sidebar .nav-links li:hover{
+    background-color: white;
+}
+*/
+/*ne radi color za tkes kad predjes preko njega (li)*/
+
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    line-height: 80px;
+}
+.sidebar .nav-links li .icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.sidebar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .bottom-content {
+    color:white;
+    font-size: 15px;
+    bottom: 0;
+    display: inline;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+
+
+/* DODATO ZA MENJANJE BOJE LI A */
+ul li a.active{
+    background: #62CDFF;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
+}
+
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+
+/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
+/*
+
+.sidebar .nav-links  li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar.close  li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: var(--transition);
+    top:50%;
+    transform: translateY(-50%);
+}
+*/
+
+/*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
+/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
+.sidebar.close .bottom-content{
+    display: none;      
+}
+
+.sidebar .bottom-content a{
+    color: white;
+    font-size: 15px;
+}
+.sidebar .bottom-content a:hover{
+    color: red;
+    
+}
+
+.home-section{
+    position: relative;
+    background: #E4E9F7;
+    height: 100%;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.5s ease;
+}
+.home-section .line{
+    position: relative;
+    background: #1E409F;
+    height: 80px;
+    width: 100% ;
+    display: inline-flex;
+}
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+
+}
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+} 
+.home-section .home-content .bx-left-indent{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+    
+}
+.home-section .home-content2 .bx-sun, .bx-moon {
+    color: #11101d;
+    font-size: 35px;
+    margin: 0 15px;
+}
+.home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+}
+.home-section .home-content2 .limbi-straine{
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
+}
+.home-section .home-content2 .limbi-straine .eng:hover,
+.home-section .home-content2 .limbi-straine .srb:hover,
+.home-section .home-content2 .limbi-straine .ro:hover{
+    color: red;   
+}
+.home-section .home-content2 .limbi-straine .eng,
+.home-section .home-content2 .limbi-straine .srb,
+.home-section .home-content2 .limbi-straine .ro{
+    color: white;
+
+}
+.home-section .home-content2{
+    right: 0;
+    padding-right: 150px;
+    padding-top: 15px;
+    display: inline-flex;
+    position:absolute;
+}
+.home-section .home-content2 .box{
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    font-size: 10px;
+
+}
+.home-section .home-content2 .box i{
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+}
+.home-section .home-content2 .limbi-straine{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.home-section .main{
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+.home-section .main .dash-text{
+    font-size: 30px;
+    color: black;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+}
+
+/*do ovde ide main posle toga ide za svakog posebno*/
+/* OVDE SU KARTICE I NJIHOV IZGLED*/
+.home-section .wrap{
+    margin-top: 50px;
+}
+.home-section .main .wrap .venitAnual{
+    background-color: #E9F8F9;
+    width: 220px;
+    height: 150px;
+    border-radius: 15px; 
+    border-left: #1E409F 5px solid;
+    font-size: 0;
+}
+.home-section .main .wrap .venitLunar{
+    background-color: #E9F8F9;
+    width: 220px;
+    height: 150px;
+    border-radius: 25px; 
+    border-left: #EB455F 5px solid;
+    font-size: 0;
+}
+.home-section .main .wrap .tranzacti{
+    background-color: #E9F8F9;
+    width: 230px;
+    height: 150px;
+    border-radius: 25px;
+    border-left: #183A1D 5px solid; 
+    font-size: 0;
+}
+.home-section .main .wrap .prVaLunar{
+    background-color: #E9F8F9;
+    width: 230px;
+    height: 150px;
+    border-radius: 25px; 
+    border-left: #F99417 5px solid;
+    font-size: 0;
+}
+.home-section .main .wrap .prVaAnual{
+    background-color: #E9F8F9;
+    width: 230px;
+    height: 150px;
+    border-radius: 25px; 
+    border-left: #3C6255 5px solid;
+    font-size: 0;
+}
+/*za naslov kako da izgleda za svaku karticu*/
+.main .venitAnual .title{
+    color: black;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+
+.main .venitLunar .title{
+    color: black;
+    font-size: 20px;
+    padding-left: 13px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+.main .tranzacti .title{
+    color: black;
+    font-size: 20px;
+    padding-left: 13px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+.main .prVaAnual .title{
+    color: black;
+    font-size: 15px;
+    padding-left: 13px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+.main .prVaLunar .title{
+    color: black;
+    font-size: 15px;
+    padding-left: 13px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+
+.main .venitAnual .wrap-img{
+    display: inline-flex;
+}
+.main .venitLunar .wrap-img{
+    display: inline-flex;
+}
+.main .tranzacti .wrap-img{
+    display: inline-flex;
+}
+.main .prVaLunar .wrap-img{
+    display: inline-flex;
+}
+.main .prVaAnual .wrap-img{
+    display: inline-flex;
+}
+
+/*nije dobro namesteno za ikonicu treba da se podesi lepo*/
+.main .wrap-img img{
+    margin-right: 10px;
+}
+.main .venitAnual img{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+/* za sliku za svaku karticu*/
+.main .venitLunar img{
+    padding-left: 40px;
+    padding-top: 50px;
+    
+}
+.main .tranzacti img{
+    padding-left: 60px;
+    padding-top: 50px;
+    
+}
+.main .prVaLunar img{
+    padding-top: 50px;
+}
+.main .prVaAnual img{
+    padding-top: 50px;
+}
+/*tekst uzet iz baze podataka*/
+.main .venitAnual #venit{
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.main .venitLunar #venitlunar{
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.main .tranzacti #tranzacti{
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.main .prVaLunar #prVaLunar{
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.main .prVaAnual  #prVaAnual{
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+}
+/*wrap da bi sve kartice bile u jednom redu*/
+.main .wrap{
+    display: inline-flex;
+    gap: 13px;
+}
+
+/*GRAFOVI*/
+.chartCard{
+    display: inline-flex;
+    width: 100%;  
+}
+.chartCard .chartBox{
+    padding-top: 150px;
+}
+#piChart{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.line1{
+    border-bottom: black 3px solid;
+    padding-top: 50px;
+    margin-right: 80px;
+}
+.textCompaniei{
+    padding-top: 30px;
+    /* font-size: 30px; */
+    font-family: Montserrat;
+    text-align: justify;
+    padding-right: 70px;
+}
+.textCompaniei h4{
+    color: blue;
+    /* font-size: 20px; */
+    opacity: 0.7;
+    padding-top: 15px;
+
+}
+.textCompaniei a{
+    color: #417AC9;
+}
+.textCompaniei a:hover{
+    color: red;
+}
+.lincuriFirmelor{
+    padding: 30px;
+    background: #D8D8D8;
+    border-radius: 35px;
+    margin-top: 20px;
+    margin-right: 50px;
+
+}
+/* COOKIES MESAGE */
+.wrapper{
+    position: fixed;
+    bottom: 10px;
+    right: -400px;
+    max-width: 345px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+}
+.wrapper.show{
+    right: 10px;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.wrapper .data{
+    margin-top: 16px;
+}
+header i{
+    color: #417AC9;
+    font-size: 32px;
+}
+header h2{
+    color: #417AC9;
+    font-weight: 500;
+}
+.wrapper .data p{
+    color: #333;
+    font-size: 16px;
+}
+.data p a{
+    color: #417AC9;
+    text-decoration: none;
+}
+.data p a:hover{
+    text-decoration: underline;
+}
+.wrapper .buttons{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .button{
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    background:#417AC9;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.buttons .button:hover{
+    background-color: #034bf1;
+}
+
+/* KARTICE ZA FIRME SA KOJIMA SARADJUJE KOMPANIAJ BONDI */
+.boody{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 50px;
+}
+.cover{
+    margin-top: 50px;
+    display: flex;
+}
+.box1{
+    margin: 10px;
+    width: 350px;
+    height: 650px;
+    background: #E4E9F7;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #2D2727;
+}
+.box1:hover{
+    background: #F6F1F1;
+    box-shadow: -10px 5px 12px #000000;
+
+}
+.box1 h2{
+    padding-top: 30px;
+    font-size: 35px;
+}
+.box1 h2:hover{
+    font-size: 38px;
+    color: #002B5B;
+    
+}
+.box1 p{
+    padding-top: 20px;
+}
+.box1 img{
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.box1 button{
+    width: 150px;
+    height: 50px;
+    background: #19A7CE;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    align-self:center;
+}
+.box1 button:hover{
+    background: #EA5455;
+    color: #2D2727;
+
+}
+/* IZGLED ZA VELIKI EKRAN  */
+/* @media only screen  and (min-width: 1024px){
+    .main .wrap{
+        gap: 50px;
+    }
+    .chartBox{
+        margin-left: 150px;
+    }
+    .sidebar .nav-links li{
+        line-height: 100px;
+    }
+
+}  */
+
+
+/* FOOTER*/
+/*GO TO TOP*/
+.buttonTop{
+    width: 70px;
+    height: 70px;
+    background: rgb(252, 252, 252);
+    border-radius: 15px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    outline: none;
+    opacity: 0.6;
+}
+.buttonTop:hover{
+    background: whitesmoke;
+    opacity: 1;
+}
+
+.fott{
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    margin-top: 50px;
+    font-family:'Poppins', sans-serif; 
+}   
+
+
+
+

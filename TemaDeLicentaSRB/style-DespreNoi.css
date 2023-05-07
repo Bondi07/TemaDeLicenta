@@ -1,0 +1,1211 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* font-family: 'Poppins', sans-serif; */
+    --transition: all 0.2s ease;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #417AC9;
+}
+.sidebar .logo-details{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar .logo-details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+.sidebar .logo-details .logo_name{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+    font-family: 'Poppins', sans-serif;
+
+}
+.lineBorder{
+    border-bottom: #11101d 3px solid;
+    padding-top: 10px;
+
+}
+.sidebar.close .logo-details .logo_name{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0s;
+    border:none;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+}
+.sidebar.close .nav-links li:hover{
+    border: none;
+}
+
+.sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px 0 150px 0;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar .nav-links{
+    overflow: visible;
+    padding-top: 50px;
+}
+/*
+.sidebar .nav-links li:hover{
+    background-color: white;
+}
+*/
+/*ne radi color za tkes kad predjes preko njega (li)*/
+
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    line-height: 80px;
+}
+.sidebar .nav-links li .icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.sidebar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .bottom-content {
+    color:white;
+    font-size: 15px;
+    bottom: 0;
+    display: inline;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
+/*
+
+.sidebar .nav-links  li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar.close  li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: var(--transition);
+    top:50%;
+    transform: translateY(-50%);
+}
+*/
+
+/*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
+/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
+.sidebar.close .bottom-content{
+    display: none;    
+}
+/*  ZA COOCKIE TEXT  */
+.sidebar .bottom-content a{
+    color: white;
+    font-size: 15px;
+}
+.sidebar .bottom-content a:hover{
+    color: red;
+}
+
+/* RADI NEKAKO DA LI JE DOBRO NE ZNAM */
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+
+/* HOME SECTION */
+.home-section{
+    position: relative;
+    background: #E4E9F7;
+    height: 100%;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.5s ease;
+}
+.home-section .line{
+    position: relative;
+    background: #1E409F;
+    height: 80px;
+    width: 100% ;
+    display: inline-flex;
+}
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+
+}
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+} 
+.home-section .home-content .bx-left-indent{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+    
+}
+.home-section .home-content2 .bx-sun, .bx-moon {
+    color: #11101d;
+    font-size: 35px;
+    margin: 0 15px;
+}
+.home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+}
+.home-section .home-content2 .limbi-straine{
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
+}
+.home-section .home-content2 .limbi-straine .eng:hover,
+.home-section .home-content2 .limbi-straine .srb:hover,
+.home-section .home-content2 .limbi-straine .ro:hover{
+    color: red;   
+}
+.home-section .home-content2 .limbi-straine .eng,
+.home-section .home-content2 .limbi-straine .srb,
+.home-section .home-content2 .limbi-straine .ro{
+    color: white;
+
+}
+.home-section .home-content2{
+    right: 0;
+    padding-right: 150px;
+    padding-top: 15px;
+    display: inline-flex;
+    position:absolute;
+}
+.home-section .home-content2 .box{
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    font-size: 10px;
+
+}
+.home-section .home-content2 .box i{
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+}
+.home-section .home-content2 .limbi-straine{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.home-section .main{
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+.home-section .main .DespreNoi-text{
+    font-size: 30px;
+    color: black;
+    border-bottom: black 4px solid;
+    margin-right: 50px;
+}
+
+/* DODATO ZA MENJANJE BOJE LI A */
+ul li a.active{
+    background: #62CDFF;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
+}
+
+/*MAIN*/
+/* TEKST SA ANIMACIJOM*/
+.container{
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Roboto+Mono, monospace;
+    margin-top: 20px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+}
+.text{
+    font-weight: 100;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+}
+.dud{
+    color:#ff0303;
+}
+.pozaPanorama {
+    margin-top: 50px;
+    gap: 0;
+    background: #0099ff;
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 80px;
+    background: #E4E9F7;
+    opacity: 0.6;
+}
+svg{
+    margin-right: 50px;
+    gap: 0;
+}
+.textGlitch h1{
+    font-size: 40px;
+    margin-top:50px;
+    width: 350px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.textGlitch h1:hover{
+    
+    text-shadow: red -3px 0,
+                 cyan 3px 0;
+}
+
+/*BIRAJ GDE CES ICI UZ POMOC MENIJA */
+.meniBirajGdeIdes{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+    background: #ECF2FF;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.meniBirajGdeIdes a{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: color 0.2s linear;
+    border-bottom: 1.5px black solid;
+    font-family: 'Poppins', sans-serif;
+
+}
+.meniBirajGdeIdes a:hover{
+    color: red;
+    border-bottom: #000000 3.5px solid;
+}
+.meniBirajGdeIdes ul {
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+    
+}
+.meniBirajGdeIdes ul li {
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.cine{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;    
+    font-weight: 900;
+}
+.cine h1::selection{
+    color: #F6F1F1;
+    background: #3A98B9;
+
+}
+
+.wrap1{
+    display: inline-flex;
+    margin-top: 20px;
+}
+.pozadina1{
+    width: 800px;
+    height: 600px;
+    background: whitesmoke;
+    border-radius: 35px;
+    position: absolute;
+    opacity: 0.8;
+}
+.pozadina1 img{
+    border-radius: 35px ;
+    margin: 20px;
+}
+.pozadina2{
+    z-index: 9;
+    margin-left: 550px;
+    margin-top: 150px;
+    width: 500px;
+    height: 150px;
+}
+.text1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background: #3A98B9;
+    margin-right: 10px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 40px;
+}
+.text1 p{
+    background-position: left;
+    background-size: 0% 100%;
+    background-image :linear-gradient(#f6e05e, #f6e05e);
+    display :inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.text1 p:hover{
+    background-size: 100% 100%;
+}
+
+
+/* O FIRMI 2 */
+.wrap2{
+    display: inline-flex;
+    margin-top: 400px;
+    background: #829460;
+    padding: 30px;
+    margin-right: 50px;
+    border-radius: 50px;
+}
+.poz2{
+    background: yellowgreen;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 60px;
+    border-style: dashed;
+    border-color: #000000;
+}
+.text2{
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;;
+    font-size: 30px; 
+    text-align: justify;
+    margin-left: 20px;
+}
+.text2 a{
+    color: blue;
+}
+.text2 a:hover{
+    color: red;
+}
+.slika img{
+    border-radius: 55px 40px 180px 90px;
+    border-color: #000000;
+    border-style: dashed;
+    margin-top: 30px;
+}
+/* RADNO VREME */
+.pozadinaTL{
+    z-index: 1;
+    position: relative;
+    border-radius: 35px;
+    background: #539165;
+    margin-right: 50px;
+
+}
+.timpulDeLucru{
+    margin-top: 50px;
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+    color: black;
+
+}
+.timpulDeLucru h1{
+    font-size: 40px;
+    font-weight: 800;
+    border-radius: 35px;
+    background: #EB455F;
+    border-radius: 35px;
+    
+}
+.timp{
+    margin-top: 20px;
+}
+.timp .ora{
+    margin-left: 300px;
+    margin-right: 350px;
+}
+.timp h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.timp h3{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+/*tekst 3*/
+.wrap3{
+    display: inline-flex;
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+.text3{
+    background: teal;
+    font-size: 25px;
+    float: left;
+    width: 50%;
+    padding: 25px;
+    text-align: justify;
+    border-radius: 30px;
+    font-family:'Poppins', sans-serif;
+    word-wrap: break-word;
+}
+.text3 p{
+    color: transparent;
+    background-position: right;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgb(161, 204, 5), rgb(161, 204, 5));
+    display :inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.text3 p:hover{
+    color: black;
+    background-size: 0% 100%;
+}
+.slikaCeEste img{
+    border-radius: 0 55px 55px 0;
+    margin-left: 150px;
+}
+.wrapPoze{
+    margin-top: 80px;
+    display:block;
+    margin-left: 80px;
+}
+.wrapPoze img{
+    border-radius: 50px 0 0 0;
+}
+.wrapPoze img:nth-child(2){
+    border-radius: 0 ;
+}
+.wrapPoze img:nth-child(3){
+    border-radius: 0 50px 0 0;
+}
+.wrapPoze img:nth-child(4){
+    border-radius: 0 0 0 50px;
+}
+.wrapPoze img:nth-child(5){
+    border-radius: 0 ;
+}
+.wrapPoze img:nth-child(6){
+    border-radius: 0 0 50px 0;
+}
+/*slike vocnjaka mini album*/
+.row1 {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+.column1 {
+    -ms-flex: 50%; 
+    flex: 50%;
+    padding: 0 4px;
+}
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 450px;
+    border-radius: 50px ;
+}
+
+/*DESPRE APARTAMENTE*/
+.cazare{
+    font-size: 50px;
+    font-weight: 600;
+    width: 350px;
+    height: 150px;
+    margin-top: 50px;
+    background: #9DC08B;
+    position: relative;
+    padding: 20px;
+    border-radius: 25px;
+}
+.tacke img{
+    position: relative;
+    z-index: 2;
+}
+.wrappApartamente{
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.wrappApartamente img{
+    border-radius: 50px 0 0 0;
+}
+.wrappApartamente img:nth-child(2){
+    border-radius: 0 ;
+}
+.wrappApartamente img:nth-child(3){
+    border-radius: 0 50px 0 0;
+}
+.wrappApartamente img:nth-child(4){
+    border-radius: 0 0 0 50px;
+}
+.wrappApartamente img:nth-child(5){
+    border-radius: 0 ;
+}
+.wrappApartamente img:nth-child(6){
+    border-radius: 0 0 50px 0;
+}
+.textCazare{
+    /* font-size: 35px; */
+    font-family:'Catamaran' , sans-serif;;
+    font-weight: 900;
+    text-align: justify;
+    margin-top: 100px;
+    background: #93BFCF;
+    padding: 30px;
+    border-radius: 35px;
+}
+.pozeApartamente{
+    margin-top: 80px;
+    display:block;
+    margin-left: 80px;
+}
+/*linkovi stanova*/
+.lincuriApartamente{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    background: #E4E9F7;
+    padding: 10px;
+    border-radius: 10px;
+}
+.lincuriApartamente a:hover{
+    color: red;
+}
+.lincuriApartamente a{
+    margin-left: 50px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.naslovApartamente{
+    display: inline-flex;
+    padding-top: 50px;
+}
+.naslovApartamente h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.naslovApartamente h1::selection{
+    color: #F6F1F1;
+    background: #5CB8E4;
+}
+.okvirokoslikeBooking img{
+    border-radius: 50px;
+
+}
+.okvirokoslikeBooking{
+    width: 300px;
+    height: 200px;
+    background: #2F58CD;
+    padding: 20px;
+    border-radius: 50px;
+}
+/* ZA ISKACUCE PROZORE I TEKST I SLIKU U NJIMA TOOLTIP  */
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.tooltip1 img{
+    border-radius: 50px;
+    padding-top: 10px;
+}
+.tooltip1 .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #417AC9;
+    margin-top: 20px;
+    font-size: 25px;
+
+    /* POZITIE TOOLTIPULUI */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -150px;
+}
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+}
+/*TOOLTIP 2*/
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.tooltip2 img{
+    border-radius: 50px;
+    padding-top: 10px;
+}
+.tooltip2 .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #417AC9;
+    margin-top: 20px;
+    font-size: 25px;
+
+   /* POZITIE TOOLTIPULUI */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -150px;
+}
+.tooltip2:hover .tooltiptext {
+    visibility: visible;
+}
+/*TOOLTIP 3*/
+.tooltip3 {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.tooltip3 button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.tooltip3 img{
+    border-radius: 50px;
+    padding-top: 10px;
+}
+.tooltip3 .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #417AC9;
+    margin-top: 20px;
+    font-size: 25px;
+
+    /* POZITIE TOOLTIPULUI */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -170px;
+}
+.tooltip3:hover .tooltiptext {
+    visibility: visible;
+}
+/* ZA TRECI TOOLTIP ALI DA BUDE GORE I DA PISE DA JE SAJT U IZRADI*/
+.tooltip3_1 {
+    position: relative;
+    display: inline;
+
+}
+.tooltip3_1 .tooltiptext1 {
+    visibility: hidden;
+    width: 220px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -100px;
+}
+.tooltip3_1 .tooltiptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.tooltip3_1:hover .tooltiptext1 {
+    visibility: visible;
+}
+
+/* popup measge*/
+.btn{
+    padding: 10px 60px;
+    background-color: #E4E9F7;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 30px;
+}
+.btn:hover{
+    color: red;
+}
+.popup{
+    /* margin-top: 900px; */
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 52%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -20%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #417AC9;
+    padding: 20px;
+}
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.popup p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p a{
+    font-size: 18px;
+    color: blue;
+    margin: 30px 0 10px;
+
+}
+.popup a:hover{
+    color: red;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TEKST O KOMPANIJI BONDI*/
+.naslov{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+.textCompaniei{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 20px;
+    text-align: justify;
+    margin-right: 50px;
+    font-family: 'Poppins', sans-serif;    
+    color: black;
+    background: #E4E9F7;
+    border-radius: 15px;
+
+}
+.textCompaniei p{
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #9ae6b4, yellow);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.textCompaniei p:hover{
+    background-size: 100% 100%;
+}
+
+/* TESKT O NASIM CILJEVIMA I USPEHU*/
+.golas{
+    font-size: 35px;
+    font-weight: 500;
+    background:  linear-gradient(to right, #9ae6b4, #FFEA20);
+    border-radius: 50px;
+    width: 550px;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    color: #2C3333;
+    margin-top: 20px;
+}
+.textObiective{
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 50px;
+    background: #E4E9F7;
+    border-radius: 15px;
+
+}
+.textObiective p{
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    text-align: justify;
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to left, #FFEA20, #FF6D28);
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+} 
+.textObiective p:hover{
+    background-position: right;
+    background-size: 100% 100%;
+}
+
+.ceDorim{
+    display: inline-flex;
+    padding: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.ceDorim h2{
+    font-size: 30px;
+    border-bottom: 3px solid black;
+}
+.ceDorim .avem li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+.ceDorim .dorim {
+    margin-left: 180px;
+}
+.ceDorim .dorim ul{
+    padding-top: 50px;
+}
+.ceDorim .avem ul{
+    padding-top: 50px;
+
+}
+.ceDorim .dorim li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+
+/* MAPS */
+.textMaps{
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #82ce9d, yellow);
+    margin-right: 50px;
+    height: 200px;
+    padding: 30px;
+    border-radius: 50px;
+}
+.textMaps h1{
+    font-size: 35px;
+}
+.textMaps h4 a{
+    font-size: 20px;
+}
+.textMaps h4 a:hover{
+    color: red;
+}
+
+/*aica punem image grid*/
+.row {
+    margin-top: 50px;
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-right: 50px;
+}
+/*pravi 4 kolone sa slikama*/ 
+.column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+iframe{
+    margin-top: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+}
+/* CONTACT US FORM */
+.infoDesprenoi{
+    margin-top: 80px;
+    font-size: 40px;
+
+}
+.FormaIntrebari{
+    margin-top: 100px;
+    display: inline-flex;
+    width: 100%;
+}
+.info{
+    width: 50%;
+    border: #000000 3px solid;
+    background: #C7E9B0;
+    border-radius: 15px 0 0 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+.info h3{
+    font-size: 30px;
+    border-bottom: #000000 2px solid;
+    margin-right: 250px;
+}
+.info h2{
+    padding-top: 20px;
+    font-size: 25px;
+    
+}
+.info a{
+    color: red;
+
+}
+.info a:hover{
+    color: #19A7CE;
+}
+.container1{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #053742;
+    border-radius: 0 15px 15px 0;
+    margin-right: 10px;
+}
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 1px black solid;
+    margin:10px 0;
+    padding: 20px;
+    outline: none;
+    background: #F7F7F7;
+    font-size: 16px;
+}
+form input:hover, form textarea:hover{
+    background: #A2DBFA;
+}
+form input:active, form textarea:active{
+    background: #A2DBFA;
+}
+form button{
+    padding: 15px;
+    background: #539165;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+/*FOOTER*/
+/*GO TO TOP*/
+.buttonTop{
+    width: 70px;
+    height: 70px;
+    background: rgb(252, 252, 252);
+    border-radius: 15px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    outline: none;
+    opacity: 0.6;
+}
+.buttonTop:hover{
+    background: whitesmoke;
+    opacity: 1;
+}
+
+.fott{
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    margin-top: 50px;
+    font-family:'Poppins', sans-serif; 
+
+}   
+
+
+
+

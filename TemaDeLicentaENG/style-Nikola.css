@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    /* font-family: 'Poppins', sans-serif; */
+    --transition: all 0.2s ease;
+    scroll-behavior: smooth;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #417AC9;
+}
+.sidebar .logo-details{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar .logo-details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+.sidebar .logo-details .logo_name{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+    font-family: 'Poppins', sans-serif;
+
+}
+.lineBorder{
+    border-bottom: #11101d 3px solid;
+    padding-top: 10px;
+
+}
+.sidebar.close .logo-details .logo_name{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0s;
+    border:none;
+}
+/* KADA JE AKTIVAN STRANICA DA ZNAS GDE SI */
+ul li a.active{
+    background: #62CDFF;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
+}
+.sidebar.close .nav-links li:hover{
+    border: none;
+}
+
+.sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px 0 150px 0;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar .nav-links{
+    overflow: visible;
+    padding-top: 50px;
+}
+/*
+.sidebar .nav-links li:hover{
+    background-color: white;
+}
+*/
+/*ne radi color za tkes kad predjes preko njega (li)*/
+
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    line-height: 80px;
+}
+.sidebar .nav-links li .icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.sidebar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .bottom-content {
+    color:white;
+    font-size: 15px;
+    bottom: 0;
+    display: inline;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
+/*
+
+.sidebar .nav-links  li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar.close  li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: var(--transition);
+    top:50%;
+    transform: translateY(-50%);
+}
+*/
+
+/*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
+/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
+.sidebar.close .bottom-content{
+    display: none;      
+}
+
+.sidebar .bottom-content a{
+    color: white;
+    font-size: 15px;
+}
+.sidebar .bottom-content a:hover{
+    color: red;
+    
+}
+
+/*   ZA COOCKIES */
+.sidebar .bt2 i{
+    bottom: 0;
+    padding: 20px;
+    color: black;
+
+}
+.sidebar.close .bt2 i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    margin-left: 15px;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar.close .bt2 i:hover{
+    border: 2px  black solid ;
+    color: red;
+}
+
+.home-section{
+    position: relative;
+    background: #E4E9F7;
+    height: 100%;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.5s ease;
+}
+.home-section .line{
+    position: relative;
+    background: #1E409F;
+    height: 80px;
+    width: 100% ;
+    display: inline-flex;
+}
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+
+}
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+} 
+.home-section .home-content .bx-left-indent{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+    
+}
+.home-section .home-content2 .bx-sun, .bx-moon {
+    color: #11101d;
+    font-size: 35px;
+    margin: 0 15px;
+}
+.home-section .home-content2 .bx-left-indent, .bx-chevrons-right {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+}
+.home-section .home-content2 .limbi-straine{
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
+}
+.home-section .home-content2 .limbi-straine .eng:hover,
+.home-section .home-content2 .limbi-straine .srb:hover,
+.home-section .home-content2 .limbi-straine .ro:hover{
+    color: red;   
+}
+.home-section .home-content2 .limbi-straine .eng,
+.home-section .home-content2 .limbi-straine .srb,
+.home-section .home-content2 .limbi-straine .ro{
+    color: white;
+
+}
+.home-section .home-content2{
+    right: 0;
+    padding-right: 150px;
+    padding-top: 15px;
+    display: inline-flex;
+    position:absolute;
+}
+.home-section .home-content2 .box{
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    font-size: 10px;
+}
+.home-section .home-content2 .box i{
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+}
+.home-section .home-content2 .limbi-straine{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.home-section .main{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+/* MAIN */
+.home-section .main .angajat1-text{
+    font-size: 30px;
+    color: black;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+}
+
+/* MAIN CONTETN */
+.button{
+    width: 120px;
+    height: 50px;
+    background: #FFDE00;
+    border-radius: 25px;
+    margin-top: 50px;
+    color: black;
+    font-size: 20px; 
+}
+.button:hover{
+    background: #FED049;
+}
+
+/* OSNOVNE INFORMACIJE O NIKOLI */
+/* WRAP */
+.wrap{
+    display: inline-flex;
+}
+/* SLIKA */
+.poza{
+    z-index: 1;
+    position: absolute;
+    margin-left: 700px;
+}
+.poza img{
+    background: #E4E9F7;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 35px;
+    z-index: 2;
+    position: absolute;
+}
+/* TROUGAO */
+.triangle {
+    padding-left: 50px;
+    border-left: 100px solid #ff4136;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-top: 100px solid transparent;
+    z-index: 10;
+    position: absolute;
+}
+/* KRUG */
+.circle {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #3d9970; 
+    z-index: 5;
+    position: absolute;
+}
+/* INFORMACIEJ */
+.despre{
+    margin-top: 20px;
+    font-size: 20px;   
+    font-family: 'Popins' sans-serif;
+}
+.despre ul{
+    list-style: none;
+    padding: 20px;
+}
+.despre h3{
+    line-height: 40px;
+    border-bottom: #11101d 2px solid;
+    width: 150px;
+    padding-top: 20px;
+}
+/* OSNOVNE INFORMACIJE O OSOBI */
+.osnocneInformacije{
+    
+    /* font-size: 20px; */
+    text-align: justify;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.osnocneInformacije p{
+    padding-top: 20px;
+    padding: 10px;  
+
+}
+/* ram za sliku */
+.ram{
+    position: absolute;
+    z-index: 0;
+}
+.ramzasliku{
+    position: absolute;
+    z-index: 1;
+}
+/* MALI NIKOLA */
+.maliNikola{
+    position: absolute;
+    z-index: 99;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.maliNikolaText{
+    margin-top: 50px;
+    display: inline-flex;
+}
+.tekstOMalomNikola{
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 400px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.tekstOMalomNikola p{
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.tekstOMalomNikola h2{
+    border-bottom: #E6B325 4px solid;
+    margin-right: 50px;
+    font-size: 35px;
+}
+/* OSNOVNA SKOLA */
+/* MARGIN TOP KAD SU ISKLJUCENA PODEASVANJA IMAM PROBLEM SA MARGINE TOP !!!!??? */
+.osnovnaSkola{
+    margin-top: 250px;
+    margin-right: 50px;
+}
+.osnovnaSkola h2{
+    font-size: 35px;
+    border-bottom: #3d9970 5px solid;
+    margin-right: 50px;
+}
+.osnovnaSkola p{
+    text-align: justify;
+    padding-top: 20px;
+}
+.osnovnaSkola a{
+    color: #1E409F;
+    border-bottom: #11101d 2px solid;
+}
+.osnovnaSkola a:hover{
+    color: #ff4136;
+}
+.slikeOsnovna{
+    margin-top: 50px;
+    margin-left: 8px;
+}
+.slikeOsnovna img{
+    border-radius: 15px;
+}
+.slikeOsnovna img:hover{
+    border-radius: 20px;
+    opacity: 0.8;
+    box-shadow: -30px 10px 12px #000000;
+}
+/* SREDNJA SKOLA */
+.srednjaSkola{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.srednjaSkola h2{
+    font-size: 40px;
+    border-bottom: darkslategrey 5px solid;
+    margin-right: 50px;
+}
+.srednjaSkola p{
+    padding-top: 20px;
+    text-align: justify;
+}
+.srednjaSkola img{
+    border-radius: 20px;
+}
+.srednjaSkola img:hover{
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: -30px 20px 12px #567189;
+}
+.slikeSrednja{
+    margin-top: 50px;
+}
+.srednjaSkola a:link{
+    color: #1E409F;
+    font-size: 22px;
+    border-bottom: #11101d 2px solid;
+}
+.srednjaSkola a:hover{
+    color: #ff4136;
+}
+.slikeDiplomaSrednja{
+    margin-top: 50px;
+    
+}
+.slikeDiplomaSrednja img{
+    border-radius: 20px;
+}
+.slikeDiplomaSrednja img:hover{
+    border-radius: 20px;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: -30px 20px 12px #000000;
+    width: 570px;
+    height: 470px;
+}
+/* FAKULTET */
+.fakultet{
+    margin-top: 50px;
+}
+.fakultet p{
+    padding-top: 20px;
+    margin-right: 50px;
+    text-align: justify;
+}
+.fakultet h2{
+    font-size: 40px;
+    border-bottom: darkblue 5px solid;
+    margin-right: 50px;
+}
+.slikeFakultet img{
+    border-radius: 20px;
+}
+.slikeFakultet img:hover{
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: -30px 20px 12px #567189;
+    width: 520px;
+    height: 420px;
+}
+.slikeFakultet{
+    margin-top: 50px;
+}
+.fakultet a:link{
+    color: #1E409F;
+    font-size: 22px;
+    border-bottom: #11101d 2px solid;
+}
+.fakultet a:hover{
+    color: #ff4136;
+}
+/* DEO O POSLU */
+.posao{
+    margin-top: 50px;
+}
+.posao h2{
+    border-bottom: #000000 3px solid;
+    margin-right: 450px;
+    font-size: 40px;
+}
+.posao h3{
+    padding-top: 50px;
+}
+.posao .text{
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: justify;
+}
+.posao .slikaHtml{
+    position: absolute;
+    z-index: 3;
+    margin-left: 750px;
+}
+.text2{
+    padding-top: 50px;
+}
+/* FOOTBALL */
+.uvodFudbal{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: #000000 3px solid;
+    margin-right: 400px;
+    margin-left: 400px;
+
+}
+.animacijaFootball{
+    display: inline-flex;
+}
+marquee{
+    margin-top: 50px;
+}
+.textFudbal{
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.imagesFootball img{
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.imagesFootball img:hover{
+    box-shadow: -20px 5px 12px #000000;
+}
+/* TRAVEL */
+.naslovTravel{
+    margin-top: 50px;
+    font-size: 50px;
+    border-bottom: #000000 3px solid;
+    margin-right: 700px;
+}
+.textTravel{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    margin-right: 50px;
+}
+.imagesTravel{
+    margin-top: 50px;
+}
+.imagesTravel img{
+    border-radius: 20px;
+}
+.imagesTravel img:hover{
+    box-shadow: -10px 5px 10px #000000;
+}
+
+
+/* GENERAL TEXT */
+.generalText{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.generalTx{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.textG{ 
+    margin-top: 50px;
+    text-align: justify;
+
+}
+.textMusic{
+    margin-top: 20px;
+    text-align: justify;
+}
+.slikeGeneral{
+    margin-top: 50px;
+}
+.slikeGeneral img{
+    border-radius: 20px;
+}
+.slikeGeneral img:hover{
+    box-shadow: -10px 5px 10px #000000;
+}
+/*GO TO TOP*/
+.buttonTop{
+    width: 70px;
+    height: 70px;
+    background: rgb(252, 252, 252);
+    border-radius: 15px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    outline: none;
+    opacity: 0.6;
+}
+.buttonTop:hover{
+    background: whitesmoke;
+    opacity: 1;
+}
+
+.fott{
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    margin-top: 50px;
+    font-family:'Poppins', sans-serif; 
+
+}   
+

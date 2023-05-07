@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #E4E9F7;
+}
+.plavaLinija{
+    width: 100%;
+    height: 80px;
+    background: #1E409F;
+}
+.plavaLinija h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.mainSection{
+    margin-left: 50px;
+}   
+.login-text{
+    font-size: 30px;
+    color: black;
+    border-bottom: black 4px solid;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+.logout button{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #1E409F;
+    margin-top: 50px;
+}
+.logout button a{
+    color: white;
+    text-decoration: none;
+}
+.logout button:hover{
+    background: #417AC9;
+}
+/* FORMA PENTRU LOGIN */
+.pozadinaForma{
+    background: #159895;
+    border-radius: 30px;
+    width: 100%;
+    padding: 50px;
+}
+form{
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+form div{
+    
+    margin: 15px auto;
+}
+label{
+    display: block;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 600;
+}
+input{
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #797979;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+input:active, input:focus{
+    background: #E4E9F7;
+}
+button{
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(90deg, #FFD966, lightgreen);
+}
+span{
+    display: block;
+    margin-left: 20px;
+    color: black;
+}
+
+
+
+
+
+
+/* FOTTER */
+.fott{
+    height: 30px;
+    padding-top: 15px;
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    font-family:'Poppins', sans-serif; 
+}   
+

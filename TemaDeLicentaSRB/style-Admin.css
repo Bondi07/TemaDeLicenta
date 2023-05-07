@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #E4E9F7;
+}
+.plavaLinija{
+    width: 100%;
+    height: 80px;
+    background: #1E409F;
+}
+.plavaLinija h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.mainSection{
+    margin-left: 50px;
+} 
+/*  LOGOUT BUTTON  */  
+.logout{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #1E409F;
+    margin-top: 50px;
+}
+.logout{
+    color: white;
+    text-decoration: none;
+}
+.logout:hover{
+    background: #417AC9;
+}
+/*   */
+.adminText h1{
+    font-size: 50px;
+    color: black;
+    border-bottom: black 5px solid;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+/* .CSV FILE PART */
+.csvSection{
+    margin-top: 350px;
+}
+.csvSection h2{
+    font-size: 40px;
+}
+.csvSection input{
+    margin-top: 50px;
+    
+}
+tr:nth-child(1){
+    background: #11101d !important;
+    color: white !important;
+    font-size: 22px !important;
+    height: 30px;
+}
+tr:nth-child(even){
+    background: gray;
+}
+tr:nth-child(odd){
+    background: white;
+}
+.buttonImport{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    color: red;
+    font-size: 30px;
+}
+.alegeFisieru{
+    margin-top: 50px;
+    height: 40px;
+    color: red;
+    font-size: 25px;
+}
+.reloadPage{
+    height: 40px;
+    color: red;
+    font-size: 25px;
+}
+table{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.alege{
+    margin-top: 100px;
+}
+.alege h2{
+    font-size: 40px;
+}
+.alege label{
+    font-size: 35px;
+}
+.alege select{
+    font-size: 20px;
+}
+
+
+
+
+
+/* FOTTER */
+.fott{
+    height: 30px;
+    padding-top: 15px;
+    color: #11101d;
+    font-size: 15px;
+    background: whitesmoke;
+    font-family:'Poppins', sans-serif; 
+}   
+

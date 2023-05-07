@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-dashboard.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/dashboard1.png" type = "image/x-icon">
+    <script src="script-schimbari.js"></script>
+    <title>Komandna tabla</title>
+</head>
+<body onload="applyChanges()">
+    <div class="sidebar">   
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Komandna tabla</span>
+                </a>
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Radnici</span>
+                </a>
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafici</span>
+                </a>
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Proizvodi</span>
+                </a>
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle' ></i>
+                    <span class="link_name">O nama</span>
+                </a>
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Podesavanja</span>
+                </a>
+            </li>
+        </ul>
+        
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Kolacici</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Politika privatnosti</a>
+        </div>
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="../TemaDeLicentaENG/Dashboard.html" class="eng">ENG</a> |
+                    <a href="../TemaDeLicentaSRB/Dashboard.html" class="srb">SRB</a> |
+                    <a href="../Fronend/Dashboard.html" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MAIN -->
+
+        <div class="main">
+            <div class="dash-text">
+                <h1>Komandna tabla</h1>
+            </div>
+
+
+            <div class="wrap">
+                <div class="venitAnual">
+                    <div class="wrap-img">
+                        <h2 class="title">Godisnji prihodi</h2>
+                        <img src="../images/euro.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="venit"></p>
+                </div>
+
+                <div class="venitLunar">
+                    <div class="wrap-img">
+                        <h2 class="title">Mesecni prihodi</h2>
+                        <img src="../images/euro.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="venitlunar"></p>
+                </div>
+
+                <div class="tranzacti">
+                    <div class="wrap-img">
+                        <h2 class="title">Tranzakcije</h2>
+                        <img src="../images/tra.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="tranzacti"></p>
+                </div>
+
+                <div class="prVaLunar">
+                    <div class="wrap-img">
+                        <h2 class="title">Proizvodi prodati mesecno</h2>
+                        <img src="../images/salles.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="prVaLunar"></p>
+                </div>
+
+                <div class="prVaAnual">
+                    <div class="wrap-img">
+                        <h2 class="title">Proizvodi prodati godisnje</h2>
+                        <img src="../images/sal1.png" alt="dolar/euro" width="30px" height="30px">
+                    </div>
+                    <p id="prVaAnual"></p>
+                </div>
+            </div>
+
+            <!--OVDE IDE KOD ZA DVA GRAFIKA-->
+            <div class="chartCard">
+                <div class="chartBox">
+                    <canvas id="myChart" width="550px" height="500px"></canvas>
+                </div>
+                
+                <div class="chartBox1">
+                    <canvas id="piChart" width="550px" height="350px"></canvas>
+                </div>
+            </div>
+
+            <div class="line1"></div>
+            <div class="textCompaniei">
+                <p>
+                    <ins><b>Kompanija <a href="https://www.facebook.com/profile.php?id=100043243181057" target="_blank">"BONDI"</a></b></ins>
+                    osnovana je 2004. goidne <mark>Kompanija "BONDI"</mark> je osnovan od strane Dejana Bodnokic 
+                    te godine. Kompanije nije velika, ali je posedovala 4 objekta, od kojih danas imamo samo jedan. 
+                    Ova radnja je otvorena za sve Vas i nalazi se u 
+                    <img src="../images/srb.png" alt="srb flag" width="30px" height="30px">  
+                    <a href="https://goo.gl/maps/GtZwVfaKApu3h7va7" target="_blank">Kladovu, Srbiji.</a> 
+                    U ovoj kompaniji radi samo familija Bondokic bez zaposlenih radnika.  
+                </p>
+
+                <h4><a href="DespreNoi.html#despre">Procitajte nesto vise o kompaniji "BONDI"</a></h4>
+
+            </div>
+            <div class="line1"></div>
+
+            <div class="lincuriFirmelor">
+                <h2 align="center">Ovde mozete naci nekoliko linkova sa kojim firmama sasradjuje kompaniji "BONDI"</h2>
+            </div>
+            <div class="boody">
+                <div class="cover">
+                    <div class="box1">
+                        <a href="https://adora.rs/" target="_blank"><img src="../images/adora.png" alt="Adora" class="center"></a>
+                        <h2>Adora</h2>
+                        <p>
+                            Adora D.O.O. je kompanija koja se bavi uvozenjem i veleprodajom proizvoda za domacinstvo. 
+                            Bavi se uvozom kuhinjskih proizvoda, LAV casa, solja, LUMINARC tanjira, tiganja, ARIAN lonaca,
+                            raznih galeriskih artikala - kao i raznih SINBO kucnih elektricnih aparata i proizvoda za namestaj
+                            Adora D.O.O. je osnovana 2001. godine. Nalazi se u ulici Episkopa Nikolaja br. 22, Altina - Zemun.
+                        </p>
+                        <a href="https://adora.rs/" target="_blank"><button>Posetite sajt</button></a>
+                    </div>
+
+                    <div class="box1">
+                        <a href="https://www.colossus.rs/" target="_blank"><img src="../images/colosus.png" alt="Colosus" class="center"></a>
+                        <h2>Colosus</h2>
+                        <p>
+                            Colossus Technology Serbia, sa predstavnistvom u Subotici, sa velikim i dugogodisnjim iskustvom u trgovini, bavi se 
+                            prodajom bele tehnike, posudja i kuhinjske opreme, masina i alata, LCD i LED televizora, bastinske opreme i drugo.
+                            Brend Colossus i Machtig, cije je ekskluzivni uvoznik, zastupnik i distributer za trziste Srbije i regiona.
+                        </p>
+                        <a href="https://www.colossus.rs/" target="_blank"><button>Posetite sajt</button></a>
+                    </div>
+
+                    <div class="box1">
+                        <a href="https://varta.com/" target="_blank"><img src="../images/varta.avif" alt="Varta" class="center"></a>
+                        <h2>Varta</h2>
+                        <p>
+                            VARTA AG proizvodi i plasira na trziste sveobuhvatni portfelj baterija, od mikro baterija, baterija za domacinstvo,
+                            sistema za skladistenje energije do specificnih resenja za baterije za razlicite primene i kao tehnoloski lider 
+                            postavlja standarde u industriji i vaznim oblastima. Kao maticna kompanija grupe, posluje u segmentima poslovanja
+                            "Lithium-Ion Solutions & Microbatteries" i "Household Batteries".
+                        </p>
+                        <a href="https://varta.com/" target="_blank"><button>Posetite sajt</button></a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+            <!-- <div class="wrapper">
+                <header>
+                    <i class="bx bx-cookie"></i>
+                    <h2>Cookies</h2>
+                </header>
+                <div class="data">
+                    <p>This website use cookies to help you have a superior and 
+                        more relevant browsing expirience on the website <a href="#">Read more</a> 
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button class="button" id="acceptBtn">Accept</button>
+                    <button class="button">Decline</button>
+                </div>
+            </div> -->
+
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. Sva prava sadrzana.</h3>
+            </div>
+        </footer>
+        
+    </section>
+
+
+    
+
+    <!--SCRIPTE PENTRU GRAFICE-->
+    <!--piChart-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+
+    <!--lineChart-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <!--scripte-->
+    <script src="script.js"></script>
+    <script src="grafice.js"></script>
+    <script src="cookie.js" defer></script>
+    <script src="activPage.js"></script>
+
+</body>
+</html>

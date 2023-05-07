@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-DespreNoi.css" type="text/css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/aboutusIcon.png" type = "image/x-icon">
+    <script src="script-schimbari.js"></script>
+    <title>Despre noi</title>
+</head>
+<body onload="applyChanges()">
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Angajatii</span>
+                </a>
+                <!-- <span class="tooltip">Angajatii</span> -->
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafice</span>
+                </a>
+                <!-- <span class="tooltip">Grafice</span> -->
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Produse</span>
+                </a>
+                <!-- <span class="tooltip">Produse</span> -->
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle'></i>
+                    <span class="link_name">Despre noi</span>
+                </a>
+                <!-- <span class="tooltip">Despre noi</span> -->
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Setari</span>
+                </a>
+                <!-- <span class="tooltip">Setari</span> -->
+            </li>
+        </ul>
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Cookie</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Privacy policy</a>
+        </div>
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="#" class="eng">ENG</a> |
+                    <a href="#" class="srb">SRB</a> |
+                    <a href="#" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--MAIN -->
+
+        <div class="main">
+            <div class="DespreNoi-text">
+                <h1>Despre noi</h1>
+            </div>
+
+            <div class="pozaPanorama">
+                <img src="../despre noi/desprenoi.jpg" alt="o nama" width="100%" height="350px">
+                <div class="centered">Despre noi</div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" 
+                d="M0,96L40,112C80,128,160,160,240,165.3C320,171,400,149,480,160C560,171,640,213,720,202.7C800,192,880,128,960,
+                117.3C1040,107,1120,149,1200,170.7C1280,192,1360,192,1400,192L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,
+                1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+
+            <div class="container">
+                <div class="text"></div>
+            </div>
+
+
+            <div class="meniBirajGdeIdes">
+                <table>
+                    <ul>
+                        <li><a href="#cine">CINE SUNTEM NOI</a></li>
+                        <li><a href="#orar">ORAR</a></li> <!--NIJE JOS NAPRAVLJEN VREME RADA RADNJE-->
+                        <li><a href="#rakija">"VLASKO CUDO"</a></li>
+                        <li><a href="#cazare">CAZARE</a></li>
+                        <li><a href="#despre">DESPRE COMPANIA "BONDI"</a></li>
+                        <li><a href="#album">ALBUM FOTO</a></li>
+                        <li><a href="#harta">HARTA</a></li>
+                    </ul>
+                </table>
+            </div>
+
+            <!-- OVDE SLEDI KONTEKST OVE STRANICE -->
+            <div class="textGlitch">
+                <h1>BONDI COMPANY</h1>
+            </div>
+            <br>
+            <br>
+            <div class="cine" id="cine">
+                <center><h1>CINE SUNTEM NOI ?</h1></center>
+            </div>
+
+            <div class="wrap1">
+                <div class="pozadina1">
+                    <img src="../despre noi/case.jpg" alt="case slika" width="450px" height="400px">
+                </div>
+
+                <div class="pozadina2">
+                    <div class="text1">
+                        <p>
+                            Suntem un magazin care vinde farfurii, pahare, cutite, tigai...Si multe alte chesti. 
+                            De fapt, tot ce tine de casa totul despre bucatarie. 
+                            Avem de toate pentru gatit,pentru a pregati mancare delicioasa, avem farfurii si vesela, 
+                            inclusiv tacamuri, furculite, cutite, oale mici, pahare de sticla, tigai, tavi, si multe alte chesti.
+                            Avem si pahare pentru cafea si ceai, avem atat de multe produse incat mi-ar lua mult timp sa le enumar.
+                            Uneori nu ne putem da seama unde sunt lucrurile in magazin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="wrap2">
+                <div class="slika">
+                    <img src="../despre noi/bondi.jpg" alt="sd" width="400px" height="350px">
+                </div>
+                <div class="poz2">
+                    <div class="text2">
+                        <p>
+                            Magazinul este situat in <img src="../images/srb.png" alt="srb flag" width="40px" height="40px"> 
+                            <a href="#harta">Kldovo</a> , pe piata verde din centrul orasului.
+                            Multi s-au obisnuit sa cumpere de la noi, avem clienti obisnuiti,
+                            care cumpara constant de la noi, si daca au o selectie larga de magazine.
+                            Ne bucuram ca am lasat o astfel de impresie oamenilor cu produse si servicii de calitate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pozadinaTL">
+                <div class="timpulDeLucru" id="orar">
+                    <center><h1>~ Timpul de lucru ~</h1></center>
+                    <div class="timp">
+                        <center>
+                            <h2>Luni - Sambata</h2>
+                            <h3 class="ora">07:30 - 13:30</h3>
+                            <h2>Duminica nu lucram !</h2>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="wrapPoze">
+                <img src="../despre noi/compresed imagase/radnjaispred1.jpg" alt="poze" width="350px" height="300px">
+                <img src="../despre noi/compresed imagase/tignaji.jpg" alt="poze" width="350px" height="300px">
+                <img src="../despre noi/compresed imagase/casestakloRadnja1.jpg" alt="poze" width="350px" height="300px">
+                <img src="../despre noi/compresed imagase/radnjaZatvorena.jpg" alt="poze" width="350px" height="300px">
+                <img src="../despre noi/compresed imagase/staima.jpg" alt="poze" width="350px" height="300px">
+                <img src="../despre noi/compresed imagase/radnjaunutra.jpg" alt="poze" width="350px" height="300px">
+            </div>
+
+            <div class="wrap3">
+                <div class="text3" id="rakija">
+                    <p>
+                        Pe langa echipamentele pentru casa, bucatarie si alte echipamente din magazinul nostru, 
+                        ne ocupam si de productie coniac. Producem tuica de prune, pere si struguri. Avem propria 
+                        noastra livada, ne-am ingrijit singuri despre fructe si calitatea acestuia si, prin urmare, 
+                        tuica este si el de inalta calitate. Tuica este de casa si se numeste "VLASKO ČUDO"
+                    </p>
+                </div>
+                <div class="slikaCeEste">
+                    <img src="../despre noi/compresed imagase/rakija1.jpg" alt="vlasko cudo" width="400px" height="450px">
+                </div>
+            </div>
+
+
+            <!-- SLIKE VOCNJAKA MINI ALBUM -->
+
+            <div class="row1"> 
+                <div class="column1">
+                    <img src="../despre noi/compresed imagase/vocnjak2.2.jpg" alt="vocnjak" width="100%">
+                </div>
+                <div class="column1">
+                    <img src="../despre noi/compresed imagase/vocnjak2.1.jpg" alt="vocnjak" width="100%">
+                </div>
+                <div class="column1">
+                    <img src="../despre noi/compresed imagase/sljive.jpg" alt="vocnjak" width="100%">
+                </div>
+                <div class="column1">
+                    <img src="../despre noi/compresed imagase/kruske.jpg" alt="vocnjak" width="100%">
+                </div>
+            </div>
+
+            <div id="cazare" class="cazare">
+                <img src="../despre noi/cazare1.jpg" alt="apartamni ikonica" width="50px" height="50px"> CAZARE
+                <img class="tacke" src="../images/panoramadots.png" alt="tackice" width="600px" height="150px">
+            </div>
+
+            <!-- OVDE SE NALAZI DEO ZA APARTMANE -->
+            <div class="wrappApartamente">
+                <div class="textCazare">
+                    Firma "BONDI", pe langa orice altceva, se ocupa si cu cazarea. 
+                    Are trei apartamente noii, situate in Kaladovo, langa Dunare. 
+                    Toate cele trei cladiri sunt pe aceeasi strada si nu departe de centrul orasului.
+                </div>
+
+                <div class="naslovApartamente" id="cazare">
+                    <div class="okvirokoslikeBooking">
+                        <a href="https://www.booking.com/"><img src="../images/bookingImage.png" alt="booking poza" width="250px" height="150px"></a>
+                    </div>
+                    <h1>Aici puteti gasi link-uri catre apartamentele noastre !!</h1>
+                </div>
+
+                <div class="lincuriApartamente">
+                    <div class="tooltip1">
+                        <a href="https://www.booking.com/hotel/rs/apartman-bondi.html?aid=304142&label=gen173nr-
+                        1FCBkoggI46AdIM1gEaMABiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALIn6igBsACAdICJDIyMmE0NzhiLWZkYTUtNDkwYy1iYTJhLTkwYzgwYTg0NDVmZtgCBeACAQ
+                        &sid=3642b708ca0dbdbc058e1878983e1edd&dist=0;group_adults=2;group_children=0;hapos=61;hpos=11;no_rooms=1;req_adults=2;req_children=0;
+                        room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1678381114;srpvid=96d8772c6b6c00aa;type=total;ucfs=1&#hotelTmpl" 
+                        target="_blank">Apartament BONDI 1</a>
+                        <span class="tooltiptext">Apartamne BONDI 1 <img src="../despre noi/stan1Kreveti1.jpg" alt="stan 1" width="200px" height="300px"></span>
+                    </div>
+                    
+                    <div class="tooltip2">
+                        <a href="https://www.booking.com/hotel/rs/apartman-bondi-2.html?aid=304142&label=gen173nr-1FCBkoggI46AdIM1gEaMABiAEBmAExuAEXyAEM2AEB6AEB-
+                        AECiAIBqAIDuALIn6igBsACAdICJDIyMmE0NzhiLWZkYTUtNDkwYy1iYTJhLTkwYzgwYTg0NDVmZtgCBeACAQ&sid=3642b708ca0dbdbc058e1878983e1edd&dist=0;
+                        group_adults=2;group_children=0;hapos=43;hpos=18;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;
+                        srepoch=1678381092;srpvid=96d8772c6b6c00aa;type=total;ucfs=1&#hotelTmpl" 
+                        target="_blank">Apartament BONDI 2</a>
+                        <span class="tooltiptext">Apartamne BONDI 2 <img src="../despre noi/stan2.jpg" alt="stan 2" width="200px" height="300px"></span>
+                    </div>
+                    
+
+                    <div class="tooltip3">
+                        <div class="tooltip3_1" >
+                            <button type="submit" class="btn" onclick="openPopup()">Apartament BONDI 3</button>
+                            <span class="tooltiptext">Apartamne BONDI 3
+                                <img src="../despre noi/stan3Soba.jpg" alt="stan 3" width="200px" height="300px">
+                            </span>
+                            <span class="tooltiptext1">Site-ul este in constructie !</span>
+                        </div>
+                    </div>
+
+
+                    <div class="popup" id="popup">
+                        <img src="../images/contacus.png" alt="contat us at bookin">
+                        <h2>Acest site este in constructie</h2>
+                        <p>
+                            Puteti afla toate detaliile despre acest apartament sunand Compania Bondi, sau trimitandu ne un e-mail
+                            pe adresa: <br>
+                            <a href="mailto:deajn.bondokic@gmail.com">dejan.bondokic@gmail.com</a>
+                        </p>
+                        <br>
+                        <h3>Multumim pentru intelegere !!</h3>
+                        <button type="button" onclick="closePopup()">INCHIDE</button>
+                    </div>
+
+                </div>
+
+                <div class="pozeApartamente">
+                    <img src="../despre noi/stan1Kreveti1.jpg" alt="stan1" width="350px" height="300px">
+                    <img src="../despre noi/compresed imagase/stan2Soba.jpg" alt="stan2" width="350px" height="300px">
+                    <img src="../despre noi/stan3Soba.jpg" alt="stan3" width="350px" height="300px">
+                    <img src="../despre noi/compresed imagase/stan3Kuhinja.jpg" alt="stan3" width="350px" height="300px">
+                    <img src="../despre noi/stan3Hodnik.jpg" alt="stan3" width="350px" height="300px">
+                    <img src="../despre noi/stan2Kuhinja.jpg" alt="stan2" width="350px" height="300px">
+                </div>
+            </div>
+            <!-- OVDE JE TEKST O TOME KO JE OSNOVAO KOMPANIJU BONDI -->
+            <center><h1 class="naslov" id="despre">CINE A FONDAT COMPANIA BONDI</h1></center>
+            <div class="textCompaniei">
+                <p>
+                    Compania a fost fondata de <mark>Bondokic Dejan</mark>, 
+                    mai cunoscut sub numele de <mark>BONDI</mark> , in anul 2004. La inceputul afacerii 
+                    sale avea multe probleme si nu totul arata atat de fabulos si grozav, dar in timpul lucrului Dejan a reusit sa pune compania
+                    "pe picioare" si sa se extinda, astfel incat astazi Dejan are: Un magazin, patru apartamente, doua masini, doua casii, trei livezi 
+                    si doua paduri. Desigur, este nevoie de multa munca si efort pentru a ajunge la acest nivel. Noi lucram in aceasta companie
+                    in familie, singur, fara muncitori. Am avut multi muncitori care s-au schimbat, iar Dejan i-a schimbat 
+                    din cauza multor probleme pe care le-au adus muncitorii, asa ca astazi firma <mark>"BONDI"</mark> functioneaza in spirit de familie si
+                    se pare ca asta este cel mai bine pentru noi. Astazi compania <mark>"BONDI"</mark> este cea mai cunoscuta compania din orasu, si toti stie cine este 
+                    <mark>BONDI</mark>.
+                </p>
+            </div>
+
+
+            <div class="golas">
+                <h1>Obiectivele noastre</h1>
+            </div>
+            <div class="textObiective">
+                <p>
+                    Ca orice angajator, obiectivele noastre sunt uriase. Suntem fericiti ca am reusit pana acum, dar ne-am 
+                    dori sa continuam munca noastra buna si sa reusim si mai mult.
+                    Obiectivele noastre sunt sa ne extindem cat mai mult si sa ne inbunatatim munca. Sa deschidem un magazin 
+                    al nostru mai mare, sa nu platim chirie, si sa avem mai multe marfa. Sa deschidem poate mai un alt apartament 
+                    si sa imbunatatim productia de tuica. 
+                </p>
+            </div>
+
+            <div class="ceDorim">
+                <div class="avem">
+                    <h2>Noi avem</h2>
+                    <ul>
+                        <li>Un magazin</li>
+                        <li>Patru apartamente</li>
+                        <li>Doua masini</li>
+                        <li>Doua casi</li>
+                        <li>Trei livezi</li>
+                        <li>Doua paduri</li>
+                    </ul>
+                </div>
+                <div class="dorim">
+                    <h2>Ce dorim sa avem</h2>
+                    <ul>
+                        <li>Doua magazine</li>
+                        <li>Un apartament(casa) pe Dunere</li>
+                        <li>O piscina </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <!-- ALBUM SA SLIKAMA TREBA DA STOJI NA KRAJU SVEGA  -->
+            <div class="row" id="album"> 
+                <div class="column">
+                    <img src="../despre noi/serpe.jpeg" width="100%">
+                    <img src="../despre noi/bondi.jpg"  width="100%">
+                    <img src="../despre noi/compresed imagase/casestakloRadnja1.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/radnjaispredRoba.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/zatvoreno.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/tignaji.jpg" width="100%">
+                </div>
+                <div class="column">
+                    <img src="../despre noi/vocnjak.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/vocnjak2.1.jpg" width="100%">
+                    <img src="../despre noi/vocnjakOran.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/vocnjak2.2.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/sljive.jpg" width="100%" height="250px">
+                </div>
+                <div class="column">
+                    <img src="../despre noi/sljivka.jpeg" width="100%">
+                    <img src="../despre noi/compresed imagase/sljive.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/kruske.jpg" width="100%">
+                    <img src="../despre noi/kruske1.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/rakija1.jpg" width="100%">
+                    
+                </div>
+                <div class="column">
+                    <img src="../despre noi/stan3Soba.jpg" width="100%">
+                    <img src="../despre noi/stan1.kreveti.jpg" width="100%" height="350px">
+                    <img src="../despre noi/stan1Kuhinja.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/stan2Soba.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/stan2Soba2.jpg" width="100%">
+                    <img src="../despre noi/compresed imagase/stan3Kuhinja.jpg" width="100%" height="430px">
+                </div>
+            </div>
+
+
+            <div class="textMaps">
+                <h1>Pe noi ne puteti gasi oricand pe aceasta locatie in Kladovo,Serbia.</h1>
+                <h4><a href="#orar">Vedeti orarur nostru</a></h4>
+            </div>
+
+            
+
+            <iframe id="harta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.625005441731!2d22.61279856041524!3d44.61120436774665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475233431d12421d%3A0x131f4e27b197e7dd!2sSTR%20Bondi!5e0!3m2!1ssr!2sro!4v1678285048600!5m2!1ssr!2sro" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <div class="infoDesprenoi">
+                <center><h2>Contactati-ne:</h2></center>
+            </div>
+
+            <div class="FormaIntrebari" id="FormaIntrebari">
+                <div class="info">
+                    <h3>Adresa :</h3><a href="#harta"><h2>Bukatarevica br.6,Serbia</h2></a>
+                    <h3>Nr.Tel :</h3><h2>062806324</h2>
+                    <h3>E-mail :</h3><a href="mailto:dejan.bondokic@gmail.com"><h2>dejan.bondokic@gmail.com</h2></a>
+                    <h3>Facebook :</h3><a href="https://www.facebook.com/profile.php?id=100043243181057"><h2>"Str. BONDI"</h2></a>
+                </div>
+
+                <div class="container1">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h3>Completati forma:</h3>
+                        
+                        <input type="text" id="nume" placeholder="Nume" required>
+                        <input type="text" id="prenume" placeholder="Prenume" required> 
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <input type="text" id="nrTelefon" placeholder="Nr. de telefon" required>
+                        <textarea id="mesaj" rows="6" placeholder="Cum va putem ajuta?"></textarea>
+                        <button type="submit">Trimite!</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- OVDE JE KOD ZA DONJU LINIJU TALASA -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" 
+                d="M0,256L26.7,
+                245.3C53.3,235,107,213,160,218.7C213.3,224,267,256,320,240C373.3,224,427,160,480,160C533.3,160,587,224,640,
+                229.3C693.3,235,747,181,800,160C853.3,139,907,149,960,165.3C1013.3,181,1067,203,1120,176C1173.3,149,1227,75,1280,
+                58.7C1333.3,43,1387,85,1413,106.7L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,
+                1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,
+                320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script-DespreNoi.js"></script>
+    <script src="activPage.js"></script>
+</body>
+</html>
+

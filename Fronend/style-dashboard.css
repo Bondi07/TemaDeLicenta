@@ -260,8 +260,12 @@ ul li a.active{
 .home-section .home-content2 .limbi-straine .srb,
 .home-section .home-content2 .limbi-straine .ro{
     color: white;
-
 }
+/* CAND LINCUL ESTE VISITAD DEVINE ALB */
+.home-section .home-content2 .limbi-straine a:visited{
+    color: white;
+}
+
 .home-section .home-content2{
     right: 0;
     padding-right: 150px;

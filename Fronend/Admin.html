@@ -13,7 +13,7 @@
 
 
     <div class="plavaLinija">
-        <center><h1>Welcome</h1></center>
+        <center><h1>Bine ati venit</h1></center>
     </div>
 
     <div class="mainSection">
@@ -25,10 +25,10 @@
         </div>
 
 
-        <div class="alege" >
+        <div class="alege">
             <h2>Selectati pagina la care doriti sa aplicati schimbari:</h2>
             <label for="tabele">Alege:</label>
-            <select name="pagini" id="pagini">
+            <select name="pagini" id="pagini" name="alegeTabel">
                 <optgroup label="Pagina Dashboard ">
                     <optgroup label="Venit">
                         <option value="venit">Venit</option>
@@ -85,16 +85,22 @@
 
 
         </div>
-
+<!-- 
         <div class="csvSection">
             <h2>Aici puteti importa un .csv file</h2>
-            <input type="file" class="alegeFisieru" placeholder="Alege fisieru... ">
+            <input type="file" class="alegeFisieru" placeholder="Alege fisieru... " id="file">
             <button onclick="location.reload();" class="reloadPage">Refresh Page</button>
             <table></table>
     
-        </div>
+        </div> -->
 
-        <input type="button" class="buttonImport" value="Importati!" id="import">
+        <form id="myForm">
+            <input type="file" name="myFile">
+            <button type="submit">Submit</button>
+        </form>
+        
+        <table></table>
+        <!-- <input type="submit" class="buttonImport" value="Importati!" id="import"> -->
     </div>
 
 

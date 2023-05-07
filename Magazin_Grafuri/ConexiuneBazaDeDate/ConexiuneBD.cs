@@ -424,7 +424,7 @@ namespace Magazin_Grafuri.ConexiuneBazaDeDate
                     dbContext.SaveChanges();
                     break;
 
-                case "Mixed Charts - Chart 8 - Ore suplimentare si ore lucrate pe saptamana pentru fiecare angajat":
+                case "Mixed charts - Chart 8 - Ore suplimentare si ore lucrate pe saptamana pentru fiecare angajat":
                     var AngajatiiMixedCharts = ReadCsvAsync<Angajati>(tableData).Result;
                     dbContext.Angajati.RemoveRange(dbContext.Angajati.ToList());
                     dbContext.Angajati.AddRange(AngajatiiMixedCharts);

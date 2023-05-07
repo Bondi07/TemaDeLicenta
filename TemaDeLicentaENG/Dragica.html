@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Dragica.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/angajatii.png" type = "image/x-icon">
+    <script src="script-schimbari.js"></script>
+    <title>Dragica</title>
+</head>
+<body onload="applyChanges()">
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Angajatii</span>
+                </a>
+                <!-- <span class="tooltip">Angajatii</span> -->
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafice</span>
+                </a>
+                <!-- <span class="tooltip">Grafice</span> -->
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Produse</span>
+                </a>
+                <!-- <span class="tooltip">Produse</span> -->
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle' ></i>
+                    <span class="link_name">Despre noi</span>
+                </a>
+                <!-- <span class="tooltip">Despre noi</span> -->
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Setari</span>
+                </a>
+                <!-- <span class="tooltip">Setari</span> -->
+            </li>
+        </ul>
+        
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Cookie</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Privacy policy</a>
+        </div>
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
+        
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="#" class="eng">ENG</a> |
+                    <a href="#" class="srb">SRB</a> |
+                    <a href="#" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="angajat4-text">
+                <h1>Draica Bondokic</h1>
+            </div>
+
+            <form>
+                <input type="button" value="Inapoi!" class="button" onclick="history.back()">
+            </form>
+
+            <div class="wrap">
+
+                <div class="despre">
+                    <h2>Informatii de baza despre persoana:</h2>
+                    <ul>
+                        <h3>Nume:</h3>
+                        <li>Bondokic</li>
+                        <h3>Prenume:</h3>
+                        <li>Dragica</li>
+                        <h3>Data nasteri:</h3>
+                        <li>28.09.1974.</li>
+                        <h3>Inaltime:</h3>
+                        <li>1.68cm</li>
+                        <h3>Greutate:</h3>
+                        <li>70kg</li>
+                    </ul>
+                </div>
+
+                <div class="poza">
+                    <div class="triangle"></div>
+                    <img src="../imagesAngajatii/dragica.jpg" alt="dragica" width="350px" height="500xp">
+                    <div class="square"></div>
+                </div>
+            </div>
+
+            <div class="uvodniTesxt">
+                <div class="naslovUvodniText">
+                    <h2>Text despre Dragica</h2>
+                </div>
+                <div class="textUvod">
+                    <p>
+                        Dragica este o femeie din sat care a avut o viata grea. In copilarie, ea facea toate treburile care se puteau 
+                        face in mediul rural, de la gradina pana la ingrijirea animalelor si a tot ceea ce le inconjoara. Pe langa asta 
+                        a facut diverse meserii, precum pictura, zidarie... Mama noastra este TOTUL pentru noi, ea este regina. A terminat 
+                        scoala primara si liceul si nu s-a inscris la facultate. Parintii ei locuiau in strainatate, dar nu i-au asigurat o 
+                        alta viata acolo. Chiar daca a fost o perioada in strainatate, cu siguranta nici acolo nu a trait prea bine. In cele 
+                        din urma, toti s-au intors in Serbia si si-au continuat viata aici.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="onsovnaSkola">
+                <div class="naslovOsnovnaSkola">
+                    <h2>Scola primara</h2>
+                </div>
+                <div class="textOS">
+                    <p>
+                        A terminat scoala primara in satul natal in care locuia. Era o scoala mica, cu putini elevi care trebuiau 
+                        sa mearga la scoala pe langa lucruri pe care le au avut acasa. Ea a absolvit cu succes scoala primara, in 
+                        ciuda greutatilorobligatie. La scoala toata lumea se cunostea pentru ca toti erau din acelasi sat, asa ca 
+                        nu au fost probleme.
+                    </p>
+                </div>
+            </div>
+            
+
+            <div class="srednajSK">
+                <div class="naslov">
+                    <h2>Liceu</h2>
+                </div>
+                <div class="text">
+                    <p>
+                        A mers la liceu in Kladovo pentru ca nu era liceu in sat. Asa ca toti elevii de la sat au urmat liceul 
+                        in orasul Kladovo. A urmat liceul, dupa care nu a mai urmat facultatea, din motive financiare. A terminat 
+                        cu succes liceul, dupa care s-a intors la munca in sat. Cred ca i-a fost greu sa calatoreasca in fiecare zi 
+                        in acea perioada, dar din fericire, a reusit si si-a terminat liceul.
+                    </p>
+                </div>
+                <center><img src="../imagesNikola/srednjaPanorama.jpg" alt="srednja skola" width="950px" height="350px"></center> 
+            </div>
+
+            <!--  GDE JE DRAGICA PUTOVALA DO SADA ILI KAD JE BILA MALA   -->
+            
+            <div class="putovanja">
+                <h2>Unde a calatorit Dragica ?</h2>
+                <div class="textPutovanja">
+                    <p>
+                        In copilarie, Dragica nu a calatorit prea mult, deoarece a inceput in anii mijlocii alaturi de sotul ei, tatal meu. 
+                        Au vizitat impreuna multe tari ale lumii, dar nu s-au oprit aici, vor sa viziteze si mai mult si sa calatoreasca in 
+                        mai multe tari. Dorinta lor este sa plece si intr-o croaziera, pe care o planuiesc de mult, dar dorinta lor nu s-a 
+                        implinit niciodata. Bineinteles, in primul rand, inainte de acea croaziera, vor sa viziteze mai multe tari si in 
+                        final croaziera. Lui Dragica ii place foarte mult sa calatoreasca, bineinteles ca e normal pentru ca cand era mica 
+                        nu putea, asa ca acum foloseste orice ocazie pentru a o face. Desigur, cand vine vorba de croaziere, Dragica ar pleca 
+                        intr-o croaziera oceanica, dar Dejan nu este de acord cu asta, asa ca vor face o intelegere si vor pleca intr-o 
+                        croaziera obisnuita in Europa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gdeJeBio">
+                <h2>Ce tari a vizitat Dragica:</h2>
+                <div class="lista">
+                    <ul>
+                        <li>Romania</li><img src="../imagesDejanDragica/romania.png" width="50px" height="50px">
+                        <li>Bulgaria</li><img src="../imagesDejanDragica/bg.png" width="50px" height="50px">
+                        <li>Croatia</li><img src="../imagesDejanDragica/cr.png" width="50px" height="50px">
+                        <li>Bosnia si Hertegovina</li><img src="../imagesDejanDragica/bih.png" width="50px" height="50px">
+                        <li>Ungaria</li><img src="../imagesDejanDragica/madjarsak.png" width="50px" height="50px">
+                        <li>Austira</li><img src="../imagesDejanDragica/ausria.png" width="50px" height="50px">
+                    </ul>
+                    <ul>
+                        <li>Germania</li><img src="../imagesDejanDragica/germania.png" width="50px" height="50px">
+                        <li>Danemarca</li><img src="../imagesDejanDragica/dk.png" width="50px" height="50px">
+                        <li>Franta</li> <img src="../imagesDejanDragica/franta.png" width="50px" height="50px">
+                        <li>Italia</li><img src="../imagesDejanDragica/Italia.png" width="50px" height="50px"> 
+                        <li>Spania</li><img src="../imagesDejanDragica/Spania.png" width="50px" height="50px">
+                        <li>Monaco</li><img src="../imagesDejanDragica/monaco.png" width="50px" height="50px">
+                        <li>Turcia</li><img src="../imagesDejanDragica/turcia.png" width="50px" height="50px">
+                    </ul>
+                </div>
+            </div>
+            
+
+
+           
+
+
+
+
+
+            
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="script-Dragica.js"></script>
+    <script src="activPage.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Angajati.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/angajatii.png" type = "image/x-icon">
+    <script src="script-schimbari.js"></script>
+    <title>Angajatii</title>
+</head>
+<body onload="applyChanges()">
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Angajatii</span>
+                </a>
+                <!-- <span class="tooltip">Angajatii</span> -->
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafice</span>
+                </a>
+                <!-- <span class="tooltip">Grafice</span> -->
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Produse</span>
+                </a>
+                <!-- <span class="tooltip">Produse</span> -->
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle' ></i>
+                    <span class="link_name">Despre noi</span>
+                </a>
+                <!-- <span class="tooltip">Despre noi</span> -->
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Setari</span>
+                </a>
+                <!-- <span class="tooltip">Setari</span> -->
+            </li>
+        </ul>
+        
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Cookie</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Privacy policy</a>
+        </div>
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
+        
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="#" class="eng">ENG</a> |
+                    <a href="#" class="srb">SRB</a> |
+                    <a href="#" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="angajatii-text">
+                <h1> Angajatii</h1>
+            </div>
+
+            <div class="angajatii">
+                <div class="okvir">
+                    <div class="datele">
+                    
+                    </div>
+
+                    <a href="#finish">Mai multe informati</a>
+
+                </div>
+            </div>
+            
+            
+            <div class="lincuriAngajatii">
+                <h2>Aici puteti gasi niste lincuri care va duce catre pagina persoanei respective:</h2>
+                <br>
+                <div class="linkovi">
+                    <h3>Pagina lui Nikola</h3>
+                    <div class="tooltip">
+                        <a href="Nikola.html">Nikola</a>
+                        <span class="tooltiptext"><img src="../imagesAngajatii/nikola.jpg" alt="nikola" height="250px" width="180px"></span>
+                    </div>
+
+                    <h3>Pagina lui Marko</h3>
+                    <div class="tooltip1">
+                        <a href="Marko.html">Marko</a>
+                        <span class="tooltiptext1"><img src="../imagesAngajatii/marko.jpg" alt="marko" height="250px" width="180px"></span>
+                    </div>
+
+                    <h3>Pagina lui Dejan</h3>
+                    <div class="tooltip2">
+                        <a href="Dejan.html">Dejan</a>
+                        <span class="tooltiptext2"><img src="../imagesAngajatii/dejan.jpg" alt="dejan" height="250px" width="180px"></span>
+                    </div>
+
+                    <h3>Pagina lui Dragica</h3>
+                    <div class="tooltip3">
+                        <a href="Dragica.html">Dragica</a>
+                        <span class="tooltiptext3"><img src="../imagesAngajatii/dragica.jpg" alt="dragica" height="250px" width="180px"></span>
+                    </div>
+
+                </div>
+
+                <br><br><br>
+                
+            </div>
+
+        </div>
+
+
+
+        <div id="finish"></div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+            </div>
+        </footer>
+
+
+
+    </section>
+
+    <!--SCRIPTE ZA ANGAJTATII-->
+    <script src="angajatii.js"></script>
+    <script src="activPage.js"></script>
+
+</body>
+</html>

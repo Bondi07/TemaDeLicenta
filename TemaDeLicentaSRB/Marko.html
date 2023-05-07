@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Marko.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/angajatii.png" type = "image/x-icon">
+    <script src="script-schimbari.js"></script>
+    <title>Marko</title>
+</head>
+<body onload="applyChanges()">
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-store'></i>            
+            <span class="logo_name">BONDI</span>
+        </div>
+        <div class="lineBorder"></div>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Komandna tabla</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="Angajati.html">
+                    <i class='bx bx-wrench'></i>
+                    <span class="link_name">Radnici</span>
+                </a>
+                <!-- <span class="tooltip">Angajatii</span> -->
+            </li>
+            <li>
+                <a href="Grafice.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Grafici</span>
+                </a>
+                <!-- <span class="tooltip">Grafice</span> -->
+            </li>
+            <li>
+                <a href="Produse.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Proizvodi</span>
+                </a>
+                <!-- <span class="tooltip">Produse</span> -->
+            </li>
+            <li>
+                <a href="DespreNoi.html">
+                    <i class='bx bx-info-circle' ></i>
+                    <span class="link_name">O nama</span>
+                </a>
+                <!-- <span class="tooltip">Despre noi</span> -->
+            </li>
+            <li>
+                <a href="Setari.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">Podesavanja</span>
+                </a>
+                <!-- <span class="tooltip">Setari</span> -->
+            </li>
+        </ul>
+        
+        
+        <div class="bottom-content">
+            <a href="Coockies.html" class="coockie">Kolacici</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Politika privatnosti</a>
+        </div>
+        <div class="bt2">
+            <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
+        </div>
+        
+    </div>
+    
+    <section class="home-section">
+        <div class="line">
+
+            <div class="home-content">
+                <i class='bx bx-left-indent' id="right"></i>
+            </div>
+
+            <div class="home-content2">
+                <div class="box">
+                    <i class='bx bx-sun' id="toggleDark"></i>
+                </div>
+                <div class="limbi-straine">
+                    <a href="../TemaDeLicentaENG/Dashboard.html" class="eng">ENG</a> |
+                    <a href="../TemaDeLicentaSRB/Dashboard.html" class="srb">SRB</a> |
+                    <a href="../Fronend/Dashboard.html" class="ro">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="angajat2-text">
+                <h1>Marko Bondokic</h1>
+            </div>
+
+            <form>
+                <input type="button" value="Nazad!" class="button" onclick="history.back()">
+            </form>
+
+
+
+            <div class="wrap">
+
+                <div class="despre">
+                    <h2>Osnovne informacije o osobi:</h2>
+                    <ul>
+                        <h3>Prezime:</h3>
+                        <li>Bondokic</li>
+                        <h3>Ime:</h3>
+                        <li>Marko</li>
+                        <h3>Datum rodjenja:</h3>
+                        <li>29.10.2002.</li>
+                        <h3>Visina:</h3>
+                        <li>1.80cm</li>
+                        <h3>Tezina:</h3>
+                        <li>90kg</li>
+                    </ul>
+                </div>
+
+                <div class="poza">
+                    <div class="triangle"></div>
+                    <img src="../imagesAngajatii/marko.jpg" alt="nikola slika" width="350px" height="500xp">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="osnocneInformacije">
+                <h2>Tekst o Marku:</h2>
+                <p>
+                    Marko je rodjen dve godine nakon Nikole, takodje u Oktobru. U detinjstvu je bio veoma 
+                    ljubazan prema meni a i danas se razumemo. Marko je kao dete bio mrzovoljan i nije
+                    hteo nista da radi, sto se vremenom promenilo. Trenirao je rukomet nekoliko godina, 
+                    sve dok nije ostali bez trenera zbog drugog posla. Marko voli izlaske, zurke, drustvo 
+                    i dobar odmor. Srednju skolu je zavrsio u rodnom mestu Kladovu, a danas sa roditeljima 
+                    pomaze i radi u nasoj radnji. Marko ne voli da putuje ali je bio u mnogo zemalja sveta.
+                </p>
+            </div>
+
+
+            <!-- OVDE IDE TEKST KAD SAM BIO MALI -->
+            <div class="maliMarkoText">
+                <div class="ram">
+                    <img src="../imagesMarko/maliMarko.jpg" alt="mali Nikola" class="maliMarko" width="280px" height="480px">
+                    <img src="../imagesMarko/frame1.png" alt="photo frame" class="ramzasliku" width="400px" height="600px">
+                </div>
+                
+                <div class="tekstOMalomMarku">
+                    <h2>Mali Marko</h2>
+                    <p>
+                        Marko je kao dete bio smedj decak, bio je nizak i poslusan decak. Moji roditelji 
+                        su se uvek vise brinuli o njemu nego o meni, tako da je bio njihov mezimac. 
+                        U detinjstvu se uvek igrao sa mnomigrackama ili neke igre napolju. Kada je malo 
+                        odrastao, zavoleo je video igrice koje je poceo da igra stalno sa skolskim drugovima. 
+                        Ceo dan nije silazio sa kompljtera.
+                    </p>
+                </div>
+            </div>
+
+            <!-- OVDE IDE TEKST O OSNOVNOJ SKOLI -->
+            <div class="osnovna">
+                <div class="naslovOsnovna">
+                    <h2>Osnovna skola</h2>
+                </div>
+                <div class="textOsnovna">
+                    <p>
+                        <a href="https://www.oskladovo.edu.rs/" target="_blank">Osnovna skola</a> zavrsio je u 
+                        rodnom gradu Kladovu. Na pocetku Osnovne skole upoznao je nove drugare, sa kojima se 
+                        druzi i danas. Generacija koja se odlicno razume, a Marko je imao srecu da bude u takvoj 
+                        generaciji. Imao je i dobre ucitelje pa nije imao problema sa skolom, sem sto Marko i 
+                        ne voli bas da uci.
+                    </p>
+                </div>
+                <div class="slikeOSnovna">
+                    <center>
+                        <img src="../imagesNikola/osnovna skola.jpg" alt="osnovna skola" width="380px" height="400px">
+                        <img src="../imagesNikola/osnovna2.jpg" alt="osnovna" width="380px" height="400px">
+                    </center>
+                </div>
+            </div>
+
+            <!-- SREDNJA SKOLA -->
+            <div class="srednja">
+                <div class="naslovSrednja">
+                    <h2>Srednja skola</h2>
+                </div>
+                <div class="textSrednja">
+                    <p>
+                        <a href="https://srednjaskolakladovo.edu.rs/" target="_blank">Srednja skolu</a> 
+                        je zavrsio u Kladovu, gradu u kome i zivi. Zavrsio je i srednju skolu koju sam jako
+                        pohadjao u njegovom rodnom gradu, sa drustvom koje se nije mnogo promenilo, sem sto 
+                        je upoznao nekoliko novih prijatelja. Marko nije bas voleo da uci, pa je sa teskocom 
+                        zavrsio Srednju skolu. Zavrsio je sa dobrim ocenama, sto njemu nije bilo vazno koliko i 
+                        meni, jer Marko nije hteo da ide na Fakultet, pa mu ocena nije bila vazna. Zavrsio je 
+                        Sredju skolu za pomorkog masinskog tehnicara, sto je veoma interesantno ali ne bas lako.
+                    </p>
+                </div>
+                <div class="slikeSrednja">
+                    <center>
+                        <img src="../imagesNikola/srednjaPanorama.jpg" alt="osnovna skola" width="950px" height="400px">
+                    </center>
+                </div>
+            </div>
+
+            <!-- TEKST O TOME DA LI JE MARKO UPISAO FAKULTET I AKO NIJE ZASTO -->
+            <div class="FaksPosao">
+                <center><h1>O Fakultetu:</h1></center>
+
+
+                <div class="text">
+                    <p>
+                        Nazalost Marko nije upisao Fakultet iz vise razloga. Prvi je sto nije voleo da uci, 
+                        drugi sto ne bi voleo da ide u inostranstvo i da se bori sa svim problemima, a naravno 
+                        jedan od glavnih razloga je to sto Marko voli novac, pa je poceo da radi u nasoj prodavnici
+                        sa nasim roditeljima. roditelji su pokusali da ga ubede da upise Fakultet i studira 
+                        bilo sta kako bi imao diplomu, cak iako nije voleo da uci, ali Marko nije zeleo, pa 
+                        je ostao u rodnom gradu da radi u nasoj radnji.
+                    </p>
+                </div>
+
+                <div class="pozadina">
+                    <div class="slikaRadnja">
+                        <img src="../despre noi/compresed imagase/radnjaispred.jpg" alt="radnja isred sa robom" width="850px" height="500px">
+                        <div class="tackice">
+                            <img src="../imagesMarko/tackice1.png" alt="tacke" width="500px" height="500px" class="tacke">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEXT GENERAL (O AUTOMOBILIMA, O MUZICI, HRANI, PUTOVANJIMA)-->
+
+            <div class="textGeneral">
+                <div class="naslovTextG">
+                    <h1>Generalni tekst</h1>
+                </div>
+                <div class="textGe">
+                    <p>
+                        Marko voli i automobile, voli i da putuje, ali ne toliko sa roditeljima, vise voli da 
+                        putuje sa prijateljima i devojkom. Kao dete je isao i sa roditeljima, sto se promenilo 
+                        od njegovog odrastanja. Bio je u mnogo zemalja sveta, ali kaze da zeli da putuje jos mnogo 
+                        vise. Voli da slusa muziku sa slusalicama, ali jako glasno, sto mi ne deluje zdravo,
+                        rekao sam mu da to nije zdravo, ali ne zeli da slusa. Nekoliko puta je isao na odmor 
+                        sa prijateljima, sto mu se dopalo i zeli da ponovi. Iako je Marko mladji od mene, ponasa
+                        se kao stariji covek i tako i izgleda.
+                    </p>
+                </div>
+
+            </div>
+            <br><br>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttonTop" >
+            <center><img src="../images/gotop.png" alt="go to top buttoon image" width="50px" height="50px"></center>
+        </button>
+
+        <footer>
+            <div class="fott">
+                <h3 align="center">&copy;2023 Nikola Bondokic. Sva prava sadrzana.</h3>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="script-Marko.js"></script>
+    <script src="activPage.js"></script>
+
+</body>
+</html>

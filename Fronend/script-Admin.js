@@ -39,30 +39,76 @@ logoutBtn.addEventListener("click", () => {
 })
 
 
+//document.getElementById('myForm').addEventListener('submit', submitForm)
 
 
 
 
-/* IMPORT .CSV FILE  */
-const importButton = document.getElementById('pagini');
+/* PENTRU A LUA .CSV SI TRIMITE CATRE BACK */
+function submitForm(event) {
+    event.preventDefault();
 
-importButton.addEventListener('import', async function(e) {
-    e.preventDefault();
+    const selectElement = document.getElementById("pagini");
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    const selectedValue = selectedOption.textContent;
+    const optgroupLabel = selectedOption.parentNode.label;
+    const tableName = optgroupLabel + ' - ' + selectedValue;
+    console.log("optgroupLabel = ", optgroupLabel);
 
-    const data = new Data(importButton);
+    const formData = new FormData();
+    formData.append('table', event.target.elements.myFile.files[0]);
+    formData.append('tableName', tableName);
 
-    data.append('pagini', document.getElementById('pagini').value);
+    fetch('https://localhost:7111/api/Magazin/ImportTable', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        console.log('File uploaded successfully');
+    })
+    .catch(error => {
+        console.error('Error uploading file', error);
+    });
+}
 
-    try{    
-        const res = await  axios.post('https://httpbin.org/post', data)
-        console.log(res);
-
-    }catch(e){
-        console.log(error);
-    }
-})
 
 
+// function submitForm(event) {
+
+//     event.preventDefault();
+
+//     let tableName;
+//     const selectElement = document.getElementById("pagini");
+//     selectElement.addEventListener("change", function() {
+//     const selectedOption = selectElement.options[selectElement.selectedIndex];
+//     const selectedValue = selectedOption.value;
+//     const optgroupLabel = selectedOption.parentNode.label;
+//     tableName = optgroupLabel + ' ' + selectedValue;
+//     console.log("table name = ", tableName);
+
+//     tableName = optgroupLabel + ' ' + selectedValue;
+//     console.log("optgroupLabel = ", optgroupLabel);
+//     console.log("selectedValue = ", selectedValue);
+//     console.log("table name = ", tableName);
+//   });
+
+//   const formData = new FormData();
+//   formData.append('table', event.target.elements.myFile.files[0]);
+//   formData.append('tableName', tableName);
+//     console.log("\n\noptgroupLabel = ", optgroupLabel);
+//     console.log("selectedValue = ", selectedValue);
+//     console.log("table name = ", tableName);
+//   fetch('https://localhost:7111/api/Magazin/ImportTable', {
+//     method: 'POST',
+//     body: formData,
+//   })
+//     .then(response => {
+//       console.log('File uploaded successfully');
+//     })
+//     .catch(error => {
+//       console.error('Error uploading file', error);
+//     });
+// }
 
 
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Admin.css" type="text/css">
+    <link rel="icon" href="../despre noi/admin.avif" type = "image/x-icon">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <title>Admin page</title>
+</head>
+<body>
+
+
+    <div class="plavaLinija">
+        <center><h1>Welcome</h1></center>
+    </div>
+
+    <div class="mainSection">
+
+        <button class="logout">Logout</button>
+        
+        <div class="adminText">
+            <h1>Admin</h1>
+        </div>
+
+
+        <div class="alege">
+            <h2>Selectati pagina la care doriti sa aplicati schimbari:</h2>
+            <label for="tabele">Alege:</label>
+            <select name="pagini" id="pagini" name="alegeTabel">
+                <optgroup label="Pagina Dashboard ">
+                    <optgroup label="Venit">
+                        <option value="venit">Venit</option>
+                    </optgroup>
+                    <optgroup label="Dashboard">
+                        <option value="chart1">Chart 1 - Vanzari saptamanale</option>
+                        <option value="chart2">Chart 2 - Vanzari saptamanale</option>
+                    </optgroup>
+                </optgroup>
+                <optgroup label="Pagina Grafice">
+                    <optgroup label="Line charts">
+                        <option value="chart1">Chart 1 - Profit intr-o singura zi pe parcursul saptamanii</option>
+                        <option value="chart2">Chart 2 - Castiguri pe parcursul unei luni a anului</option>
+                        <option value="chart3">Chart 3 - Castiguri pe ror parcursul anului 2021.</option>
+                        <option value="chart4">Chart 4 - Banii cheltuiti pentru achizitionarea de bunuri si castiguri minime din acele bunuri</option>
+                        <option value="chart5">Chart 5 - Castiguri pe parcursul unei zile</option>
+                    </optgroup>
+                    <optgroup label="Bar charts">
+                        <option value="chart1">Chart 1 - Banii cheltuiti pentru achizitionarea de bunuri si castiguri minime din acele bunuri</option>
+                        <option value="chart2">Chart 2 - Castiguri pe prcursul unei zile din intreaga saptamana</option>
+                        <option value="chart3">Chart 3 - Numar de angajati, numar de masini si numarul de magazine din firma "BONDI"</option>
+                        <option value="chart4">Chart 4 - Numar de vizite in fiecare zi in magazinul nostru</option>
+                        <option value="chart5">Chart 5 - Castiguri pe tot parcusul anului 2021. in dinari(DIN)</option>
+                    </optgroup>
+                    <optgroup label="Area charts">
+                        <option value="chart1">Chart 1 - Bani cheltuiti pe marfa si profit</option>
+                        <option value="chart2">Chart 2 - Diferenta dinte clienti multumiti si clienti nemultumiti</option>
+                        <option value="chart3">Chart 3 - Clientii nostri din diverse tari Europeane</option>
+                    </optgroup>
+                    <optgroup label="Pi charts">
+                        <option value="chart1">Chart 1 - Profitul intr-o singura zi pe parcusul saptamanii si vanzari totale intr-o zi</option>
+                        <option value="chart2">Chart 2 - Castiguri pe parcursul unei zile</option>
+                        <option value="chart3">Chart 3 - Numarul de vizite pe parcusul unei zile pe saptamana</option>
+                        <option value="chart4">Chart 4 - Numarul de produse vandute lunar, venit anual, venit lunar, si numar de tranzactii intro luna</option>
+                    </optgroup>
+                    <optgroup label="Doughnut charts">
+                        <option value="chart1">Chart 1 - Bani cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunurir</option>
+                        <option value="chart2">Chart 2 - Numarul de produse vandute lunar, venit anual, venit lunar, si numar de tranzactii intro luna</option>
+                        <option value="chart3">Chart 3 - Profituri intr-o singura zi pe parcursul saptamanii</option>
+                        <option value="chart4">Chart 4 - Castiguri pe parcursul unei luni a anului</option>
+                    </optgroup>
+                    <optgroup label="Mixed charts">
+                        <option value="chart1">Chart 1 - Nuamr de clienti care sunt multumiti si numarul de clienti care sunt nemultumiti</option>
+                        <option value="chart2">Chart 2 - Banii cheltuiti pentru achizitionarea de bunuri si castiguri minime din acele bunuri</option>
+                        <option value="chart3">Chart 3 - Numar de clienti si tara de unde sunt clienti care au vizitat magazinul</option>
+                        <option value="chart4">Chart 4 - Numar de clienti din Kladovo si din alte orase</option>
+                        <option value="chart5">Chart 5 - Vizite in fiecare zi intr-o saptamana</option>
+                        <option value="chart6">Chart 6 - Numar de produs vandute, profit si bani cheltuiti din vinzarea produselor</option>
+                        <option value="chart7">Chart 7 - Numar de produse vandute si cumparate din Bulgaria si Romania</option>
+                        <option value="chart8">Chart 8 - Ore suplimentare si ore lucrate pe saptamana pentru fiecare angajat</option>
+                    </optgroup>
+                </optgroup>
+            </select>
+
+
+        </div>
+
+        <div class="csvSection">
+            <h2>Aici puteti importa un .csv file</h2>
+            <input type="file" class="alegeFisieru" placeholder="Alege fisieru... " id="file">
+            <button onclick="location.reload();" class="reloadPage">Refresh Page</button>
+            <table></table>
+    
+        </div>
+
+        <input type="submit" class="buttonImport" value="Importati!" id="import">
+    </div>
+
+
+    <br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="fott">
+            <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+        </div>
+    </footer>
+
+    <script src="script-Admin.js"></script>
+
+</body>
+</html>
