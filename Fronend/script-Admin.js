@@ -39,11 +39,19 @@ logoutBtn.addEventListener("click", () => {
 })
 
 
+/* refresh button */
+const refreshButton = document.getElementById('refreshButton');
+
+refreshButton.addEventListener('click', () => {
+    location.reload();
+}); 
 
 
 
-document.getElementById('myForm').addEventListener('submit', submitForm)
+
 /* PENTRU A LUA .CSV SI TRIMITE CATRE BACK */
+document.getElementById('myForm').addEventListener('submit', submitForm)
+
 function submitForm(event) {
     event.preventDefault();
     const selectElement = document.getElementById("pagini");
@@ -63,50 +71,16 @@ function submitForm(event) {
     })
     .then(response => {
         console.log('File uploaded successfully');
+        alert('Data retrieved successfully');
+
     })
     .catch(error => {
         console.error('Error uploading file', error);
+        alert('Data not retrieved successfully');
+
     });
 }
 
-
-
-// function submitForm(event) {
-
-//     event.preventDefault();
-
-//     let tableName;
-//     const selectElement = document.getElementById("pagini");
-//     selectElement.addEventListener("change", function() {
-//     const selectedOption = selectElement.options[selectElement.selectedIndex];
-//     const selectedValue = selectedOption.value;
-//     const optgroupLabel = selectedOption.parentNode.label;
-//     tableName = optgroupLabel + ' ' + selectedValue;
-//     console.log("table name = ", tableName);
-
-//     tableName = optgroupLabel + ' ' + selectedValue;
-//     console.log("optgroupLabel = ", optgroupLabel);
-//     console.log("selectedValue = ", selectedValue);
-//     console.log("table name = ", tableName);
-//   });
-
-//   const formData = new FormData();
-//   formData.append('table', event.target.elements.myFile.files[0]);
-//   formData.append('tableName', tableName);
-//     console.log("\n\noptgroupLabel = ", optgroupLabel);
-//     console.log("selectedValue = ", selectedValue);
-//     console.log("table name = ", tableName);
-//   fetch('https://localhost:7111/api/Magazin/ImportTable', {
-//     method: 'POST',
-//     body: formData,
-//   })
-//     .then(response => {
-//       console.log('File uploaded successfully');
-//     })
-//     .catch(error => {
-//       console.error('Error uploading file', error);
-//     });
-// }
 
 
 

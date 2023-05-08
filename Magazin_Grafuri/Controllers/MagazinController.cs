@@ -228,13 +228,20 @@ namespace Magazin_Grafuri.Controllers
         [Route("ImportTable")]
         public IActionResult ImportTable(IFormFile table, [FromForm] string tableName)
         {
-            var response = conexiuneBD.ImportTable(table, tableName);
-            if (response)
+            try 
             {
-                return Ok("Tabel importat cu succes!");
+                var response = conexiuneBD.ImportTable(table, tableName);
+                if (response)
+                {
+                    return Ok("Tabel importat cu succes!");
+                }
+                return Ok("Tabel nu este importat !");
             }
-            return Ok("Tabel nu este importat !");
-        }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+         }
 
     }
 }

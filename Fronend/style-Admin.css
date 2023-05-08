@@ -117,6 +117,10 @@ table{
     border-radius: 25px;
     width: 200px;
 }
+/* refresh button */
+#refreshButton{
+    margin-left: 50px;
+}
 
 /* FOTTER */
 .fott{
