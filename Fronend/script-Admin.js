@@ -39,15 +39,13 @@ logoutBtn.addEventListener("click", () => {
 })
 
 
-//document.getElementById('myForm').addEventListener('submit', submitForm)
 
 
 
-
+document.getElementById('myForm').addEventListener('submit', submitForm)
 /* PENTRU A LUA .CSV SI TRIMITE CATRE BACK */
 function submitForm(event) {
     event.preventDefault();
-
     const selectElement = document.getElementById("pagini");
     const selectedOption = selectElement.options[selectElement.selectedIndex];
     const selectedValue = selectedOption.textContent;

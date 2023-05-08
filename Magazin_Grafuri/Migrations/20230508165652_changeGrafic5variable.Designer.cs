@@ -3,6 +3,7 @@ using System;
 using Magazin_Grafuri.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MagazinGrafuri.Migrations
 {
     [DbContext(typeof(MagazinDbContext))]
-    partial class MagazinDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230508165652_changeGrafic5variable")]
+    partial class changeGrafic5variable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -6,7 +6,7 @@
 
         public int ClientiDinSerbia { get; set; }
 
-        public int ClientiDinRomani { get; set; }   
+        public int ClientiDinRomania { get; set; }   
 
         public int ClientiDinBulgaria { get; set; }
 
