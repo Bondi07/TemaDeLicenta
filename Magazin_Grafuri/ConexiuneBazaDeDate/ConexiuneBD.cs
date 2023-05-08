@@ -202,113 +202,433 @@ namespace Magazin_Grafuri.ConexiuneBazaDeDate
 
                 case "Chart1 - Vanzari saptamanale":
                     var VanzariSaptamanale = ReadCsvAsync<VanzariSaptamanale>(tableData).Result;
+
                     dbContext.VanzariSaptamanale.RemoveRange(dbContext.VanzariSaptamanale.ToList());
                     dbContext.VanzariSaptamanale.AddRange(VanzariSaptamanale);
                     dbContext.SaveChanges();
                     break;
 
 
+
+
                 case "Chart2 - Vanzari saptamanale":
-                    var VanzariSaptamanale1 = ReadCsvAsync<VanzariSaptamanale>(tableData).Result;
-                    dbContext.VanzariSaptamanale.RemoveRange(dbContext.VanzariSaptamanale.ToList());
-                    dbContext.VanzariSaptamanale.AddRange(VanzariSaptamanale1);
+                    var VanzariSaptamanale1 = ReadCsvAsync<DashboardChart2>(tableData).Result;
+
+                    foreach (var chart in VanzariSaptamanale1)
+                    {
+                        var vanzariSaptamanale = dbContext.VanzariSaptamanale.FirstOrDefault(x => x.ID == chart.ID);
+                        if (vanzariSaptamanale != null)
+                        {
+                            vanzariSaptamanale.Vanzari = chart.Vanzari;
+                            vanzariSaptamanale.ProfitPeZi = chart.ProfitPeZi;
+                        }
+                        else
+                        {
+                            dbContext.VanzariSaptamanale.Add(new VanzariSaptamanale
+                            {
+                                Vanzari = chart.Vanzari,
+                                ProfitPeZi = chart.ProfitPeZi
+                            });
+                        }
+                    }
+
+                    //VanzariSaptamanale
+
                     dbContext.SaveChanges();
                     break;
+
+
+
 
                 //line chart's
 
                 case "Line charts - Chart 1 - Profit intr-o singura zi pe parcursul saptamanii":
-                    var VanzariSaptamanale2 = ReadCsvAsync<VanzariSaptamanale>(tableData).Result;
-                    dbContext.VanzariSaptamanale.RemoveRange(dbContext.VanzariSaptamanale.ToList());
-                    dbContext.VanzariSaptamanale.AddRange(VanzariSaptamanale2);
+                    var VanzariSaptamanale2 = ReadCsvAsync<LineChartsChart1>(tableData).Result;
+                    
+                    foreach (var chart in VanzariSaptamanale2)
+                    {
+                        var vanzariSaptamanale = dbContext.VanzariSaptamanale.FirstOrDefault(x => x.ID == chart.ID);
+                        if (vanzariSaptamanale != null)
+                        {
+                            vanzariSaptamanale.Zi = chart.Zi;
+                            vanzariSaptamanale.Vanzari = chart.Vanzari;
+                            vanzariSaptamanale.ProfitPeZi = chart.ProfitPeZi;
+                        }
+                        else
+                        {
+                            dbContext.VanzariSaptamanale.Add(new VanzariSaptamanale
+                            {
+                                Zi = chart.Zi,
+                                Vanzari = chart.Vanzari,
+                                ProfitPeZi = chart.ProfitPeZi
+                            });
+                        }
+                    }
+
+                    //VanzariSaptamanale
+
                     dbContext.SaveChanges();
                     break;
 
+
+
+
+
                 case "Line charts - Chart 2 - Castiguri pe parcursul unei luni a anului":
-                    var VanzariTotale = ReadCsvAsync<VanzariTotale>(tableData).Result;
-                    dbContext.VanzariTotale.RemoveRange(dbContext.VanzariTotale.ToList());
-                    dbContext.VanzariTotale.AddRange(VanzariTotale);
+                    var VanzariTotale = ReadCsvAsync<LineChartsChart2>(tableData).Result;
+
+                    foreach (var chart in VanzariTotale)
+                    {
+                        var vanzariTotale = dbContext.VanzariTotale.FirstOrDefault(x => x.ID == chart.ID);
+                        if (vanzariTotale != null)
+                        {
+                            vanzariTotale.Luna = chart.Luna;
+                            vanzariTotale.vanzariTotale = chart.vanzariTotale;
+                        }
+                        else
+                        {
+                            dbContext.VanzariTotale.Add(new VanzariTotale
+                            {
+                                Luna = chart.Luna,
+                                vanzariTotale = chart.vanzariTotale
+                            });
+                        }
+                    }
+
+                    //VanzariTotale
+
                     dbContext.SaveChanges();
                     break;
+
+
+
+
 
 
                 case "Line charts - Chart 3 - Castiguri pe ror parcursul anului 2021.":
-                    var VanzariTotale1 = ReadCsvAsync<VanzariTotale>(tableData).Result;
-                    dbContext.VanzariTotale.RemoveRange(dbContext.VanzariTotale.ToList());
-                    dbContext.VanzariTotale.AddRange(VanzariTotale1);
+                    var VanzariTotale1 = ReadCsvAsync<LineChartsChart3>(tableData).Result;
+
+                    foreach (var chart in VanzariTotale1)
+                    {
+                        var vanzariTotale = dbContext.VanzariTotale.FirstOrDefault(x => x.ID == chart.ID);
+                        if (vanzariTotale != null)
+                        {
+                            vanzariTotale.vanzariTotale = chart.vanzariTotale;
+                            vanzariTotale.An = chart.An;
+                        }
+                        else
+                        {
+                            dbContext.VanzariTotale.Add(new VanzariTotale
+                            {
+                                vanzariTotale = chart.vanzariTotale,
+                                An = chart.An
+                            });
+                        }
+                    }
+
+                    //VanzariTotale
+
                     dbContext.SaveChanges();
                     break;
 
+
+
+
+
+
                 case "Line charts - Chart 4 - Banii cheltuiti pentru achizitionarea de bunuri si castiguri minime din acele bunuri":
-                    var Grafic3 = ReadCsvAsync<Grafic3>(tableData).Result;
-                    dbContext.Grafic3.RemoveRange(dbContext.Grafic3.ToList());
-                    dbContext.Grafic3.AddRange(Grafic3);
+                    var Grafic3 = ReadCsvAsync<LineChartsChart4>(tableData).Result;
+
+                    foreach (var chart in Grafic3)
+                    {
+                        var grafic3 = dbContext.Grafic3.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic3 != null)
+                        {
+                            grafic3.Zi = chart.Zi;
+                            grafic3.SumaMarfa = chart.SumaMarfa;
+                            grafic3.Profit = chart.Profit;
+                        }
+                        else
+                        {
+                            dbContext.Grafic3.Add(new Grafic3
+                            {
+                                Zi = chart.Zi,
+                                SumaMarfa = chart.SumaMarfa,
+                                Profit = chart.Profit
+                            });
+                        }
+                    }
+
+                    //Grafic3
+
+
                     dbContext.SaveChanges();
                     break;
+
+
+
 
 
                 case "Line charts - Chart 5 - Castiguri pe parcursul unei zile":
-                    var Grafic7 = ReadCsvAsync<Grafic7>(tableData).Result;
-                    dbContext.Grafic7.RemoveRange(dbContext.Grafic7.ToList());
-                    dbContext.Grafic7.AddRange(Grafic7);
+                    var Grafic7 = ReadCsvAsync<LineChartsChart5>(tableData).Result;
+
+                    foreach (var chart in Grafic7)
+                    {
+                        var grafic7 = dbContext.Grafic7.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic7 != null)
+                        {
+                            grafic7.Zi = chart.Zi;
+                            grafic7.VanzariPeZi = chart.VanzariPeZi;
+                        }
+                        else
+                        {
+                            dbContext.Grafic7.Add(new Grafic7
+                            {
+                                Zi = chart.Zi,
+                                VanzariPeZi = chart.VanzariPeZi
+                            });
+                        }
+                    }
+
+                    //Grafic7
+
                     dbContext.SaveChanges();
                     break;
+
+
+
 
 
                     //bar chart's
 
                 case "Bar charts - Chart 1 - Banii cheltuiti pentru achizitionarea de bunuri si castiguri minime din acele bunuri":
-                    var Grafic3BarCharts = ReadCsvAsync<Grafic3>(tableData).Result;
-                    dbContext.Grafic3.RemoveRange(dbContext.Grafic3.ToList());
-                    dbContext.Grafic3.AddRange(Grafic3BarCharts);
+                    var Grafic3BarCharts = ReadCsvAsync<BarChartsChart1>(tableData).Result;
+
+
+                    foreach (var chart in Grafic3BarCharts)
+                    {
+                        var grafic3 = dbContext.Grafic3.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic3 != null)
+                        {
+                            grafic3.Zi = chart.Zi;
+                            grafic3.SumaMarfa = chart.SumaMarfa;
+                            grafic3.Profit = chart.Profit;    
+
+                        }
+                        else
+                        {
+                            dbContext.Grafic3.Add(new Grafic3
+                            {
+                                Zi = chart.Zi,
+                                SumaMarfa = chart.SumaMarfa,
+                                Profit = chart.Profit
+                            });
+                        }
+                    }
+
+                    //Grafic3
+
                     dbContext.SaveChanges();
                     break;
 
+
+
                 case "Bar charts - Chart 2 - Castiguri pe prcursul unei zile din intreaga saptamana":
-                    var Grafic7BarCharts = ReadCsvAsync<Grafic7>(tableData).Result;
-                    dbContext.Grafic7.RemoveRange(dbContext.Grafic7.ToList());
-                    dbContext.Grafic7.AddRange(Grafic7BarCharts);
+                    var Grafic7BarCharts = ReadCsvAsync<BarChartsChart2>(tableData).Result;
+
+                    foreach (var chart in Grafic7BarCharts)
+                    {
+                        var grafic7 = dbContext.Grafic7.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic7 != null)
+                        {
+                            grafic7.Zi = chart.Zi;
+                            grafic7.VanzariPeZi = chart.VanzariPeZi;
+
+                        }
+                        else
+                        {
+                            dbContext.Grafic7.Add(new Grafic7
+                            {
+                                Zi = chart.Zi,
+                                VanzariPeZi = chart.VanzariPeZi
+                            });
+                        }
+                    }
+
+                    // Grafic7
+
                     dbContext.SaveChanges();
                     break;
+
+
+
 
 
                 case "Bar charts - Chart 3 - Numar de angajati, numar de masini si numarul de magazine din firma \"BONDI\"":
-                    var Grafic1BarCharts = ReadCsvAsync<Grafic1>(tableData).Result;
-                    dbContext.Grafic1.RemoveRange(dbContext.Grafic1.ToList());
-                    dbContext.Grafic1.AddRange(Grafic1BarCharts);
+                    var Grafic1BarCharts = ReadCsvAsync<BarChartsChart3>(tableData).Result;
+
+                    foreach (var chart in Grafic1BarCharts)
+                    {
+                        var grafic1 = dbContext.Grafic1.FirstOrDefault(x => x.Id == chart.ID);
+                        if (grafic1 != null)
+                        {
+                            grafic1.NrTotalDeAngajati = chart.NrTotalDeAngajati;
+                            grafic1.NrDeMagazine = chart.NrDeMagazine;
+                            grafic1.NrDeMasini = chart.NrDeMasini;
+
+                        }
+                        else
+                        {
+                            dbContext.Grafic1.Add(new Grafic1
+                            {
+                                NrTotalDeAngajati = chart.NrTotalDeAngajati,
+                                NrDeMagazine = chart.NrDeMagazine,
+                                NrDeMasini = chart.NrDeMasini
+                            });
+                        }
+                    }
+
+                    //Grafic1
+
                     dbContext.SaveChanges();
                     break;
 
+
+
+
                 case "Bar charts - Chart 4 - Numar de vizite in fiecare zi in magazinul nostru":
-                    var Grafic8BarCharts = ReadCsvAsync<Grafic8>(tableData).Result;
-                    dbContext.Grafic8.RemoveRange(dbContext.Grafic8.ToList());
-                    dbContext.Grafic8.AddRange(Grafic8BarCharts);
+                    var Grafic8BarCharts = ReadCsvAsync<BarChartsChart4>(tableData).Result;
+
+                    foreach (var chart in Grafic8BarCharts)
+                    {
+                        var grafic8 = dbContext.Grafic8.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic8 != null)
+                        {
+                            grafic8.Zi = chart.Zi;
+                            grafic8.Vizite = chart.Vizite;
+
+                        }
+                        else
+                        {
+                            dbContext.Grafic8.Add(new Grafic8
+                            {
+                                Zi = chart.Zi,
+                                Vizite = chart.Vizite
+                            });
+                        }
+                    }
+
+                    //Grafic8
+
                     dbContext.SaveChanges();
                     break;
+
 
 
                 case "Bar charts - Chart 5 - Castiguri pe tot parcusul anului 2021. in dinari(DIN)":
-                    var VanzariTotaleBarCharts = ReadCsvAsync<VanzariTotale>(tableData).Result;
-                    dbContext.VanzariTotale.RemoveRange(dbContext.VanzariTotale.ToList());
-                    dbContext.VanzariTotale.AddRange(VanzariTotaleBarCharts);
+                    var VanzariTotaleBarCharts = ReadCsvAsync<BarChartsChart5>(tableData).Result;
+
+                    foreach (var chart in VanzariTotaleBarCharts)
+                    {
+                        var vanzariTotale = dbContext.VanzariTotale.FirstOrDefault(x => x.ID == chart.ID);
+                        if (vanzariTotale != null)
+                        {
+                            vanzariTotale.Luna = chart.Luna;
+                            vanzariTotale.vanzariTotale = chart.vanzariTotale;
+
+                        }
+                        else
+                        {
+                            dbContext.VanzariTotale.Add(new VanzariTotale
+                            {
+                                Luna = chart.Luna,
+                                vanzariTotale = chart.vanzariTotale
+                            });
+                        }
+                    }
+
+                    //VanzariTotale
+
                     dbContext.SaveChanges();
                     break;
+
+
+
+
+
 
                 //Area chart's
 
                 case "Area charts - Chart 1 - Bani cheltuiti pe marfa si profit":
-                    var Grafic3AreaCharts = ReadCsvAsync<Grafic3>(tableData).Result;
-                    dbContext.Grafic3.RemoveRange(dbContext.Grafic3.ToList());
-                    dbContext.Grafic3.AddRange(Grafic3AreaCharts);
+                    var Grafic3AreaCharts = ReadCsvAsync<AreaChartsChart1>(tableData).Result;
+
+                    foreach (var chart in Grafic3AreaCharts)
+                    {
+                        var grafic3 = dbContext.Grafic3.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic3 != null)
+                        {
+                            grafic3.Zi = chart.Zi;
+                            grafic3.SumaMarfa = chart.SumaMarfa;
+                            grafic3.Profit = chart.Profit;
+
+                        }
+                        else
+                        {
+                            dbContext.Grafic3.Add(new Grafic3
+                            {
+                                Zi = chart.Zi,
+                                SumaMarfa = chart.SumaMarfa,
+                                Profit = chart.Profit
+
+                            });
+                        }
+                    }
+
+                    // Grafic3
+
                     dbContext.SaveChanges();
                     break;
 
+
+
+
+
+
                 case "Area charts - Chart 2 - Diferenta dinte clienti multumiti si clienti nemultumiti":
-                    var Grafic4AreaCharts = ReadCsvAsync<Grafic4>(tableData).Result;
-                    dbContext.Grafic4.RemoveRange(dbContext.Grafic4.ToList());
-                    dbContext.Grafic4.AddRange(Grafic4AreaCharts);
+                    var Grafic4AreaCharts = ReadCsvAsync<AreaChartsChart2>(tableData).Result;
+
+
+                    foreach (var chart in Grafic4AreaCharts)
+                    {
+                        var grafic4 = dbContext.Grafic4.FirstOrDefault(x => x.ID == chart.ID);
+                        if (grafic4 != null)
+                        {
+                            grafic4.ClientiMultumiti = chart.ClientiMultumiti;
+                            grafic4.ClientiNemultumiti = chart.ClientiNemultumiti;
+
+                        }
+                        else
+                        {
+                            dbContext.Grafic4.Add(new Grafic4
+                            {
+
+                                ClientiMultumiti = chart.ClientiMultumiti,
+                                ClientiNemultumiti = chart.ClientiNemultumiti
+
+                            });
+                        }
+                    }
+
+                    //Grafic4
+
+
                     dbContext.SaveChanges();
                     break;
+
+
+
+
+
 
                 case "Area charts - Chart 3 - Clientii nostri din diverse tari Europeane":
                     var Grafic5AreaCharts = ReadCsvAsync<AreaChartsChart3>(tableData).Result;
