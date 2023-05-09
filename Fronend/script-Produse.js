@@ -16,6 +16,8 @@ const body = document.querySelector('body');
 const box = body.querySelector('.box');
 const body1 = body.querySelector('.home-section');
 const text = body.querySelector('.produse-text');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -25,12 +27,16 @@ const text = body.querySelector('.produse-text');
             body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
         }else{
             body1.style.background = '#121212';
             body1.style.color = 'white';
             body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -66,6 +72,10 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
+
+
 
 
 /* DODAVANJE PRODUKTA */

@@ -11,37 +11,43 @@ sidebarBtn.addEventListener("click", ()=>{
 /*DARK MODE*/
 
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.area-text');
-    button = body.querySelector('.button');
-    chart = body.querySelector('#canvas');
-    chart1 = body.querySelector('#canvas1');
-    chart2 = body.querySelector('#canvas2');
+const  body = document.querySelector('body');
+const  box = body.querySelector('.box');
+const  body1 = body.querySelector('.home-section');
+const  text = body.querySelector('.area-text');
+const  button = body.querySelector('.button');
+const  chart = body.querySelector('#canvas');
+const  chart1 = body.querySelector('#canvas1');
+const  chart2 = body.querySelector('#canvas2');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'yellow';
-            text.style.color = 'black';
-            button.style.background = 'black';
-            chart.style.background = '#E4E9F7';
-            chart1.style.background = '#E4E9F7';
-            chart2.style.background = '#E4E9F7';
+          body1.style.background = '#E4E9F7';
+          body1.style.color = 'black';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'yellow';
+          text.style.color = 'black';
+          button.style.background = 'black';
+          chart.style.background = '#E4E9F7';
+          chart1.style.background = '#E4E9F7';
+          chart2.style.background = '#E4E9F7';
+          manu.style.background = '#417AC9';
+          plavaLinija.style.background = '#1E409F';
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'white';
-            text.style.color = 'white';
-            button.style.background = 'blue';
-            chart.style.background = 'white';
-            chart1.style.background = 'white';
-            chart2.style.background = 'white';
+          body1.style.background = '#121212';
+          body1.style.color = 'white';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'white';
+          text.style.color = 'white';
+          button.style.background = 'blue';
+          chart.style.background = 'white';
+          chart1.style.background = 'white';
+          chart2.style.background = 'white';
+          manu.style.background = "#0A4D68";
+          plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -75,6 +81,7 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
 
 
 

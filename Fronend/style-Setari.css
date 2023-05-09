@@ -64,12 +64,6 @@ ul li a.active{
     border: none;
 }
 
-/* .sidebar.close .nav-links i:hover{
-    color: #11101d;
-    background-color: white;
-    border:none;
-} */
-
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;
@@ -80,8 +74,10 @@ ul li a.active{
     overflow: visible;
     padding-top: 50px;
 }
-
-/*ne radi color za tkes kad predjes preko njega (li)*/
+/* CAND LINCUL ESTE VISITAD DEVINE ALB */
+.home-section .home-content2 .limbi-straine a:visited{
+    color: white;
+}
 
 .sidebar .nav-links li{
     position: relative;
@@ -128,6 +124,7 @@ ul li a.active{
     position: absolute;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/

@@ -1,43 +1,50 @@
 /*html  */
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    headertext = body.querySelector('.text-barChart');
-    button = body.querySelector('.button');
-    chart = body.querySelector('#canvas');
-    chart1 = body.querySelector('#canvas1');
-    chart2 = body.querySelector('#canvas2');
-    chart3 = body.querySelector('#canvas3');
-    chart4 = body.querySelector('#canvas4');
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const headertext = body.querySelector('.text-barChart');
+const button = body.querySelector('.button');
+const chart = body.querySelector('#canvas');
+const chart1 = body.querySelector('#canvas1');
+const chart2 = body.querySelector('#canvas2');
+const chart3 = body.querySelector('#canvas3');
+const chart4 = body.querySelector('#canvas4');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'yellow';
-            headertext.style.color = 'black';
-            button.style.background = 'black';
-            chart.style.background = '#E4E9F7';
-            chart1.style.background = '#E4E9F7';
-            chart2.style.background = '#E4E9F7';
-            chart3.style.background = '#E4E9F7';
-            chart4.style.background = '#E4E9F7';
+          body1.style.background = '#E4E9F7';
+          body1.style.color = 'black';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'yellow';
+          headertext.style.color = 'black';
+          button.style.background = 'black';
+          chart.style.background = '#E4E9F7';
+          chart1.style.background = '#E4E9F7';
+          chart2.style.background = '#E4E9F7';
+          chart3.style.background = '#E4E9F7';
+          chart4.style.background = '#E4E9F7';
+          manu.style.background = '#417AC9';
+          plavaLinija.style.background = '#1E409F';
+            
 
         }else{
-            body.style.background = '#121212'; /* malo svetlija boja (#282A3A)*/
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'white';
-            headertext.style.color = 'white';
-            button.style.background = 'blue';
-            chart.style.background = 'white';
-            chart1.style.background = 'white';
-            chart2.style.background = 'white';
-            chart3.style.background = 'white';
-            chart4.style.background = 'white';
+          body1.style.background = '#121212'; /* malo svetlija boja (#282A3A)*/
+          body1.style.color = 'white';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'white';
+          headertext.style.color = 'white';
+          button.style.background = 'blue';
+          chart.style.background = 'white';
+          chart1.style.background = 'white';
+          chart2.style.background = 'white';
+          chart3.style.background = 'white';
+          chart4.style.background = 'white';
+          manu.style.background = "#0A4D68";
+          plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -80,6 +87,8 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
 
 /*Bar charts */
 var xmlhttp = new XMLHttpRequest();

@@ -43,8 +43,6 @@ const plavaLinija = body.querySelector(".line");
             manu.style.background = '#417AC9';
             plavaLinija.style.background = '#1E409F';
             
-
-
         }else{
             body1.style.background = '#121212';
             body1.style.color = 'white';
@@ -61,8 +59,8 @@ const plavaLinija = body.querySelector(".line");
             testFont.style.color = 'black';
             testFont.style.padding = '20px';
             // PIATANJE DA LI DA OSTAVIM ILI NE?
-            manu.style.background = "#146C94";
-            plavaLinija.style.background = '#394867';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -99,4 +97,7 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
+
 

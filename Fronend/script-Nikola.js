@@ -11,22 +11,24 @@ sidebarBtn.addEventListener("click", () => {
 /*DARK MODE*/
 
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.angajat1-text');
-    marq = body.querySelector('marquee');
-    travel = body.querySelector('.containerTravel marquee');
-    imgFudbal = body.querySelector('#gol');
-    marq2 = body.querySelector('#marq2');
-    animacijaFudbal = body.querySelector('.animacijaFootball');
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const text = body.querySelector('.angajat1-text');
+const marq = body.querySelector('marquee');
+const travel = body.querySelector('.containerTravel marquee');
+const imgFudbal = body.querySelector('#gol');
+const marq2 = body.querySelector('#marq2');
+const animacijaFudbal = body.querySelector('.animacijaFootball');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#E4E9F7';
+            body1.style.color = 'black';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
             marq.style.background = '#E4E9F7';
@@ -34,11 +36,13 @@ const toggle = document.getElementById('toggleDark');
             imgFudbal.style.background = '#E4E9F7';
             marq2.style.background = '#E4E9F7';
             animacijaFudbal.style.background = '#E4E9F7';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
 
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#121212';
+            body1.style.color = 'white';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
             marq.style.background = 'white';
@@ -46,7 +50,8 @@ const toggle = document.getElementById('toggleDark');
             imgFudbal.style.background = 'white';
             marq2.style.background = 'white';
             animacijaFudbal.style.background = 'white';
-
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
             
         }
     })
@@ -83,4 +88,5 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
 
