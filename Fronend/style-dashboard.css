@@ -163,7 +163,6 @@ ul li a.active{
 .sidebar.close .bottom-content{
     display: none;      
 }
-
 .sidebar .bottom-content a{
     color: white;
     font-size: 15px;
@@ -172,7 +171,7 @@ ul li a.active{
     color: red;
     
 }
-
+/* HOME SECTION */
 .home-section{
     position: relative;
     background: #E4E9F7;
@@ -273,6 +272,148 @@ ul li a.active{
     margin-right: 80px;
 }
 
+/*tablet mode*/
+@media (max-width: 770px){
+
+    .sidebar{
+        width: 200px;
+    }
+    .sidebar .nav-links{
+        padding-top: 0;
+    }
+    .sidebar .logo-details{
+        height: 70px;
+    }
+    .sidebar .logo-details i{
+        font-size: 25px;
+        height: 40px;
+        min-width: 60px;
+        line-height: 40px;
+        padding-top: 20px;
+    }
+    .sidebar .logo-details .logo_name{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .sidebar .nav-links li{
+        line-height: 60px;
+        padding-top: 10px;
+    }
+    .sidebar .nav-links li i{
+        height: 40px;
+        min-width: 60px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .sidebar .nav-links li a .link_name{
+        font-size: 16px;
+    }
+    .sidebar .bottom-content{
+        font-size: 14px;
+    }
+    .home-section{
+        position: relative;
+        left: 200px;
+        width: calc(100% - 200px);
+    }
+    .home-section .wrap{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .home-section .main .wrap .venitAnual,
+    .home-section .main .wrap .venitLunar,
+    .home-section .main .wrap .tranzacti,
+    .home-section .main .wrap .prVaLunar,
+    .home-section .main .wrap .prVaAnual {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        border-left: 5px solid;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main .venitAnual img,
+    .main .venitLunar img,
+    .main .tranzacti img,
+    .main .prVaLunar img,
+    .main .prVaAnual img {
+        padding: 20px 0;
+        max-width: 80%;
+        height: auto;
+    }
+    
+    .main .venitAnual #venit,
+    .main .venitLunar #venitlunar,
+    .main .tranzacti #tranzacti,
+    .main .prVaLunar #prVaLunar,
+    .main .prVaAnual  #prVaAnual {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .main .venitAnual .title,
+    .main .venitLunar .title,
+    .main .tranzacti .title,
+    .main .prVaAnual .title,
+    .main .prVaLunar .title {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #myChart{
+        width: 350px;
+    }
+    #piChart{
+        width: 350px;
+        margin-left: 0;
+    }
+    .chartCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .chartCard .chartBox {
+        padding-top: 50px;
+    }
+    #piChart {
+        margin: 0;
+    }
+    .textCompaniei{
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+    .cover {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box1 {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .box1 img {
+        width: 100%;
+        height: auto;
+    }
+    .buttonTop {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+
+}
+
 /*do ovde ide main posle toga ide za svakog posebno*/
 /* OVDE SU KARTICE I NJIHOV IZGLED*/
 .home-section .wrap{
@@ -324,7 +465,7 @@ ul li a.active{
     font-size: 20px;
     padding-left: 15px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main .venitLunar .title{
@@ -332,28 +473,28 @@ ul li a.active{
     font-size: 20px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .main .tranzacti .title{
     color: black;
     font-size: 20px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .main .prVaAnual .title{
     color: black;
     font-size: 15px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .main .prVaLunar .title{
     color: black;
     font-size: 15px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main .venitAnual .wrap-img{
@@ -450,7 +591,6 @@ ul li a.active{
 .textCompaniei{
     padding-top: 30px;
     /* font-size: 30px; */
-    font-family: Montserrat;
     text-align: justify;
     padding-right: 70px;
 }
@@ -609,19 +749,6 @@ header h2{
     color: #2D2727;
 
 }
-/* IZGLED ZA VELIKI EKRAN  */
-/* @media only screen  and (min-width: 1024px){
-    .main .wrap{
-        gap: 50px;
-    }
-    .chartBox{
-        margin-left: 150px;
-    }
-    .sidebar .nav-links li{
-        line-height: 100px;
-    }
-
-}  */
 
 
 /* FOOTER*/

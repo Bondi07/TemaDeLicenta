@@ -376,6 +376,8 @@ svg{
     margin-left: 15px;
     padding-top: 5px;
 }
+
+
 .cine{
     font-size: 50px;
     font-family: 'Poppins', sans-serif;    
@@ -1148,6 +1150,9 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+form button:hover{
+    background: #053742;
 }
 
 

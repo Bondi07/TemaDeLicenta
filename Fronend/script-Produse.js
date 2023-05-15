@@ -130,18 +130,18 @@ function filterList(){
     const filter = searchInput.value.toLowerCase();
     const listItems = document.querySelectorAll('.okvir');
     const homeSection = document.querySelector('.home-section');
-    const fotter = document.querySelector('.fott');
+    const fott = document.querySelector('footer');
 
     listItems.forEach((item) => {
         let text = item.textContent;
         if(text.toLowerCase().includes(filter.toLowerCase())){
             item.style.display = 'grid';
             homeSection.style.height = '100%';
-            
+            fott.style.display = '';
         }else{
             item.style.display = 'none';
-            homeSection.style.height = '100vh';
-            //fotter.style.bottom = '10px';
+            homeSection.style.height = '100%';
+            fott.style.display = 'none';
         }
     });
 }

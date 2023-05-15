@@ -103,28 +103,6 @@ function closePopup(){
 
 
 
-/* TEST TEST ZA MENJANJE FONT SIZE */
-
-// function changeStyle(){
-//     var element = document.getElementById("myWeb");
-//     element.style.fontSize = "100px";
-// }
-// function changeStyleToNormal(){
-//     var element = document.getElementById("myWeb");
-//     element.style.fontSize = "20px";
-
-// }
-
-// /* ZA MENJAJE POZADINE LINKOVA MENIJA */
-// function mousOver(element){
-//     element.style.color = 'red';
-// }
-// function mousOut(element){
-//     element.style.color = 'white';
-// }
-
-
-
 /* TEKST KOJI NESTAJE SA ANIMACIJOM */
 class TextScremble{
     constructor(el){
@@ -203,8 +181,8 @@ next()
 function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "nikola.bondokic72@gmail.com",
-        Password : "******",
+        Username : "nikola72bondokic3@gmail.com",
+        Password : "******",  // AICI TREBUIE SA PUI PAROLA MEILULUI
         To : 'nikola.bondokic72@gmail.com',
         From : document.getElementById("email").value,
         Subject : "Mesaj din forma Contact us",
