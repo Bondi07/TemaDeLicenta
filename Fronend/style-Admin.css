@@ -121,6 +121,9 @@ table{
 #refreshButton{
     margin-left: 50px;
 }
+#myForm button:hover{
+    background: #DC0000;
+}
 
 /* FOTTER */
 .fott{

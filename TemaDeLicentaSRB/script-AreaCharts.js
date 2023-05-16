@@ -11,37 +11,43 @@ sidebarBtn.addEventListener("click", ()=>{
 /*DARK MODE*/
 
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.area-text');
-    button = body.querySelector('.button');
-    chart = body.querySelector('#canvas');
-    chart1 = body.querySelector('#canvas1');
-    chart2 = body.querySelector('#canvas2');
+const  body = document.querySelector('body');
+const  box = body.querySelector('.box');
+const  body1 = body.querySelector('.home-section');
+const  text = body.querySelector('.area-text');
+const  button = body.querySelector('.button');
+const  chart = body.querySelector('#canvas');
+const  chart1 = body.querySelector('#canvas1');
+const  chart2 = body.querySelector('#canvas2');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'yellow';
-            text.style.color = 'black';
-            button.style.background = 'black';
-            chart.style.background = '#E4E9F7';
-            chart1.style.background = '#E4E9F7';
-            chart2.style.background = '#E4E9F7';
+          body1.style.background = '#E4E9F7';
+          body1.style.color = 'black';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'yellow';
+          text.style.color = 'black';
+          button.style.background = 'black';
+          chart.style.background = '#E4E9F7';
+          chart1.style.background = '#E4E9F7';
+          chart2.style.background = '#E4E9F7';
+          manu.style.background = '#417AC9';
+          plavaLinija.style.background = '#1E409F';
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'white';
-            text.style.color = 'white';
-            button.style.background = 'blue';
-            chart.style.background = 'white';
-            chart1.style.background = 'white';
-            chart2.style.background = 'white';
+          body1.style.background = '#121212';
+          body1.style.color = 'white';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'white';
+          text.style.color = 'white';
+          button.style.background = 'blue';
+          chart.style.background = 'white';
+          chart1.style.background = 'white';
+          chart2.style.background = 'white';
+          manu.style.background = "#0A4D68";
+          plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -78,6 +84,7 @@ scrollToTopButton.addEventListener('click', () => {
 
 
 
+
 /*area charts*/
 /* CHART 1 */
 var xmlhttp = new XMLHttpRequest();
@@ -108,7 +115,7 @@ xmlhttp.onreadystatechange = function(){
               labels: zi,
               datasets: [
               {
-                label: 'Bani cheltuiti pe marfa',
+                label: 'Novac utrosen na robu',
                 data: sumaMarfa,
                 borderWidth: 4,
                 backgroundColor: '#2B3A55',
@@ -126,7 +133,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Bani cheltuiti pe marfa si profit',
+                    text: 'Novac potrosen na robu i zarada',
                     padding: {
                       bottom: 40
                   },
@@ -170,13 +177,13 @@ xmlhttp.onreadystatechange = function(){
               labels: [],
               datasets: [
               {
-                label: 'Clienti multumiti',
+                label: 'Zadovoljni klijenti',
                 data: clientiMultumiti,
                 borderWidth: 4,
                 borderColor: '#FED049'
               },
               {
-                label: 'Clienti ne multumiti',
+                label: 'Nezadovoljni klijenti',
                 data: clientiNemultumiti,
                 borderWidth: 4,
                 borderColor: 'red',
@@ -189,7 +196,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Diferenta dintre clientii multumiti si clientii nemultumiti ',
+                    text: 'Razlika izmedju zadovoljnih i nezadovoljnih klijenta ',
                     padding: {
                       bottom: 40
                   },
@@ -244,32 +251,30 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'polarArea',/* radar (area graf chart tipe) */
             data: {
-              labels: ['Clienti din Serbia', 'Clienti din Romania', 'Clienti din Bulgaria', 'Clienti din Austria' ],
+              labels: ['Klijenti iz Srbije', 'Klijenti iz Rumunije', 'Klijenti iz Bugarske', 'Klijenti iz Austrije' ],
               datasets: [
               {
-                label: 'Clienti din Serbia',
+                label: 'Klijenti iz Srbije',
                 data: clientiDinSerbia,
                 borderWidth: 4,
                 borderColor: '#0B2447'
                 
               },
               {
-                label: 'Clienti din Romania',
+                label: 'Klijenti iz Rumunije',
                 data: clientiDinRomani,
                 borderWidth: 4,
                 borderColor: 'red'
-
               },
               {
-                label: 'Clienti din Bulgaria',
+                label: 'Klijenti iz Bugarske',
                 data: clientiDinBulgaria,
                 borderWidth: 4,
                 color:'#301E67',
-                // borderColor: 'green',
                 above: 'green'
               },
               {
-                label: 'Clienti din Austria',
+                label: 'Klijenti iz Austrije',
                 data: clientiDinAustria,
                 borderWidth: 4,
                 backgroundColor: '#05BFDB',
@@ -281,7 +286,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Clientii nostri din diverse tari Europene',
+                    text: 'Nasi klijenti iz raznih delova Evrope',
                     padding: {
                       bottom: 40
                   },
@@ -291,11 +296,6 @@ xmlhttp.onreadystatechange = function(){
                 }
               },
               scales: {
-                // r:{
-                //   grid:{
-                //     display:false
-                //   }
-                // },
                 x: {
                   beginAtZero: true
                 },

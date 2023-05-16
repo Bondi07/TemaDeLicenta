@@ -16,6 +16,8 @@ const body = document.querySelector('body');
 const box = body.querySelector('.box');
 const body1 = body.querySelector('.home-section');
 const text = body.querySelector('.produse-text');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -25,12 +27,16 @@ const text = body.querySelector('.produse-text');
             body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
         }else{
             body1.style.background = '#121212';
             body1.style.color = 'white';
             body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -66,6 +72,10 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
+
+
 
 
 /* DODAVANJE PRODUKTA */
@@ -119,13 +129,19 @@ function filterList(){
     const searchInput = document.querySelector('#search');
     const filter = searchInput.value.toLowerCase();
     const listItems = document.querySelectorAll('.okvir');
+    const homeSection = document.querySelector('.home-section');
+    const fott = document.querySelector('footer');
 
     listItems.forEach((item) => {
         let text = item.textContent;
         if(text.toLowerCase().includes(filter.toLowerCase())){
             item.style.display = 'grid';
+            homeSection.style.height = '100%';
+            fott.style.display = '';
         }else{
             item.style.display = 'none';
+            homeSection.style.height = '100%';
+            fott.style.display = 'none';
         }
     });
 }
@@ -191,7 +207,7 @@ data.forEach(item => {
                 <div class="okvir" id="prod">
                 <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
                 <p class=nume>${item.nume}</p>
-                <p class=cantitate>Cantitate: ${item.cantitate}</p>
+                <p class=cantitate>Kolicina: ${item.cantitate}</p>
                 <p class=pret>${item.pret} RON </p>
                 </div>
             </div>

@@ -10,27 +10,28 @@ sidebarBtn.addEventListener("click", ()=>{
 
 /*DARK MODE*/
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.MixedChartsText');
-    button = body.querySelector('.button');
-    chart = body.querySelector('#canvas');
-    chart1 = body.querySelector('#canvas1');
-    chart2 = body.querySelector('#canvas2');
-    chart3 = body.querySelector('#canvas3');
-    chart4 = body.querySelector('#canvas4');
-    chart5 = body.querySelector('#canvas5');
-    chart6 = body.querySelector('#canvas6');
-    chart7 = body.querySelector('#canvas7');
-
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const text = body.querySelector('.MixedChartsText');
+const button = body.querySelector('.button');
+const chart = body.querySelector('#canvas');
+const chart1 = body.querySelector('#canvas1');
+const chart2 = body.querySelector('#canvas2');
+const chart3 = body.querySelector('#canvas3');
+const chart4 = body.querySelector('#canvas4');
+const chart5 = body.querySelector('#canvas5');
+const chart6 = body.querySelector('#canvas6');
+const chart7 = body.querySelector('#canvas7');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#E4E9F7';
+            body1.style.color = 'black';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
             button.style.background = 'black';
@@ -43,10 +44,12 @@ const toggle = document.getElementById('toggleDark');
             chart5.style.background = '#E4E9F7';
             chart6.style.background = '#E4E9F7';
             chart7.style.background = '#E4E9F7';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#121212';
+            body1.style.color = 'white';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
             button.style.background = 'blue';
@@ -58,6 +61,8 @@ const toggle = document.getElementById('toggleDark');
             chart5.style.background = 'white';
             chart6.style.background = 'white';
             chart7.style.background = 'white';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -92,6 +97,10 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+
+
+
+
 /* chart 1 */
 var xmlhttp = new XMLHttpRequest();
 var url = "https://localhost:7111/api/Magazin/Grafic4";
@@ -116,14 +125,14 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: [],
             datasets: [{
-                label: 'Clienti multumiti',
+                label: 'Zadovoljni klijenti',
                 data: clientiMultumiti,
                 borderWidth: 4,
                 borderColor: 'black',
                 backgroundColor: '#FC2947'
             },
             {
-                label: 'Clienti nemultumiti',
+                label: 'Nezadovoljni klijenti',
                 data: clientiNemultumiti,
                 borderWidth: 4,
                 borderColor: 'black',
@@ -135,7 +144,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "red",
-                    text: 'Numar de clienti care sunt multumiti si numar de clienti care sunt nemltumitu',
+                    text: 'Broj zadovoljnih i nezadovoljnih klijenata',
                     padding: {
                     bottom: 40
                 },
@@ -188,13 +197,13 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: zi,
             datasets: [{
-                label: 'Bani pentru marfa',
+                label: 'Novac za robu',
                 data: sumaMarfa,
                 borderWidth: 4,
                 borderColor: 'green'
             },
             {
-                label: 'Profit intr-o zi',
+                label: 'Zarada tokom dana',
                 data: profit,
                 borderWidth: 4,
                 borderColor: 'red'
@@ -205,7 +214,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "#F2921D",
-                    text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                    text: 'Novac utrosen na kupovinu robe i minimalna zarada od te robe',
                     padding: {
                     bottom: 40
                 },
@@ -260,28 +269,28 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: [1],
             datasets: [{
-                label: 'Clienti care vin din Serbia',
+                label: 'Klijenti koji dolaze iz Srbije',
                 data: clientiDinSerbia,
                 borderWidth: 4,
                 borderColor: 'blue',
                 backgroundColor: 'white'
             },
             {
-                label: 'Clienti care vin din Romania',
+                label: 'Klijenti koji dolaze iz Rumunije',
                 data: clientiDinRomani,
                 borderWidth: 4,
                 borderColor: 'yellow',
                 backgroundColor: 'white'
             },
             {
-                label: 'Clienti care vin din Bulgaria',
+                label: 'Klijenti koji dolaze iz Bugarske',
                 data: clientiDinBulgaria,
                 borderWidth: 4,
                 borderColor: 'red',
                 backgroundColor: 'white'
             },
             {
-                label: 'Clienti care vin din Germania',
+                label: 'Klijenti koji dolaze iz Nemacke',
                 data: clientiDinGermania,
                 borderWidth: 4,
                 borderColor: 'green',
@@ -293,7 +302,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "#A7727D",
-                    text: 'Numar de clienti si tara de unde sunt clienti care au vizitat magazin',
+                    text: 'Broj klijenata i zemlja iz koje su klijenti koji su posetili nasu radnju',
                     padding: {
                     bottom: 40
                 },
@@ -349,28 +358,28 @@ xmlhttp.onreadystatechange = function(){
             data: {
                 labels: [1],
                 datasets: [{
-                    label: 'Numar de clienti din Kladovo',
+                    label: 'Broj klijenata iz Kladova',
                     data: clientiDinKladovo,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: '#B0DAFF'
                 },
                 {
-                    label: 'Numar de clienti din Bor',
+                    label: 'Broj klijenata iz Bora',
                     data: clientiDinBor,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: '#F9D949'
                 },
                 {
-                    label: 'Numar de clienti din Craiova',
+                    label: 'Broj klijenata iz Krajove',
                     data: clientiDinCraiova,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'blue'
                 },
                 {
-                    label: 'Numar de clienti din Drobeta Turn Severin',
+                    label: 'Broj klijenata iz Drobete Turn Severina',
                     data: clientiDinDrobetaTurnSeverin,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
@@ -382,7 +391,7 @@ xmlhttp.onreadystatechange = function(){
                     title: {
                         display: true,
                         color: "#3E54AC",
-                        text: 'Numar de clienti din Kladovo si din alte orase',
+                        text: 'Broj Klijenata iz Kladova i drugih gradova',
                         padding: {
                         bottom: 40
                     },
@@ -430,7 +439,7 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: zi,
             datasets: [{
-                label: 'Vizite in fiecare zi intr-o saptamana',
+                label: 'Broj poseta tokom jednog dana u nedelji',
                 data: vizite,
                 borderWidth: 4,
                 borderColor: '#609EA2'
@@ -441,7 +450,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Vizite in fiecare zi intr-o saptamana',
+                    text: 'Broj poseta tokom jednog dana u nedelji',
                     padding: {
                     bottom: 40
                 },
@@ -496,19 +505,19 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: zi,
             datasets: [{
-                label: 'Vanzari',
+                label: 'Prodaja',
                 data: vanzari,
                 borderWidth: 4,
                 borderColor: '#609EA2'
             },
             {
-                label: 'Produse vandute',
+                label: 'Broj prodatih prizvoda',
                 data: produseVandute,
                 borderWidth: 4,
                 borderColor: '#DF2E38'
             },
             {
-                label: 'Profit pe zi',
+                label: 'Profit tokom dana',
                 data: profitPeZi,
                 borderWidth: 4,
                 borderColor: '#E7B10A'
@@ -519,7 +528,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "#245953",
-                    text: 'Numar de produse vandute, profit si bani cheltuiti din vanzarea produselor',
+                    text: 'Broj prodatih prizvoda, profit i novac potrosen od prodaje priozvoda ',
                     padding: {
                     bottom: 40
                 },
@@ -576,28 +585,28 @@ xmlhttp.onreadystatechange = function(){
             data: {
                 labels: [1],
                 datasets: [{
-                    label: 'Numar de produse vandute in Romania',
+                    label: 'Broj prodatih proizvoda u Rumuniji',
                     data: produseVanduteInRomania,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'blue'
                 },
                 {
-                    label: 'Numar de produse vandute in Bulgaria',
+                    label: 'Broj prodatih proizvoda u Bugarskoj',
                     data: produseVanduteInBulgaria,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'red'
                 },
                 {
-                    label: 'Numar de produse cumparate in Romania',
+                    label: 'Broj kupljenih proizvoda u Rumuniji',
                     data: produseCumparateDinRomania,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'blue'
                 },
                 {
-                    label: 'Numar de produse cumparate in Bulgaria',
+                    label: 'Broj kupljenih proizvoda u Bugarskoj',
                     data: produseCumparateDinBulgaria,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
@@ -609,7 +618,7 @@ xmlhttp.onreadystatechange = function(){
                     title: {
                         display: true,
                         color: "red",
-                        text: 'Numar de produse vandute si cumparate din Bulgaria si Romania',
+                        text: 'Broj prodatih i kupljenih proizvoda iz Bugarske i Rumunije',
                         padding: {
                         bottom: 40
                     },
@@ -658,13 +667,13 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: [],
             datasets: [{
-                label: 'Ore lucrate pe saptamana',
+                label: 'Broj radnih sati tokom nedelje',
                 data: oreLucratePeSaptamana,
                 borderWidth: 4,
                 borderColor: 'green'
             },
             {
-                label: 'Ore suplimentare',
+                label: 'Broj prekovremenih sati',
                 data: oreSuplimentare,
                 borderWidth: 4,
                 borderColor: 'red',
@@ -676,7 +685,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Ore suplimentere si ore lucrate pe saptamana pentur fiecare angajat',
+                    text: 'Dodatni sati i radni sati tokom nedelje za svakog zaposlenog',
                     padding: {
                     bottom: 40
                 },

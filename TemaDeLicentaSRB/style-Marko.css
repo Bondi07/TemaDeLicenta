@@ -10,6 +10,15 @@
     --transition: all 0.2s ease;
     scroll-behavior: smooth;
 }
+a:link{
+    color: red;
+}
+a:visited{
+    color: #E1701A;
+}
+a:hover{
+    color: #FC5404;
+}
 .sidebar{
     position: fixed;
     top: 0;
@@ -75,13 +84,10 @@ ul li a.active{
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
+/* CAND LINCUL ESTE VISITAD DEVINE ALB */
+.home-section .home-content2 .limbi-straine a:visited{
+    color: white;
 }
-*/
-/*ne radi color za tkes kad predjes preko njega (li)*/
-
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
@@ -126,34 +132,9 @@ ul li a.active{
     position: absolute;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
 }
 
-/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
-/*
-
-.sidebar .nav-links  li .tooltip{
-    position: absolute;
-    top: -20px;
-    left: 80px;
-    z-index: 1;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 6px 14px;
-    font-size: 15px;
-    white-space: nowrap;
-    border-radius: 15px;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0s;
-}
-.sidebar.close  li:hover .tooltip{
-    opacity: 1;
-    pointer-events: auto;
-    transition: var(--transition);
-    top:50%;
-    transform: translateY(-50%);
-}
-*/
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
@@ -397,7 +378,7 @@ ul li a.active{
     color: #FC5404;
 }
 .textOsnovna a:visited{
-    color: red;
+    color: #417AC9;
 }
 .osnovna{
     margin-top: 400px;
@@ -440,16 +421,6 @@ ul li a.active{
 .slikeSrednja img:hover{
     box-shadow: -20px 10px 12px #000000;
 }
-.textSrednja a{
-    color: red;
-}
-.textSrednja a:hover{
-    color: #FC5404;
-}
-.textSrednja a:visited{
-    color: red;
-}
-/* FAKULTET */
 .FaksPosao{
     margin-top: 50px;
     margin-right: 50px;

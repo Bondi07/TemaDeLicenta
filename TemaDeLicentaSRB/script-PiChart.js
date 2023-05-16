@@ -12,43 +12,49 @@ sidebarBtn.addEventListener("click", ()=>{
 /*DARK MODE*/
 
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.pichart-text');
-    button = body.querySelector('.button');
-    chart = body.querySelector('#canvas');
-    chart1 = body.querySelector('#canvas1');
-    chart2 = body.querySelector('#canvas2');
-    chart3 = body.querySelector('#canvas3');
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const text = body.querySelector('.pichart-text');
+const button = body.querySelector('.button');
+const chart = body.querySelector('#canvas');
+const chart1 = body.querySelector('#canvas1');
+const chart2 = body.querySelector('#canvas2');
+const chart3 = body.querySelector('#canvas3');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'yellow';
-            text.style.color = 'black';
-            button.style.background = 'black';
-            button.style.color = 'white';
-            chart.style.background = '#E4E9F7';
-            chart1.style.background = '#E4E9F7';
-            chart2.style.background = '#E4E9F7';
-            chart3.style.background = '#E4E9F7';
+          body1.style.background = '#E4E9F7';
+          body1.style.color = 'black';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'yellow';
+          text.style.color = 'black';
+          button.style.background = 'black';
+          button.style.color = 'white';
+          chart.style.background = '#E4E9F7';
+          chart1.style.background = '#E4E9F7';
+          chart2.style.background = '#E4E9F7';
+          chart3.style.background = '#E4E9F7';
+          manu.style.background = '#417AC9';
+          plavaLinija.style.background = '#1E409F';
 
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'white';
-            text.style.color = 'white';
-            button.style.background = 'blue';
-            button.style.color = 'black';
-            chart.style.background = 'white';
-            chart1.style.background = 'white';
-            chart2.style.background = 'white';
-            chart3.style.background = 'white';
+          body1.style.background = '#121212';
+          body1.style.color = 'white';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'white';
+          text.style.color = 'white';
+          button.style.background = 'blue';
+          button.style.color = 'black';
+          chart.style.background = 'white';
+          chart1.style.background = 'white';
+          chart2.style.background = 'white';
+          chart3.style.background = 'white';
+          manu.style.background = "#0A4D68";
+          plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -84,6 +90,9 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+
+
+
 /* CHARTS */
 /* CHART 1 */
 var xmlhttp = new XMLHttpRequest();
@@ -113,14 +122,14 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: zi,
             datasets: [{
-              label: 'Vanzari',
+              label: 'Prodaja',
               data: vanzari,
               borderWidth: 4,
               borderColor: 'white',
               backgroundColor: '#1F8A70'
             },
             {
-                label: 'Profit pe zi',
+                label: 'Zarada tokom dana',
                 data: profitPeZi,
                 borderWidth: 4,
                 borderColor: 'white',
@@ -132,7 +141,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Profituri intr-o singura zi pe parcursul saptamanii si vanzari totale intr-o zi',
+                  text: 'Profit u jednom danu tokom nedelje i ukupna prodaja u jednom danu',
                   padding: {
                     bottom: 40
                 },
@@ -183,7 +192,7 @@ xmlhttp.onreadystatechange = function(){
             labels: zi,
             datasets: [
             {
-                label: 'Profit pe zi',
+                label: 'Zarada tokom jednog dana',
                 data: vanzariPeZi,
                 borderWidth: 4,
                 borderColor: '#00235B',
@@ -195,7 +204,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Castiguri pe parcursul unei zile',
+                  text: 'Zarada tokom jednog dana',
                   padding: {
                     bottom: 40
                 },
@@ -247,7 +256,7 @@ xmlhttp.onreadystatechange = function(){
             labels: zi,
             datasets: [
             {
-                label: 'Vizite pe o zi',
+                label: 'Posete tokom jednog dana',
                 data: vizite,
                 borderWidth: 4,
                 borderColor: 'black',
@@ -259,7 +268,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Numarul de vizite pe parcursul unei zile pe saptamana',
+                  text: 'Broj poseta tokom dana u jednoj nedelji',
                   padding: {
                     bottom: 40
                 },
@@ -268,10 +277,6 @@ xmlhttp.onreadystatechange = function(){
                 }
               }
             },
-            title: {
-                display: true,
-                text: "Vanzarile pe o zi"
-              },
             elements:{
                 line:{
                     tension:0
@@ -321,10 +326,10 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
+            labels: ['Godisnji prihod', 'Mesecni prihod', 'Tranzakcije', 'Prodati prodati mesecno'],
             datasets: [
             {
-                label: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
+                label: ['Godisnji prihod', 'Mesecni prihod', 'Tranzakcije', 'Prodati prodati mesecno'],
                 data: [venitAnual, venitLunar, tranzactie, produseVanduteLunar],
                 borderWidth: 5,
                 borderColor: 'black',
@@ -336,7 +341,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Numarul de produse vandute lunar, venit anual, venit lunar si numar de tranzacti intro luna',
+                  text: 'Broj prodatih proizvoda mesecno, godisnji prihod, mesecni prihod i broj tranzakcija tokom meseca',
                   padding: {
                     bottom: 40
                 },

@@ -9,25 +9,31 @@ sidebarBtn.addEventListener("click", ()=>{
 
 /*DARK MODE*/
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    text = body.querySelector('.Graftext');
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const text = body.querySelector('.Graftext');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#E4E9F7';
+            body1.style.color = 'black';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
         }else{
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#121212';
+            body1.style.color = 'white';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -62,3 +68,5 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+

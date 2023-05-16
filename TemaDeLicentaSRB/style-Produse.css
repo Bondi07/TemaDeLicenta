@@ -69,6 +69,8 @@
     overflow: visible;
     padding-top: 50px;
 }
+
+/* DODATO ZA MENJANJE BOJE LI A */
 ul li a.active{
     background: #62CDFF;
 }
@@ -121,8 +123,12 @@ ul li a.active{
     position: absolute;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
 }
-
+/* CAND LINCUL ESTE VISITAD DEVINE ALB */
+.home-section .home-content2 .limbi-straine a:visited{
+    color: white;
+}
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
@@ -360,6 +366,9 @@ button.disabled {
     color: #ccc;
     cursor: default;
 }
+
+
+
 
 
 

@@ -389,9 +389,10 @@ ul li a.active{
 .gdeJeBio h2{
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-bottom: yellowgreen 3px  solid;
-    margin-right: 350px;
-    margin-left: 350px;
+    margin-right: 400px;
+    margin-left: 400px;
 }   
 .lista{
     display: grid;
@@ -407,16 +408,6 @@ ul li a.active{
 .lista li::marker{
     content: ' ▶️ ';
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*GO TO TOP*/

@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style-Admin.css" type="text/css">
     <link rel="icon" href="../despre noi/admin.avif" type = "image/x-icon">
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
-    <title>Admin page</title>
+    <title>Admin</title>
 </head>
 <body>
 
 
     <div class="plavaLinija">
-        <center><h1>Welcome</h1></center>
+        <center><h1>Dobrodosli</h1></center>
     </div>
 
     <div class="mainSection">
@@ -26,8 +26,8 @@
 
 
         <div class="alege">
-            <h2>Selectati pagina la care doriti sa aplicati schimbari:</h2>
-            <label for="tabele">Alege:</label>
+            <h2>Odaberite stranicu na kojoj zelite da izvrsite izmene:</h2>
+            <label for="tabele">Odaberi:</label>
             <select name="pagini" id="pagini" name="alegeTabel">
                 <optgroup label="Pagina Dashboard ">
                     <optgroup label="Venit">
@@ -86,15 +86,15 @@
 
         </div>
 
-        <div class="csvSection">
-            <h2>Aici puteti importa un .csv file</h2>
-            <input type="file" class="alegeFisieru" placeholder="Alege fisieru... " id="file">
-            <button onclick="location.reload();" class="reloadPage">Refresh Page</button>
-            <table></table>
-    
-        </div>
 
-        <input type="submit" class="buttonImport" value="Importati!" id="import">
+        <form id="myForm">
+            <input type="file" name="myFile">
+            <button type="submit">Posalji</button>
+            <button id="refreshButton">Refresuj</button>
+        </form>
+        
+        <table></table>
+        
     </div>
 
 
@@ -102,7 +102,7 @@
 
     <footer>
         <div class="fott">
-            <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+            <h3 align="center">&copy;2023 Nikola Bondokic. Sva prava sadrzana.</h3>
         </div>
     </footer>
 

@@ -1,43 +1,50 @@
 /*html  */
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    box = body.querySelector('.box');
-    body = body.querySelector('.home-section');
-    headertext = body.querySelector('.text-barChart');
-    button = body.querySelector('.button');
-    chart = body.querySelector('#canvas');
-    chart1 = body.querySelector('#canvas1');
-    chart2 = body.querySelector('#canvas2');
-    chart3 = body.querySelector('#canvas3');
-    chart4 = body.querySelector('#canvas4');
+const body = document.querySelector('body');
+const box = body.querySelector('.box');
+const body1 = body.querySelector('.home-section');
+const headertext = body.querySelector('.text-barChart');
+const button = body.querySelector('.button');
+const chart = body.querySelector('#canvas');
+const chart1 = body.querySelector('#canvas1');
+const chart2 = body.querySelector('#canvas2');
+const chart3 = body.querySelector('#canvas3');
+const chart4 = body.querySelector('#canvas4');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'yellow';
-            headertext.style.color = 'black';
-            button.style.background = 'black';
-            chart.style.background = '#E4E9F7';
-            chart1.style.background = '#E4E9F7';
-            chart2.style.background = '#E4E9F7';
-            chart3.style.background = '#E4E9F7';
-            chart4.style.background = '#E4E9F7';
+          body1.style.background = '#E4E9F7';
+          body1.style.color = 'black';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'yellow';
+          headertext.style.color = 'black';
+          button.style.background = 'black';
+          chart.style.background = '#E4E9F7';
+          chart1.style.background = '#E4E9F7';
+          chart2.style.background = '#E4E9F7';
+          chart3.style.background = '#E4E9F7';
+          chart4.style.background = '#E4E9F7';
+          manu.style.background = '#417AC9';
+          plavaLinija.style.background = '#1E409F';
+            
 
         }else{
-            body.style.background = '#121212'; /* malo svetlija boja (#282A3A)*/
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
-            box.style.background = 'white';
-            headertext.style.color = 'white';
-            button.style.background = 'blue';
-            chart.style.background = 'white';
-            chart1.style.background = 'white';
-            chart2.style.background = 'white';
-            chart3.style.background = 'white';
-            chart4.style.background = 'white';
+          body1.style.background = '#121212'; /* malo svetlija boja (#282A3A)*/
+          body1.style.color = 'white';
+          body1.style.transform = '0.5s easy';
+          box.style.background = 'white';
+          headertext.style.color = 'white';
+          button.style.background = 'blue';
+          chart.style.background = 'white';
+          chart1.style.background = 'white';
+          chart2.style.background = 'white';
+          chart3.style.background = 'white';
+          chart4.style.background = 'white';
+          manu.style.background = "#0A4D68";
+          plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -81,6 +88,8 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+
+
 /*Bar charts */
 var xmlhttp = new XMLHttpRequest();
 var url = "https://localhost:7111/api/Magazin/Grafic3";
@@ -110,7 +119,7 @@ xmlhttp.onreadystatechange = function(){
             data: {
               labels: zi,
               datasets: [{
-                label: 'Bani cheltuiti pe marfa',
+                label: 'Novac potrosen na robu',
                 data: sumaMarfa,
                 borderWidth: 4,
                 borderColor: 'red'
@@ -128,7 +137,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                    text: 'Novac utrosen na kupovinu robe i minimalna zarada od te robe',
                     padding: {
                       bottom: 40
                   },
@@ -172,7 +181,7 @@ xmlhttp.onreadystatechange = function(){
             data: {
               labels: zi,
               datasets: [{
-                label: 'Bani cheltuiti pe marfa',
+                label: 'Novac potrosen na robu',
                 data: vanzariPeZi,
                 borderWidth: 4,
                 barThickness: 100,
@@ -185,7 +194,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Castiguri pe parcursul unei zile din intreaga saptamana',
+                    text: 'Zarada tokom jendog dana u celoj nedelji ',
                     padding: {
                       bottom: 40
                   },
@@ -232,21 +241,21 @@ xmlhttp.onreadystatechange = function(){
             data: {
               labels: [1, 2],
               datasets: [{
-                label: 'Numar total de angajati',
+                label: 'Ukupan broj zaposljenih',
                 data: nrTotalDeAngajati,
                 borderWidth: 4,
                 backgroundColor:'#F5F5F5' ,
                 borderColor: '#F94A29'
               },
               {
-                label: 'Numar de magazine',
+                label: 'Broj radnji',
                 data: nrDeMagazine,
                 borderWidth: 4,
                 backgroundColor:'#F5F5F5' ,
                 borderColor: '#86A3B8'
               },
               {
-                label: 'Numar de masini',
+                label: 'Broj automobila',
                 data: nrDeMasini,
                 borderWidth: 4,
                 backgroundColor:'#F5F5F5' ,
@@ -258,7 +267,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Numarul de angajati, numarul de masini si numarul de magazine din firma "BONDI"',
+                    text: 'Broj zaposlenih, broj automobila i broj prodavnica u kompaniji "BONDI"',
                     padding: {
                       bottom: 40
                   },
@@ -303,7 +312,7 @@ xmlhttp.onreadystatechange = function(){
               labels: zi,
               datasets: [
               {
-                label: 'Numar de vizite in fiecare zi',
+                label: 'Broj poseta svakog dana',
                 data: vizite,
                 borderWidth: 4,
                 backgroundColor:'#13005A' ,
@@ -315,7 +324,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Numar de vizite in fiecare zi in magazinul nostru',
+                    text: 'Broj poseta svakog dana u nasoj radnji',
                     padding: {
                       bottom: 40
                   },
@@ -363,7 +372,7 @@ xmlhttp.onreadystatechange = function(){
               labels: luna,
               datasets: [
               {
-                label: 'Vanzari totale pe o luna in an 2021',
+                label: 'Ukupna prodaja tokom mesec dana u 2021 godini',
                 data: vanzariTotale,
                 borderWidth: 2,
                 backgroundColor:'#4E6C50' ,
@@ -375,7 +384,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Castiguri pe tot parcursul anului 2021 in dinari (DIN)',
+                    text: 'Zarada tokom 2021. godine u dinarima(DIN)',
                     padding: {
                       bottom: 40
                   },

@@ -38,7 +38,7 @@ body{
 }
 /*   */
 .adminText h1{
-    font-size: 50px;
+    font-size: 60px;
     color: black;
     border-bottom: black 5px solid;
     margin-right: 150px;
@@ -86,12 +86,13 @@ tr:nth-child(odd){
     font-size: 25px;
 }
 table{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
+    
 }
-.alege{
+.alege{ 
     margin-top: 100px;
 }
 .alege h2{
@@ -102,11 +103,27 @@ table{
 }
 .alege select{
     font-size: 20px;
+} 
+
+/* CSV */
+#myForm{
+    margin-top: 50px;
 }
-
-
-
-
+#myForm input{
+    font-size: 20px;
+}
+#myForm button{
+    font-size: 30px;
+    border-radius: 25px;
+    width: 200px;
+}
+/* refresh button */
+#refreshButton{
+    margin-left: 50px;
+}
+#myForm button:hover{
+    background: #DC0000;
+}
 
 /* FOTTER */
 .fott{

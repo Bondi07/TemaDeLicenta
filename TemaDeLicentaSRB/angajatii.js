@@ -11,12 +11,13 @@ sidebarBtn.addEventListener("click", ()=>{
 /*darkside */
 
 const toggle = document.getElementById('toggleDark');
-const  body = document.querySelector('body');
-const  body1 = body.querySelector('.home-section');
-const  box = body.querySelector('.box');
-const  text = body.querySelector('.angajatii-text');
-const  date = body.querySelector('.angajatii');
-
+const body = document.querySelector('body');
+const body1 = body.querySelector('.home-section');
+const box = body.querySelector('.box');
+const text = body.querySelector('.angajatii-text');
+const date = body.querySelector('.angajatii');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
@@ -27,6 +28,8 @@ const  date = body.querySelector('.angajatii');
             box.style.background = 'yellow';
             text.style.color = 'black';
             date.style.color = 'black';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
         }else{  
             body1.style.background = '#121212';
             body1.style.color = 'white';
@@ -34,6 +37,8 @@ const  date = body.querySelector('.angajatii');
             box.style.background = 'white';
             text.style.color = 'white';
             date.style.color = 'black';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -99,7 +104,7 @@ http.onload = function(){
                             <p class=pozitie>Pozicija: ${item.pozitie}</p>
                         </div>
 
-                        <a href="#finish">Vise informacija</a>
+                        <a href="#finish"> Vise informacija </a>
 
                     </div>  
                 </div>
@@ -113,3 +118,6 @@ http.onload = function(){
         console.log(out);
     }
 }
+
+
+

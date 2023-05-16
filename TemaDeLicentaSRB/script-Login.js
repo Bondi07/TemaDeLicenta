@@ -20,7 +20,7 @@ login.onclick = () => {
         {
             if ((input[0].value != sessionStorage.getItem("username")))
             {
-                input[0].nextElementSibling.textContent = "Username este incorect!";
+                input[0].nextElementSibling.textContent = "Korisnicko ime je pogresno upisano!";
                 setTimeout(() =>{
                     input[0].nextElementSibling.textContent = "";
                 },3000);
@@ -28,7 +28,7 @@ login.onclick = () => {
 
             if ((input[1].value != sessionStorage.getItem("password")))
             {
-                input[1].nextElementSibling.textContent = "Password este incorect!";
+                input[1].nextElementSibling.textContent = "Sifra je pogresno upisana!";
                 setTimeout(() =>{
                     input[1].nextElementSibling.textContent = "";
                 },3000);
@@ -39,14 +39,14 @@ login.onclick = () => {
     {
         if(input[0].value == "")
         {
-            input[0].nextElementSibling.textContent = "Username is empty!";
+            input[0].nextElementSibling.textContent = "Polje Korisnicko ime je prazno!";
             setTimeout(() =>{
                 input[0].nextElementSibling.textContent = "";
             },3000);
         }
         if(input[1].value == "")
         {
-            input[1].nextElementSibling.textContent = "Password is empty!";
+            input[1].nextElementSibling.textContent = "Polje Sifra je prazna!";
             setTimeout(() =>{
                 input[1].nextElementSibling.textContent = "";
             },3000);
@@ -55,3 +55,5 @@ login.onclick = () => {
     }
 
 }
+
+

@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../images/setings.png" type = "image/x-icon">
     <script src="script-schimbari.js"></script>
-    <title>Setari</title>
+    <title>Podesavanja</title>
 </head>
 <body onload="applyChanges()">
 
@@ -23,45 +23,45 @@
             <li>
                 <a href="Dashboard.html">
                     <i class='bx bxs-grid-alt'></i>
-                    <span class="link_name">Dashboard</span>
+                    <span class="link_name">Komandna tabla</span>
                 </a>
             </li>
             <li>
                 <a href="Angajati.html">
                     <i class='bx bx-wrench'></i>
-                    <span class="link_name">Angajatii</span>
+                    <span class="link_name">Radnici</span>
                 </a>
             </li>
             <li>
                 <a href="Grafice.html">
                     <i class='bx bx-line-chart'></i>
-                    <span class="link_name">Grafice</span>
+                    <span class="link_name">Grafici</span>
                 </a>
             </li>
             <li>
                 <a href="Produse.html">
                     <i class='bx bx-cart-alt'></i>
-                    <span class="link_name">Produse</span>
+                    <span class="link_name">Proizvodi</span>
                 </a>
             </li>
             <li>
                 <a href="DespreNoi.html">
                     <i class='bx bx-info-circle' ></i>
-                    <span class="link_name">Despre noi</span>
+                    <span class="link_name">O nama</span>
                 </a>
             </li>
             <li>
                 <a href="Setari.html">
                     <i class='bx bx-cog' ></i>
-                    <span class="link_name">Setari</span>
+                    <span class="link_name">Podesavanja</span>
                 </a>
             </li>
         </ul>
         
         
         <div class="bottom-content">
-            <a href="Coockies.html" class="coockie">Cookie</a> |
-            <a href="PrivacyPolice.html" class="prpolice">Privacy policy</a>
+            <a href="Coockies.html" class="coockie">Kolacici</a> |
+            <a href="PrivacyPolice.html" class="prpolice">Politika privatnosti</a>
         </div>
         <div class="bt2">
             <a href="Coockies.html"><i class='bx bx-cookie'></i></a>
@@ -81,9 +81,9 @@
                     <i class='bx bx-sun' id="toggleDark"></i>
                 </div>
                 <div class="limbi-straine">
-                    <a href="#" class="eng">ENG</a> |
-                    <a href="#" class="srb">SRB</a> |
-                    <a href="#" class="ro">RO</a>
+                    <a href="../TemaDeLicentaENG/Setari.html" class="eng">ENG</a> |
+                    <a href="../TemaDeLicentaSRB/Setari.html" class="srb">SRB</a> |
+                    <a href="../Fronend/Setari.html" class="ro">RO</a>
                 </div>
             </div>
         </div>
@@ -92,34 +92,33 @@
 
         <div class="main">
             <div class="setari-text">
-                <h1>Setari</h1>
+                <h1>Podesavanja</h1>
                 <div class="btn-right">
-                    <a href="Login.html"><button type="button"><img src="../despre noi/boss.png" alt="Admin icon" width="30px" height="30px">Admin Page</button></a>
+                    <a href="Login.html"><button type="button"><img src="../despre noi/boss.png" alt="Admin icon" width="30px" height="30px">Admin</button></a>
                 </div>
             </div>
         
 
             <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-SIZE -->
             <div class="test">
-                <h2>Aici puteti alege font-size:</h2>
+                <h2>Ovde mozete odabrati velicinu teksta:</h2>
                 <div class="tooltip1">
-                    <button onclick="changeFontSize('20px')">Small</button>
-                    <span class="tooltiptext1">Text proba</span>
+                    <button onclick="changeFontSize('20px')">Malo</button>
+                    <span class="tooltiptext1">Probni tekst</span>
                 </div>
-                <div class="tooltip2">                       <!-- MOZDA IZBACITI OVU VISUNU  -->
-                    <button onclick="changeFontSize('30px')">Medium</button>
-                    <span class="tooltiptext2">Text proba</span>
+                <div class="tooltip2">                      
+                    <button onclick="changeFontSize('30px')">Srednje</button>
+                    <span class="tooltiptext2">Probni tekst</span>
                 </div>
                 <div class="tooltip3">
-                    <button onclick="changeFontSize('40px')">Large</button>
-                    <span class="tooltiptext3">Text proba</span>
+                    <button onclick="changeFontSize('40px')">Veliko</button>
+                    <span class="tooltiptext3">Probni tekst</span>
                 </div>
                 
                 <div class="testText">
-                    <h3>Asa va arate text dupa modificari:</h3>
+                    <h3>Ovako ce izgledati tekst posle promena:</h3>
                     <p class="text">
-                        This is some text on the page.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Ovo je neki tekst na stranici. Lorem Ipsnum je jednostavan lazni tekst industrije stampanja i kucanja. 
                     </p>
                 </div>
             </div>
@@ -129,18 +128,17 @@
             <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-COLOR -->
             <div class="schimbaCuloarea">
                 <div class="text1">
-                    <h2>Aica puteti schimba culoarea textului</h2>
-                    <button onclick="changeColor('red')" class="red">Red</button>
-                    <button onclick="changeColor('blue')" class="blue">Blue</button>
-                    <button onclick="changeColor('green')" class="green">Green</button>
-                    <button onclick="changeColor('orange')" class="orange">Orange</button>
-                    <button onclick="changeColor('black')" class="black">Black</button>
+                    <h2>Ovde mozete promeniti boju teksta</h2>
+                    <button onclick="changeColor('red')" class="red">Crvena</button>
+                    <button onclick="changeColor('blue')" class="blue">Plava</button>
+                    <button onclick="changeColor('green')" class="green">Zelena</button>
+                    <button onclick="changeColor('orange')" class="orange">Narandzasta</button>
+                    <button onclick="changeColor('black')" class="black">Crna</button>
                 </div>
                 <div class="dupaShimbarea">
-                    <h3>Asa va arate text dupa modificari:</h3>
+                    <h3>Ovako ce izgledati tekst posle promena:</h3>
                     <p class="textColor">
-                        This is some text on the page.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                        Ovo je neki tekst na stranici. Lorem Ipsnum je jednostavan lazni tekst industrije stampanja i kucanja. 
                     </p>
                 </div>
             </div>
@@ -149,40 +147,34 @@
             <!-- AICI ESTE CODU PENTRU A SCHIMBA FONT-FAMILY -->
             <div class="schimbareaFontFamily">
                 <div class="text2">
-                    <h2>Aica puteti schimba font-family textului</h2>
+                    <h2>Ovde mozete promeniti font-family teksta</h2>
                     <div class="gridBtn">
                         <div class="tooltip4">
                             <button onclick="changeFontFamily('Poppins, sans-serif')">Poppins</button>
-                            <span class="tooltiptext4">Text proba</span>
+                            <span class="tooltiptext4">Probni tekst</span>
                         </div>
                         <div class="tooltip5">
                             <button onclick="changeFontFamily('Sono, sans-serif')">Sono</button>
-                            <span class="tooltiptext5">Text proba</span>
+                            <span class="tooltiptext5">Probni tekst</span>
                         </div>
                         <div class="tooltip6">
                             <button onclick="changeFontFamily('Source Code Pro, monospace')">Source Code Pro</button>
-                            <span class="tooltiptext6">Text proba</span>
+                            <span class="tooltiptext6">Probni tekst</span>
                         </div>
                         <div class="tooltip7">
                             <button onclick="changeFontFamily('Caveat, cursive')">Caveat</button>
-                            <span class="tooltiptext7">Text proba</span>
+                            <span class="tooltiptext7">Probni tekst</span>
                         </div>
                     </div>
                 </div>
             
                 <div class="dupaShimbareaFontului">
-                    <h3>Asa va arate text dupa modificari:</h3>
+                    <h3>Ovako ce izgledati tekst posle promena:</h3>
                     <p class="textFamily">
-                        This is some text on the page.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                        Ovo je neki tekst na stranici. Lorem Ipsnum je jednostavan lazni tekst industrije stampanja i kucanja. 
                     </p>
                 </div>
             </div>
-
-
-
-
-
 
         </div>
 
@@ -193,7 +185,7 @@
 
         <footer>
             <div class="fott">
-                <h3 align="center">&copy;2023 Nikola Bondokic. All rights reserved  </h3>
+                <h3 align="center">&copy;2023 Nikola Bondokic. Sva prava sadrzana.</h3>
             </div>
         </footer>
 
