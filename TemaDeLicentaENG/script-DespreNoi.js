@@ -158,11 +158,11 @@ class TextScremble{
     }
 }
 const phrases = [
-    'CINE SUNTEM NOI ??',
-    'DORITI SA STITI CINE SUNTEM NOI ?',
-    'NOI SUNTEM O COMPANIE MARE!',
-    'NOI SUNTEM "BONDI" !',
-    'NOI SUNTEM O FAMILIE !'
+    'WHO ARE WE ??',
+    'YOU WANT TO KNOW WHO WE ARE ?',
+    'WE ARE A BIG COMPANY!',
+    'WE ARE "BONDI" !',
+    'WE ARE A FAMILY !'
 ]
 const el = document.querySelector('.text')
 const fx = new TextScremble(el)
@@ -183,7 +183,7 @@ function sendEmail(){
         Host : "smtp.gmail.com",
         Username : "nikola72bondokic3@gmail.com",
         Password : "******",  // AICI TREBUIE SA PUI PAROLA MEILULUI
-        To : 'nikola.bondokic72@gmail.com',
+        To : 'nikola72bondokic3@gmail.com',
         From : document.getElementById("email").value,
         Subject : "Mesaj din forma Contact us",
         Body : "Nume" + document.getElementById("nume").value   

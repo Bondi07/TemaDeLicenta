@@ -278,12 +278,16 @@ ul li a.active{
 .main .button{
     width: 120px;
     height: 50px;
-    background: black;
+    background: #E21818;
     border-radius: 25px;
-    border-color: white;
     margin-top: 50px;
     color: white;
     font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.main .button:hover{
+    background: yellowgreen;
 }
 
 /*GO TO TOP*/

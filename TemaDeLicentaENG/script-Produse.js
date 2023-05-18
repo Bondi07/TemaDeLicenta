@@ -207,7 +207,7 @@ data.forEach(item => {
                 <div class="okvir" id="prod">
                 <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
                 <p class=nume>${item.nume}</p>
-                <p class=cantitate>Cantitate: ${item.cantitate}</p>
+                <p class=cantitate>Amount: ${item.cantitate}</p>
                 <p class=pret>${item.pret} RON </p>
                 </div>
             </div>

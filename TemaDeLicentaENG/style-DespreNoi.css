@@ -354,7 +354,7 @@ svg{
 }
 .meniBirajGdeIdes a{
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: 2px;
     font-weight: bold;
     transition: color 0.2s linear;
@@ -596,9 +596,9 @@ svg{
 
 /*DESPRE APARTAMENTE*/
 .cazare{
-    font-size: 50px;
-    font-weight: 600;
-    width: 350px;
+    font-size: 30px;
+    font-weight: 500;
+    width: 400px;
     height: 150px;
     margin-top: 50px;
     background: #9DC08B;

@@ -274,12 +274,13 @@ ul li a.active{
     border-radius: 30px;
     font-size: 20px;
     padding: 15px;
+    padding-left: 30px;
     outline: none;
     border: none;
     cursor: pointer;
     float: right;
     display: inline-flex;
-    margin-left: 600px;
+    margin-left: 635px;
 
 }
 .sidebar.close .btn-right button{
