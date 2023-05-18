@@ -11,29 +11,34 @@ sidebarBtn.addEventListener("click", ()=>{
 /*darkside */
 
 const toggle = document.getElementById('toggleDark');
-    body = document.querySelector('body');
-    body = body.querySelector('.home-section');
-    box = body.querySelector('.box');
-    text = body.querySelector('.angajatii-text');
-    date = body.querySelector('.angajatii');
-
+const body = document.querySelector('body');
+const body1 = body.querySelector('.home-section');
+const box = body.querySelector('.box');
+const text = body.querySelector('.angajatii-text');
+const date = body.querySelector('.angajatii');
+const manu = body.querySelector(".sidebar");
+const plavaLinija = body.querySelector(".line");
 
     toggle.addEventListener('click', function(){
         this.classList.toggle('bx-moon');
         if(this.classList.toggle('bx-sun')){
-            body.style.background = '#E4E9F7';
-            body.style.color = 'black';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#E4E9F7';
+            body1.style.color = 'black';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'yellow';
             text.style.color = 'black';
             date.style.color = 'black';
+            manu.style.background = '#417AC9';
+            plavaLinija.style.background = '#1E409F';
         }else{  
-            body.style.background = '#121212';
-            body.style.color = 'white';
-            body.style.transform = '0.5s easy';
+            body1.style.background = '#121212';
+            body1.style.color = 'white';
+            body1.style.transform = '0.5s easy';
             box.style.background = 'white';
             text.style.color = 'white';
             date.style.color = 'black';
+            manu.style.background = "#0A4D68";
+            plavaLinija.style.background = '#4C6793';
         }
     })
 
@@ -90,16 +95,16 @@ http.onload = function(){
             out +=  `
                 <div class="angajatii">
                     <div class="okvir">
-                        <img class="poza" src="../imagesAngajatii/${item.prenume}.jpg" alt="poze" width="300px" height="450px">
+                        <img class="poza" src="../imagesAngajatii/${item.prenume}.jpg" alt="poze" width="300px" height="550px">
                         <div class="datele">
-                            <p class=prenume>Prenume: ${item.prenume}</p>
-                            <p class=nume>Nume: ${item.nume}</p> 
-                            <p class=oras>Oras: ${item.oras}</p>
+                            <p class=prenume>First name: ${item.prenume}</p>
+                            <p class=nume>Last name: ${item.nume}</p> 
+                            <p class=oras>Town: ${item.oras}</p>
                             <p class=email>E-mail: ${item.email}</p>
-                            <p class=pozitie>Pozitie: ${item.pozitie}</p>
+                            <p class=pozitie>Position: ${item.pozitie}</p>
                         </div>
 
-                        <a href="#finish"> Mai multe informati </a>
+                        <a href="#finish">More information</a>
 
                     </div>  
                 </div>
@@ -113,3 +118,6 @@ http.onload = function(){
         console.log(out);
     }
 }
+
+
+

@@ -39,45 +39,47 @@ logoutBtn.addEventListener("click", () => {
 })
 
 
+/* refresh button */
+const refreshButton = document.getElementById('refreshButton');
+
+refreshButton.addEventListener('click', () => {
+    location.reload();
+}); 
 
 
 
 
-/* IMPORT .CSV FILE  */
+/* PENTRU A LUA .CSV SI TRIMITE CATRE BACK */
+document.getElementById('myForm').addEventListener('submit', submitForm)
 
-const form = document.querySelector('#pagini');
+function submitForm(event) {
+    event.preventDefault();
+    const selectElement = document.getElementById("pagini");
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    const selectedValue = selectedOption.textContent;
+    const optgroupLabel = selectedOption.parentNode.label;
+    const tableName = optgroupLabel + ' - ' + selectedValue;
+    console.log("optgroupLabel = ", optgroupLabel);
 
-form.addEventListener('submit', (e) => {
+    const formData = new FormData();
+    formData.append('table', event.target.elements.myFile.files[0]);
+    formData.append('tableName', tableName);
 
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    //de pe yt
-    const file = document.querySelector('#file');
-    formData.append('file', file.files[0], "file.csv");
-
-
-    for(item of formData){
-        console.log(item[0], item[1]);
-    }
-
-    console.log('Before fetch call');
     fetch('https://localhost:7111/api/Magazin/ImportTable', {
-        method: "POST",
+        method: 'POST',
         body: formData,
-        headers: {
-            "Content-Type": "multipart/form-data"
-        },
     })
-        .then(res => res.json())
-        .then(res => console.log(res))
-        .catch(error => console.error(error));
-        console.log('Form data sent.');
-});
+    .then(response => {
+        console.log('File uploaded successfully');
+        alert('Data retrieved successfully');
 
+    })
+    .catch(error => {
+        console.error('Error uploading file', error);
+        alert('Data not retrieved successfully');
 
-
+    });
+}
 
 
 

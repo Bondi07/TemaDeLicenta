@@ -13,7 +13,7 @@
 
 
     <div class="plavaLinija">
-        <center><h1>Welcome</h1></center>
+        <center><h1>Bine ati venit</h1></center>
     </div>
 
     <div class="mainSection">
@@ -86,15 +86,15 @@
 
         </div>
 
-        <div class="csvSection">
-            <h2>Aici puteti importa un .csv file</h2>
-            <input type="file" class="alegeFisieru" placeholder="Alege fisieru... " id="file">
-            <button onclick="location.reload();" class="reloadPage">Refresh Page</button>
-            <table></table>
-    
-        </div>
 
-        <input type="submit" class="buttonImport" value="Importati!" id="import">
+        <form id="myForm">
+            <input type="file" name="myFile">
+            <button type="submit">Submit</button>
+            <button id="refreshButton">Refresh</button>
+        </form>
+        
+        <table></table>
+        
     </div>
 
 

@@ -64,11 +64,11 @@ ul li a.active{
     border: none;
 }
 
-/* .sidebar.close .nav-links i:hover{
-    color: #11101d;
-    background-color: white;
-    border:none;
-} */
+/* CAND LINCURI PENTRU LIMBI STRAINE SUNT ACTIVATI  */
+.limbi-straine a.active {
+    color: red !important;
+}
+
 
 .sidebar .nav-links{
     height: 100%;
@@ -80,8 +80,10 @@ ul li a.active{
     overflow: visible;
     padding-top: 50px;
 }
-
-/*ne radi color za tkes kad predjes preko njega (li)*/
+/* CAND LINCUL ESTE VISITAD DEVINE ALB */
+.home-section .home-content2 .limbi-straine a:visited{
+    color: white;
+}
 
 .sidebar .nav-links li{
     position: relative;
@@ -118,7 +120,6 @@ ul li a.active{
 .sidebar.close .nav-links li a .link_name{
     opacity: 0;
     pointer-events: none;
-
 }
 .sidebar .bottom-content {
     color:white;
@@ -128,6 +129,7 @@ ul li a.active{
     position: absolute;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
@@ -226,8 +228,9 @@ ul li a.active{
 .home-section .home-content2 .limbi-straine .srb,
 .home-section .home-content2 .limbi-straine .ro{
     color: white;
-
 }
+
+
 .home-section .home-content2{
     right: 0;
     padding-right: 150px;

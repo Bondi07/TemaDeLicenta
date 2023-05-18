@@ -74,12 +74,10 @@
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
+/* CAND LINCURI PENTRU LIMBI STRAINE SUNT ACTIVATI  */
+.limbi-straine a.active {
+    color: red !important;
 }
-*/
-/*ne radi color za tkes kad predjes preko njega (li)*/
 
 .sidebar .nav-links li{
     position: relative;
@@ -125,7 +123,18 @@
     position: absolute;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
 }
+
+ul li a.active{
+    background: #62CDFF;
+}
+.sidebar .nav-links li:hover{
+    border: black 1px solid;
+    background: rgba(255, 255, 255, 0.393);
+}
+
+
 
 /*   ZA COOCKIES */
 .sidebar .bt2 i{
@@ -151,33 +160,6 @@
     border: 2px  black solid ;
     color: red;
 }
-
-/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
-/*
-
-.sidebar .nav-links  li .tooltip{
-    position: absolute;
-    top: -20px;
-    left: 80px;
-    z-index: 1;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 6px 14px;
-    font-size: 15px;
-    white-space: nowrap;
-    border-radius: 15px;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0s;
-}
-.sidebar.close  li:hover .tooltip{
-    opacity: 1;
-    pointer-events: auto;
-    transition: var(--transition);
-    top:50%;
-    transform: translateY(-50%);
-}
-*/
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/

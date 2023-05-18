@@ -28,7 +28,7 @@ login.onclick = () => {
 
             if ((input[1].value != sessionStorage.getItem("password")))
             {
-                input[1].nextElementSibling.textContent = "Password este incorect!";
+                input[1].nextElementSibling.textContent = "Parola este incorecta!";
                 setTimeout(() =>{
                     input[1].nextElementSibling.textContent = "";
                 },3000);
@@ -39,14 +39,14 @@ login.onclick = () => {
     {
         if(input[0].value == "")
         {
-            input[0].nextElementSibling.textContent = "Username is empty!";
+            input[0].nextElementSibling.textContent = "Campul pentru nume este gol !";
             setTimeout(() =>{
                 input[0].nextElementSibling.textContent = "";
             },3000);
         }
         if(input[1].value == "")
         {
-            input[1].nextElementSibling.textContent = "Password is empty!";
+            input[1].nextElementSibling.textContent = "Campul pentru parola este gol !";
             setTimeout(() =>{
                 input[1].nextElementSibling.textContent = "";
             },3000);

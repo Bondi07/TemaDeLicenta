@@ -129,10 +129,11 @@ ul li a.active{
     font-family: 'Poppins', sans-serif;
     margin-left: 10px;
 }
-/* CAND LINCUL ESTE VISITAD DEVINE ALB */
-.home-section .home-content2 .limbi-straine a:visited{
-    color: white;
+/* CAND LINCURI PENTRU LIMBI STRAINE SUNT ACTIVATI  */
+.limbi-straine a.active {
+    color: red !important;
 }
+
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{

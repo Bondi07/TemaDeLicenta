@@ -73,12 +73,6 @@ ins{
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
-}
-*/
-/*ne radi color za tkes kad predjes preko njega (li)*/
 
 .sidebar .nav-links li{
     position: relative;
@@ -162,39 +156,13 @@ ul li a.active{
     color: red;
 }
 
-/*KADA JE MENUBAR ZATVOREN DA PISE SA STRANE IME GDE KLIKCEMO*/
-/*
 
-.sidebar .nav-links  li .tooltip{
-    position: absolute;
-    top: -20px;
-    left: 80px;
-    z-index: 1;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 6px 14px;
-    font-size: 15px;
-    white-space: nowrap;
-    border-radius: 15px;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0s;
-}
-.sidebar.close  li:hover .tooltip{
-    opacity: 1;
-    pointer-events: auto;
-    transition: var(--transition);
-    top:50%;
-    transform: translateY(-50%);
-}
-*/
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
 /*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }
-
 .sidebar .bottom-content a{
     color: white;
     font-size: 15px;
@@ -203,7 +171,7 @@ ul li a.active{
     color: red;
     
 }
-
+/* HOME SECTION */
 .home-section{
     position: relative;
     background: #E4E9F7;
@@ -260,8 +228,12 @@ ul li a.active{
 .home-section .home-content2 .limbi-straine .srb,
 .home-section .home-content2 .limbi-straine .ro{
     color: white;
-
 }
+/* CAND LINCURI PENTRU LIMBI STRAINE SUNT ACTIVATI  */
+.limbi-straine a.active {
+    color: red !important;
+}
+
 .home-section .home-content2{
     right: 0;
     padding-right: 150px;
@@ -299,6 +271,7 @@ ul li a.active{
     border-bottom: black 4px solid;
     margin-right: 80px;
 }
+
 
 /*do ovde ide main posle toga ide za svakog posebno*/
 /* OVDE SU KARTICE I NJIHOV IZGLED*/
@@ -351,7 +324,7 @@ ul li a.active{
     font-size: 20px;
     padding-left: 15px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main .venitLunar .title{
@@ -359,28 +332,28 @@ ul li a.active{
     font-size: 20px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .main .tranzacti .title{
     color: black;
     font-size: 20px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .main .prVaAnual .title{
     color: black;
     font-size: 15px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .main .prVaLunar .title{
     color: black;
     font-size: 15px;
     padding-left: 13px;
     padding-top: 5px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main .venitAnual .wrap-img{
@@ -477,7 +450,6 @@ ul li a.active{
 .textCompaniei{
     padding-top: 30px;
     /* font-size: 30px; */
-    font-family: Montserrat;
     text-align: justify;
     padding-right: 70px;
 }
@@ -605,6 +577,7 @@ header h2{
 }
 .box1 p{
     padding-top: 20px;
+    text-align: justify;
 }
 .box1 img{
     display: flex;
@@ -629,26 +602,14 @@ header h2{
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
-    align-self:center;
+    align-self: center;
+    
 }
 .box1 button:hover{
     background: #EA5455;
     color: #2D2727;
-
 }
-/* IZGLED ZA VELIKI EKRAN  */
-/* @media only screen  and (min-width: 1024px){
-    .main .wrap{
-        gap: 50px;
-    }
-    .chartBox{
-        margin-left: 150px;
-    }
-    .sidebar .nav-links li{
-        line-height: 100px;
-    }
 
-}  */
 
 
 /* FOOTER*/
