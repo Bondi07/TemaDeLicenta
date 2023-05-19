@@ -185,7 +185,7 @@ xmlhttp.onreadystatechange = function(){
                 borderColor: '#FED049'
               },
               {
-                label: 'Clienti ne multumiti',
+                label: 'Clienti nemultumiti',
                 data: clientiNemultumiti,
                 borderWidth: 4,
                 borderColor: 'red',

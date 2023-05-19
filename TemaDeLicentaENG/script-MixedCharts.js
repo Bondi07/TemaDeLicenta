@@ -126,14 +126,14 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: [],
             datasets: [{
-                label: 'Clienti multumiti',
+                label: 'Satisfied customers',
                 data: clientiMultumiti,
                 borderWidth: 4,
                 borderColor: 'black',
                 backgroundColor: '#FC2947'
             },
             {
-                label: 'Clienti nemultumiti',
+                label: 'Unsatisfied customers',
                 data: clientiNemultumiti,
                 borderWidth: 4,
                 borderColor: 'black',
@@ -145,7 +145,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "red",
-                    text: 'Numar de clienti care sunt multumiti si numar de clienti care sunt nemltumitu',
+                    text: 'Number of satisfied customers and number of dissatisfied customers',
                     padding: {
                     bottom: 40
                 },
@@ -198,13 +198,13 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: zi,
             datasets: [{
-                label: 'Bani pentru marfa',
+                label: 'Money for the goods',
                 data: sumaMarfa,
                 borderWidth: 4,
                 borderColor: 'green'
             },
             {
-                label: 'Profit intr-o zi',
+                label: 'Profit in a day',
                 data: profit,
                 borderWidth: 4,
                 borderColor: 'red'
@@ -215,7 +215,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "#F2921D",
-                    text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                    text: 'The money spent on the purchase of goods and the minimum earnings from those goods',
                     padding: {
                     bottom: 40
                 },
@@ -270,28 +270,28 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: [1],
             datasets: [{
-                label: 'Clienti care vin din Serbia',
+                label: 'Customers coming from Serbia',
                 data: clientiDinSerbia,
                 borderWidth: 4,
                 borderColor: 'blue',
                 backgroundColor: 'white'
             },
             {
-                label: 'Clienti care vin din Romania',
+                label: 'Customers coming from Romania',
                 data: clientiDinRomani,
                 borderWidth: 4,
                 borderColor: 'yellow',
                 backgroundColor: 'white'
             },
             {
-                label: 'Clienti care vin din Bulgaria',
+                label: 'Customers coming from Bulgaria',
                 data: clientiDinBulgaria,
                 borderWidth: 4,
                 borderColor: 'red',
                 backgroundColor: 'white'
             },
             {
-                label: 'Clienti care vin din Germania',
+                label: 'Customers coming from Germania',
                 data: clientiDinGermania,
                 borderWidth: 4,
                 borderColor: 'green',
@@ -303,7 +303,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "#A7727D",
-                    text: 'Numar de clienti si tara de unde sunt clienti care au vizitat magazin',
+                    text: 'Number of customers and the country from which customers who visited the store',
                     padding: {
                     bottom: 40
                 },
@@ -359,28 +359,28 @@ xmlhttp.onreadystatechange = function(){
             data: {
                 labels: [1],
                 datasets: [{
-                    label: 'Numar de clienti din Kladovo',
+                    label: 'Number of customers from Kladovo',
                     data: clientiDinKladovo,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: '#B0DAFF'
                 },
                 {
-                    label: 'Numar de clienti din Bor',
+                    label: 'Number of customers from Bor',
                     data: clientiDinBor,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: '#F9D949'
                 },
                 {
-                    label: 'Numar de clienti din Craiova',
+                    label: 'Number of customers from Craiova',
                     data: clientiDinCraiova,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'blue'
                 },
                 {
-                    label: 'Numar de clienti din Drobeta Turn Severin',
+                    label: 'Number of customers from Drobeta Turn Severin',
                     data: clientiDinDrobetaTurnSeverin,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
@@ -392,7 +392,7 @@ xmlhttp.onreadystatechange = function(){
                     title: {
                         display: true,
                         color: "#3E54AC",
-                        text: 'Numar de clienti din Kladovo si din alte orase',
+                        text: 'Number of customers from Kladovo and other cities',
                         padding: {
                         bottom: 40
                     },
@@ -440,7 +440,7 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: zi,
             datasets: [{
-                label: 'Vizite in fiecare zi intr-o saptamana',
+                label: 'Visits every day in a week',
                 data: vizite,
                 borderWidth: 4,
                 borderColor: '#609EA2'
@@ -451,7 +451,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Vizite in fiecare zi intr-o saptamana',
+                    text: 'Visits every day in a week',
                     padding: {
                     bottom: 40
                 },
@@ -506,19 +506,19 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: zi,
             datasets: [{
-                label: 'Vanzari',
+                label: 'Sale',
                 data: vanzari,
                 borderWidth: 4,
                 borderColor: '#609EA2'
             },
             {
-                label: 'Produse vandute',
+                label: 'Products sold',
                 data: produseVandute,
                 borderWidth: 4,
                 borderColor: '#DF2E38'
             },
             {
-                label: 'Profit pe zi',
+                label: 'Profit per day',
                 data: profitPeZi,
                 borderWidth: 4,
                 borderColor: '#E7B10A'
@@ -529,7 +529,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "#245953",
-                    text: 'Numar de produse vandute, profit si bani cheltuiti din vanzarea produselor',
+                    text: 'Number of products sold, profit and money spent from selling products',
                     padding: {
                     bottom: 40
                 },
@@ -586,28 +586,28 @@ xmlhttp.onreadystatechange = function(){
             data: {
                 labels: [1],
                 datasets: [{
-                    label: 'Numar de produse vandute in Romania',
+                    label: 'Number of products sold in Romania',
                     data: produseVanduteInRomania,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'blue'
                 },
                 {
-                    label: 'Numar de produse vandute in Bulgaria',
+                    label: 'Number of products sold in Bulgaria',
                     data: produseVanduteInBulgaria,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'red'
                 },
                 {
-                    label: 'Numar de produse cumparate in Romania',
+                    label: 'Number of products bought in Romania',
                     data: produseCumparateDinRomania,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
                     backgroundColor: 'blue'
                 },
                 {
-                    label: 'Numar de produse cumparate in Bulgaria',
+                    label: 'Number of products bought in Bulgaria',
                     data: produseCumparateDinBulgaria,
                     borderWidth: 4,
                     borderColor: '#E7B10A',
@@ -619,7 +619,7 @@ xmlhttp.onreadystatechange = function(){
                     title: {
                         display: true,
                         color: "red",
-                        text: 'Numar de produse vandute si cumparate din Bulgaria si Romania',
+                        text: 'Number of products sold and bought from Bulgaria and Romania',
                         padding: {
                         bottom: 40
                     },
@@ -668,13 +668,13 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: [],
             datasets: [{
-                label: 'Ore lucrate pe saptamana',
+                label: 'Hours worked per week',
                 data: oreLucratePeSaptamana,
                 borderWidth: 4,
                 borderColor: 'green'
             },
             {
-                label: 'Ore suplimentare',
+                label: 'Overtime',
                 data: oreSuplimentare,
                 borderWidth: 4,
                 borderColor: 'red',
@@ -686,7 +686,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Ore suplimentere si ore lucrate pe saptamana pentur fiecare angajat',
+                    text: 'Additional hours and hours worked per week for each employee',
                     padding: {
                     bottom: 40
                 },

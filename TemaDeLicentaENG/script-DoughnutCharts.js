@@ -121,14 +121,14 @@ xmlhttp.onreadystatechange = function(){
             data: {
                 labels: zi,
                 datasets: [{
-                    label: 'Bani cheltuiti pe marfa',
+                    label: 'Money spent on merchandise',
                     data: sumaMarfa,
                     borderWidth: 4,
                     borderColor: 'red',
                     backgroundColor: '#1F8A70'
                 },
                 {
-                    label: 'Profit',
+                    label: 'Advantage',
                     data: profit,
                     borderWidth: 4,
                     borderColor: 'red',
@@ -141,7 +141,7 @@ xmlhttp.onreadystatechange = function(){
                         title: {
                             display: true,
                             color: "#E21818",
-                            text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                            text: 'The money spent on the purchase of goods and the minimum earnings from those goods',
                             padding: {
                                 bottom: 40
                             },
@@ -192,7 +192,7 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Venit anuale', 'Vanzari lunare', 'Tranzacti', 'Produse vandute lunar'],
+                labels: ['Annual income', 'Monthly sales', 'Transaction', 'Products sold monthly'],
                 datasets: [{
                     label: [],
                     data: [venitAnual,venitLunar,tranzactie,produseVanduteLunar],
@@ -206,7 +206,7 @@ xmlhttp.onreadystatechange = function(){
                         title: {
                             display: true,
                             color: "#E21818",
-                            text: 'Numarul de produse vandute lunar, venit anual, venit lunar si numar de tranzacti intro luna',
+                            text: 'Number of products sold monthly, annual income, monthly income and number of transactions within the month',
                             padding: {
                                 bottom: 40
                             },
@@ -259,20 +259,20 @@ xmlhttp.onreadystatechange = function(){
             data: {
                 labels: zi,
                 datasets: [{
-                    label: 'Vanzari',
+                    label: 'Sale',
                     data: vanzari,
                     borderWidth: 4,
                     borderColor: 'black',
                     backgroundColor: '#FDD36A'
                 },
                 {
-                    label: 'Produse vandute',
+                    label: 'Products sold',
                     data: produseVandute,
                     borderWidth: 4,
                     borderColor: 'black',
                     backgroundColor: '#F16767'
                 },{
-                    label: 'Profit pe zi',
+                    label: 'Profit per day',
                     data: profitPeZi,
                     borderWidth: 4,
                     borderColor: 'black',
@@ -284,7 +284,7 @@ xmlhttp.onreadystatechange = function(){
                         title: {
                             display: true,
                             color: "#E21818",
-                            text: 'Profituri intr-o singura zi pe parcursul saptamanii',
+                            text: 'Profits in a single day during the week',
                             padding: {
                                 bottom: 40
                             },
@@ -329,7 +329,7 @@ xmlhttp.onreadystatechange = function(){
             data: {
             labels: luna ,
                 datasets: [{
-                    label: 'Vanzari totale',
+                    label: 'Total sales',
                     data: vanzariTotale,
                     borderWidth: 4,
                     borderColor: 'blac',
@@ -341,7 +341,7 @@ xmlhttp.onreadystatechange = function(){
                         title: {
                             display: true,
                             color: "#E21818",
-                            text: 'Castiguri pe parcursul unei luni a anului',
+                            text: 'Earnings during one month of the year',
                             padding: {
                                 bottom: 40
                             },

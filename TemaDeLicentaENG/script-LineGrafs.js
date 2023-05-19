@@ -124,13 +124,13 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: zi,
             datasets: [{
-              label: 'Vanzari',
+              label: 'Sale',
               data: vanzari,
               borderWidth: 4,
               borderColor: 'red'
             },
             {
-                label: 'Profit pe zi',
+                label: 'Profit per day',
                 data: profitPeZi,
                 borderWidth: 4,
                 borderColor: 'blue'
@@ -141,7 +141,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "red",
-                  text: 'Profituri intr-o singura zi pe parcursul saptamanii',
+                  text: 'Profits in a single day during the week',
                   padding: {
                     bottom: 40
                 },
@@ -190,7 +190,7 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: luna,
             datasets: [{
-              label: 'Vanzari totale pe o luna',
+              label: 'Total sales for a month',
               data: vanzariTotale,
               borderWidth: 4,
               borderColor: 'red'
@@ -201,7 +201,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "red",
-                  text: 'Castiguri pe parcursul unei luni a anului',
+                  text: 'Earnings during one month of the year',
                   padding: {
                     bottom: 40
                 },
@@ -250,7 +250,7 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: an,
             datasets: [{
-              label: 'Vanzari totale pe an',
+              label: 'Total sales per year',
               data: vanzariTotale,
               borderWidth: 4,
               borderColor: 'green'
@@ -261,7 +261,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "red",
-                  text: 'Castiguri pe tot parcursul anului 2021',
+                  text: 'Earnings throughout 2021',
                   padding: {
                     bottom: 40
                 },
@@ -316,13 +316,13 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: zi,
             datasets: [{
-              label: 'Suma de bani pentru marfa',
+              label: 'The amount of money for the goods',
               data: sumaMarfa,
               borderWidth: 4,
               borderColor: '#E7B10A'
             },
             {
-              label: 'Profit',
+              label: 'Advantage',
               data: profit,
               borderWidth: 4,
               borderColor: '#2B3467'
@@ -333,7 +333,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "red",
-                  text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                  text: 'The money spent on the purchase of goods and the minimum earnings from those goods',
                   padding: {
                     bottom: 40
                 },
@@ -382,7 +382,7 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: zi,
             datasets: [{
-              label: 'Bani facuti intr-o zi',
+              label: 'Money made in a day',
               data: vanzariPeZi,
               borderWidth: 4,
               borderColor: '#609EA2'
@@ -393,7 +393,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "red",
-                  text: 'Castiguri pe parcursul unei zile',
+                  text: 'Earnings during a day',
                   padding: {
                     bottom: 40
                 },

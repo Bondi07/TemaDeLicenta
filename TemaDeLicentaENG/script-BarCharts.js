@@ -121,13 +121,13 @@ xmlhttp.onreadystatechange = function(){
             data: {
               labels: zi,
               datasets: [{
-                label: 'Bani cheltuiti pe marfa',
+                label: 'Money spent on merchandise',
                 data: sumaMarfa,
                 borderWidth: 4,
                 borderColor: 'red'
               },
               {
-                label: 'Profit',
+                label: 'Advantage',
                 data: profit,
                 borderWidth: 4,
                 borderColor: 'green'
@@ -139,7 +139,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Banii cheltuiti pentru achizitionarea de bunuri si castigurile minime din acele bunuri',
+                    text: 'The money spent on the purchase of goods and the minimum earnings from those goods',
                     padding: {
                       bottom: 40
                   },
@@ -183,7 +183,7 @@ xmlhttp.onreadystatechange = function(){
             data: {
               labels: zi,
               datasets: [{
-                label: 'Bani cheltuiti pe marfa',
+                label: 'Money spent on merchandise',
                 data: vanzariPeZi,
                 borderWidth: 4,
                 barThickness: 100,
@@ -196,7 +196,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Castiguri pe parcursul unei zile din intreaga saptamana',
+                    text: 'Earnings during one day of the entire week',
                     padding: {
                       bottom: 40
                   },
@@ -243,21 +243,21 @@ xmlhttp.onreadystatechange = function(){
             data: {
               labels: [1, 2],
               datasets: [{
-                label: 'Numar total de angajati',
+                label: 'Total number of employees',
                 data: nrTotalDeAngajati,
                 borderWidth: 4,
                 backgroundColor:'#F5F5F5' ,
                 borderColor: '#F94A29'
               },
               {
-                label: 'Numar de magazine',
+                label: 'Number of stores',
                 data: nrDeMagazine,
                 borderWidth: 4,
                 backgroundColor:'#F5F5F5' ,
                 borderColor: '#86A3B8'
               },
               {
-                label: 'Numar de masini',
+                label: 'Number of cars',
                 data: nrDeMasini,
                 borderWidth: 4,
                 backgroundColor:'#F5F5F5' ,
@@ -269,7 +269,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Numarul de angajati, numarul de masini si numarul de magazine din firma "BONDI"',
+                    text: 'The number of employees, the number of cars and the number of stores in the "BONDI" company',
                     padding: {
                       bottom: 40
                   },
@@ -314,7 +314,7 @@ xmlhttp.onreadystatechange = function(){
               labels: zi,
               datasets: [
               {
-                label: 'Numar de vizite in fiecare zi',
+                label: 'Number of visits every day',
                 data: vizite,
                 borderWidth: 4,
                 backgroundColor:'#13005A' ,
@@ -326,7 +326,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Numar de vizite in fiecare zi in magazinul nostru',
+                    text: 'Number of visits every day in our store',
                     padding: {
                       bottom: 40
                   },
@@ -374,7 +374,7 @@ xmlhttp.onreadystatechange = function(){
               labels: luna,
               datasets: [
               {
-                label: 'Vanzari totale pe o luna in an 2021',
+                label: 'Total sales for one month in 2021',
                 data: vanzariTotale,
                 borderWidth: 2,
                 backgroundColor:'#4E6C50' ,
@@ -386,7 +386,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "blue",
-                    text: 'Castiguri pe tot parcursul anului 2021 in dinari (DIN)',
+                    text: 'Earnings throughout 2021 in dinars (DIN)',
                     padding: {
                       bottom: 40
                   },

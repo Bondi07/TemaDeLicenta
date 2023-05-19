@@ -122,14 +122,14 @@ xmlhttp.onreadystatechange = function(){
           data: {
             labels: zi,
             datasets: [{
-              label: 'Vanzari',
+              label: 'Sale',
               data: vanzari,
               borderWidth: 4,
               borderColor: 'white',
               backgroundColor: '#1F8A70'
             },
             {
-                label: 'Profit pe zi',
+                label: 'Profit per day',
                 data: profitPeZi,
                 borderWidth: 4,
                 borderColor: 'white',
@@ -141,7 +141,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Profituri intr-o singura zi pe parcursul saptamanii si vanzari totale intr-o zi',
+                  text: 'Profits in a single day during the week and total sales in a day',
                   padding: {
                     bottom: 40
                 },
@@ -192,7 +192,7 @@ xmlhttp.onreadystatechange = function(){
             labels: zi,
             datasets: [
             {
-                label: 'Profit pe zi',
+                label: 'Profit per day',
                 data: vanzariPeZi,
                 borderWidth: 4,
                 borderColor: '#00235B',
@@ -204,7 +204,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Castiguri pe parcursul unei zile',
+                  text: 'Earnings during a day',
                   padding: {
                     bottom: 40
                 },
@@ -256,7 +256,7 @@ xmlhttp.onreadystatechange = function(){
             labels: zi,
             datasets: [
             {
-                label: 'Vizite pe o zi',
+                label: 'Day visits',
                 data: vizite,
                 borderWidth: 4,
                 borderColor: 'black',
@@ -268,7 +268,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Numarul de vizite pe parcursul unei zile pe saptamana',
+                  text: 'The number of visits during one day per week',
                   padding: {
                     bottom: 40
                 },
@@ -277,10 +277,6 @@ xmlhttp.onreadystatechange = function(){
                 }
               }
             },
-            title: {
-                display: true,
-                text: "Vanzarile pe o zi"
-              },
             elements:{
                 line:{
                     tension:0
@@ -330,10 +326,10 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
+            labels: ['Annual income', 'Monthly income', 'Transaction', 'Products sold monthly'],
             datasets: [
             {
-                label: ['Venit anual', 'Venit Lunar', 'Tranzacti', 'Produse vandute lunar'],
+                label: ['Annual income', 'Monthly income', 'Transaction', 'Products sold monthly'],
                 data: [venitAnual, venitLunar, tranzactie, produseVanduteLunar],
                 borderWidth: 5,
                 borderColor: 'black',
@@ -345,7 +341,7 @@ xmlhttp.onreadystatechange = function(){
               title: {
                   display: true,
                   color: "#159895",
-                  text: 'Numarul de produse vandute lunar, venit anual, venit lunar si numar de tranzacti intro luna',
+                  text: 'Number of products sold monthly, annual income, monthly income and number of transactions within the month',
                   padding: {
                     bottom: 40
                 },

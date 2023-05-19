@@ -117,14 +117,14 @@ xmlhttp.onreadystatechange = function(){
               labels: zi,
               datasets: [
               {
-                label: 'Bani cheltuiti pe marfa',
+                label: 'Money spent on merchandise',
                 data: sumaMarfa,
                 borderWidth: 4,
                 backgroundColor: '#2B3A55',
                 borderColor: '#FED049'
               },
               {
-                label: 'Profit',
+                label: 'Advantage',
                 data: profit,
                 borderWidth: 4,
                 borderColor: '#FC7300'
@@ -135,7 +135,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Bani cheltuiti pe marfa si profit',
+                    text: 'Money spent on merchandise and profit',
                     padding: {
                       bottom: 40
                   },
@@ -179,13 +179,13 @@ xmlhttp.onreadystatechange = function(){
               labels: [],
               datasets: [
               {
-                label: 'Clienti multumiti',
+                label: 'Satisfied customers',
                 data: clientiMultumiti,
                 borderWidth: 4,
                 borderColor: '#FED049'
               },
               {
-                label: 'Clienti ne multumiti',
+                label: 'Unsatisfied customers',
                 data: clientiNemultumiti,
                 borderWidth: 4,
                 borderColor: 'red',
@@ -198,7 +198,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Diferenta dintre clientii multumiti si clientii nemultumiti ',
+                    text: 'The difference between satisfied customers and dissatisfied customers ',
                     padding: {
                       bottom: 40
                   },
@@ -253,24 +253,24 @@ xmlhttp.onreadystatechange = function(){
         new Chart(ctx, {
             type: 'polarArea',/* radar (area graf chart tipe) */
             data: {
-              labels: ['Clienti din Serbia', 'Clienti din Romania', 'Clienti din Bulgaria', 'Clienti din Austria' ],
+              labels: ['Customers from Serbia', 'Customers from Romania', 'Customers from Bulgaria', 'Customers from Austria' ],
               datasets: [
               {
-                label: 'Clienti din Serbia',
+                label: 'Customers from Serbia',
                 data: clientiDinSerbia,
                 borderWidth: 4,
                 borderColor: '#0B2447'
                 
               },
               {
-                label: 'Clienti din Romania',
+                label: 'Customers from Romania',
                 data: clientiDinRomani,
                 borderWidth: 4,
                 borderColor: 'red'
 
               },
               {
-                label: 'Clienti din Bulgaria',
+                label: 'Customers from Bulgaria',
                 data: clientiDinBulgaria,
                 borderWidth: 4,
                 color:'#301E67',
@@ -278,7 +278,7 @@ xmlhttp.onreadystatechange = function(){
                 above: 'green'
               },
               {
-                label: 'Clienti din Austria',
+                label: 'Customers from Austria',
                 data: clientiDinAustria,
                 borderWidth: 4,
                 backgroundColor: '#05BFDB',
@@ -290,7 +290,7 @@ xmlhttp.onreadystatechange = function(){
                 title: {
                     display: true,
                     color: "green",
-                    text: 'Clientii nostri din diverse tari Europene',
+                    text: 'Our customers from various European countries',
                     padding: {
                       bottom: 40
                   },
@@ -300,11 +300,6 @@ xmlhttp.onreadystatechange = function(){
                 }
               },
               scales: {
-                // r:{
-                //   grid:{
-                //     display:false
-                //   }
-                // },
                 x: {
                   beginAtZero: true
                 },
