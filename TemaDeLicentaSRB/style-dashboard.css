@@ -375,28 +375,29 @@ ul li a.active{
 
 /*nije dobro namesteno za ikonicu treba da se podesi lepo*/
 .main .venitAnual img{
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 50px;
     
 }
 /* za sliku za svaku karticu*/
 .main .venitLunar img{
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 50px;
     
 }
 .main .tranzacti img{
-    padding-left: 80px;
+    padding-left: 50px;
     padding-top: 50px;
     
 }
 .main .prVaLunar img{
     padding-top: 50px;
-    
+    padding-right: 20px;
 }
 .main .prVaAnual img{
     padding-top: 50px;
-    
+    padding-right: 20px;
+
 }
 /*tekst uzet iz baze podataka*/
 .main .venitAnual #venit{
