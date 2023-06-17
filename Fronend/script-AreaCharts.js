@@ -317,4 +317,3 @@ xmlhttp.onreadystatechange = function(){
     }
 }
 
-

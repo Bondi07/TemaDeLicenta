@@ -78,13 +78,6 @@
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
-}
-*/
-/*ne radi color za tkes kad predjes preko njega (li)*/
-
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
@@ -137,7 +130,6 @@
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;    
 }
@@ -150,7 +142,6 @@
     color: red;
 }
 
-/* RADI NEKAKO DA LI JE DOBRO NE ZNAM */
 /*   ZA COOCKIES */
 .sidebar .bt2 i{
     bottom: 0;
@@ -377,7 +368,6 @@ svg{
     padding-top: 5px;
 }
 
-
 .cine{
     font-size: 50px;
     font-family: 'Poppins', sans-serif;    
@@ -386,9 +376,7 @@ svg{
 .cine h1::selection{
     color: #F6F1F1;
     background: #3A98B9;
-
 }
-
 .wrap1{
     display: inline-flex;
     margin-top: 20px;
@@ -846,7 +834,6 @@ svg{
     color: red;
 }
 .popup{
-    /* margin-top: 900px; */
     width: 400px;
     background: #fff;
     border-radius: 6px;
@@ -910,7 +897,6 @@ svg{
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 /* TEKST O KOMPANIJI BONDI*/
 .naslov{
@@ -1014,7 +1000,6 @@ svg{
     font-size: 20px;
     
 }
-
 
 /* MAPS */
 .textMaps{
@@ -1189,7 +1174,4 @@ form button:hover{
     font-family:'Poppins', sans-serif; 
 
 }   
-
-
-
 

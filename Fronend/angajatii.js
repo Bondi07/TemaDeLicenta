@@ -1,5 +1,5 @@
-
 /*sidebar*/
+
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".bx-left-indent");
 console.log(sidebarBtn);

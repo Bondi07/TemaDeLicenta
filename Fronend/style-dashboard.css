@@ -6,7 +6,6 @@
     padding: 0%;
     margin: 0%;
     text-decoration: none;
-    /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
 }
 ins{
@@ -26,7 +25,6 @@ ins{
     width: 100%;
     display: flex;
     align-items: center;
-
 }
 .sidebar .logo-details i{
     font-size: 30px;
@@ -43,12 +41,10 @@ ins{
     transition: 0.3s ease;
     transition-delay: 0.1s;
     font-family: 'Poppins', sans-serif;
-
 }
 .lineBorder{
     border-bottom: #11101d 3px solid;
     padding-top: 10px;
-
 }
 .sidebar.close .logo-details .logo_name{
     opacity: 0;
@@ -62,7 +58,6 @@ ins{
 .sidebar.close .nav-links li:hover{
     border: none;
 }
-
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;
@@ -73,7 +68,6 @@ ins{
     overflow: visible;
     padding-top: 50px;
 }
-
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
@@ -83,7 +77,6 @@ ins{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .sidebar .nav-links li i{
     height: 50px;
@@ -93,7 +86,6 @@ ins{
     color: #fff;
     font-size: 30px;
     cursor: pointer;
-
 }
 .sidebar .nav-links li a{
     display: flex;
@@ -104,7 +96,6 @@ ins{
     font-size: 18px;
     font-weight: 400;
     color: #fff;
-
 }
 .sidebar.close .nav-links li a .link_name{
     opacity: 0;
@@ -120,7 +111,6 @@ ins{
     font-family: 'Poppins', sans-serif;
     margin-left: 10px;
 }
-
 
 /* DODATO ZA MENJANJE BOJE LI A */
 ul li a.active{
@@ -156,10 +146,7 @@ ul li a.active{
     color: red;
 }
 
-
-
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }
@@ -169,7 +156,6 @@ ul li a.active{
 }
 .sidebar .bottom-content a:hover{
     color: red;
-    
 }
 /* HOME SECTION */
 .home-section{
@@ -190,19 +176,16 @@ ul li a.active{
 .sidebar.close ~ .home-section{
     left: 78px;
     width: calc(100% - 78px);
-
 }
 .home-section .home-content{
     height: 60px;
     display: flex;
     align-items: center;
-
 } 
 .home-section .home-content .bx-left-indent{
     color: #ffffff;
     font-size: 40px;
     margin: 15px 0 0 15px;
-    
 }
 .home-section .home-content2 .bx-sun, .bx-moon {
     color: #11101d;
@@ -233,7 +216,6 @@ ul li a.active{
 .limbi-straine a.active {
     color: red !important;
 }
-
 .home-section .home-content2{
     right: 0;
     padding-right: 150px;
@@ -248,7 +230,6 @@ ul li a.active{
     border-radius: 10px;
     margin-right: 50px;
     font-size: 10px;
-
 }
 .home-section .home-content2 .box i{
     text-align: center;
@@ -263,7 +244,6 @@ ul li a.active{
 .home-section .main{
     padding-left: 50px;
     padding-top: 20px;
-
 }
 .home-section .main .dash-text{
     font-size: 30px;
@@ -271,8 +251,6 @@ ul li a.active{
     border-bottom: black 4px solid;
     margin-right: 80px;
 }
-
-
 /*do ovde ide main posle toga ide za svakog posebno*/
 /* OVDE SU KARTICE I NJIHOV IZGLED*/
 .home-section .wrap{
@@ -326,7 +304,6 @@ ul li a.active{
     padding-top: 5px;
     font-weight: 600;
 }
-
 .main .venitLunar .title{
     color: black;
     font-size: 20px;
@@ -355,7 +332,6 @@ ul li a.active{
     padding-top: 5px;
     font-weight: 600;
 }
-
 .main .venitAnual .wrap-img{
     display: inline-flex;
 }
@@ -371,8 +347,6 @@ ul li a.active{
 .main .prVaAnual .wrap-img{
     display: inline-flex;
 }
-
-/*nije dobro namesteno za ikonicu treba da se podesi lepo*/
 .main .venitAnual img{
     padding-left: 40px;
     padding-top: 50px;
@@ -382,20 +356,16 @@ ul li a.active{
 .main .venitLunar img{
     padding-left: 40px;
     padding-top: 50px;
-    
 }
 .main .tranzacti img{
     padding-left: 80px;
     padding-top: 50px;
-    
 }
 .main .prVaLunar img{
     padding-top: 50px;
-    
 }
 .main .prVaAnual img{
     padding-top: 50px;
-    
 }
 /*tekst uzet iz baze podataka*/
 .main .venitAnual #venit{
@@ -413,7 +383,6 @@ ul li a.active{
     font-size: 30px;
     padding-left: 30px;
 }
-
 .main .prVaLunar #prVaLunar{
     color: black;
     font-size: 30px;
@@ -429,7 +398,6 @@ ul li a.active{
     display: inline-flex;
     gap: 13px;
 }
-
 /*GRAFOVI*/
 .chartCard{
     display: inline-flex;
@@ -449,16 +417,13 @@ ul li a.active{
 }
 .textCompaniei{
     padding-top: 30px;
-    /* font-size: 30px; */
     text-align: justify;
     padding-right: 70px;
 }
 .textCompaniei h4{
     color: blue;
-    /* font-size: 20px; */
     opacity: 0.7;
     padding-top: 15px;
-
 }
 .textCompaniei a{
     color: #417AC9;
@@ -472,7 +437,6 @@ ul li a.active{
     border-radius: 35px;
     margin-top: 20px;
     margin-right: 50px;
-
 }
 /* COOKIES MESAGE */
 .wrapper{
@@ -536,7 +500,6 @@ header h2{
 .buttons .button:hover{
     background-color: #034bf1;
 }
-
 /* KARTICE ZA FIRME SA KOJIMA SARADJUJE KOMPANIAJ BONDI */
 .boody{
     align-items: center;
@@ -564,7 +527,6 @@ header h2{
 .box1:hover{
     background: #F6F1F1;
     box-shadow: -10px 5px 12px #000000;
-
 }
 .box1 h2{
     padding-top: 30px;
@@ -573,7 +535,6 @@ header h2{
 .box1 h2:hover{
     font-size: 38px;
     color: #002B5B;
-    
 }
 .box1 p{
     padding-top: 20px;
@@ -609,9 +570,6 @@ header h2{
     background: #EA5455;
     color: #2D2727;
 }
-
-
-
 /* FOOTER*/
 /*GO TO TOP*/
 .buttonTop{
@@ -636,7 +594,6 @@ header h2{
     background: whitesmoke;
     opacity: 1;
 }
-
 .fott{
     color: #11101d;
     font-size: 15px;
@@ -644,7 +601,4 @@ header h2{
     margin-top: 50px;
     font-family:'Poppins', sans-serif; 
 }   
-
-
-
 

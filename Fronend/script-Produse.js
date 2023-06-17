@@ -1,4 +1,3 @@
-
 /*pentru html*/ 
 
 let sidebar = document.querySelector(".sidebar");
@@ -72,51 +71,6 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-
-
-
-
-
-/* DODAVANJE PRODUKTA */
-
-// let http = new XMLHttpRequest();
-
-// http.open('get', 'https://localhost:7111/api/Magazin/Produse', true );
-
-// http.send();
-// http.onload = function(){
-
-//     if(this.readyState == 4 && this.status == 200){
-
-//         let products = JSON.parse(this.responseText);
-
-//         let out = "";
-//         /* za svaku od slika */
-//         let i = 0;
-//         for(let item of products){
-
-//             /*  OVDE MORA DA BUDE I DA PISE PRODUCT A NE PRODUCTS JE NECE DA RADI INACE   */
-//             out +=  `
-//                 <div class="product"  id="products">
-//                     <div class="okvir" id="prod">
-//                         <img src="../imagesProduse/${item.nume}.jpg" alt="poze" width="180px" height="350px">
-//                         <p class=nume>${item.nume}</p>
-//                         <p class=cantitate>Cantitate: ${item.cantitate}</p>
-//                         <p class=pret>${item.pret} RON </p>
-//                     </div>
-//                 </div>
-//                 <div id="pagination-container"></div>
-
-//             `; 
-//             /* za menjanje slika */
-//             i = i + 1;
-//         }
-
-//         document.querySelector(".products").innerHTML = out;
-        
-//     }
-// }
 
 
 

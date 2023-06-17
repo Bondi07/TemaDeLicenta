@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 body{
     background: #E4E9F7;
@@ -36,7 +35,7 @@ body{
 .logout:hover{
     background: #417AC9;
 }
-/*   */
+/* admin text  */
 .adminText h1{
     font-size: 60px;
     color: black;
@@ -53,7 +52,6 @@ body{
 }
 .csvSection input{
     margin-top: 50px;
-    
 }
 tr:nth-child(1){
     background: #11101d !important;
@@ -90,7 +88,6 @@ table{
     height: 100%;
     font-size: 20px;
     margin-top: 20px;
-    
 }
 .alege{ 
     margin-top: 100px;
@@ -104,7 +101,6 @@ table{
 .alege select{
     font-size: 20px;
 } 
-
 /* CSV */
 #myForm{
     margin-top: 50px;

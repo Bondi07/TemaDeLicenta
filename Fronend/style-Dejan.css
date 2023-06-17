@@ -65,8 +65,6 @@ ul li a.active{
     border: black 1px solid;
     background: rgba(255, 255, 255, 0.393);
 }
-
-
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px 0 150px 0;
@@ -77,12 +75,6 @@ ul li a.active{
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
-}
-*/
-/*ne radi color za tkes kad predjes preko njega (li)*/
 
 .sidebar .nav-links li{
     position: relative;
@@ -135,7 +127,6 @@ ul li a.active{
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }
@@ -283,7 +274,7 @@ ul li a.active{
 .button:hover{
     background: #FED049;
 }
-/* OSNOVNE INFORMACIJE O NIKOLI */
+/* OSNOVNE INFORMACIJE O DEJANU */
 /* WRAP */
 .wrap{
     display: inline-flex;
@@ -633,10 +624,6 @@ ul li a.active{
     line-height: 80px;
 
 }
-
-
-
-
 
 
 /*GO TO TOP*/

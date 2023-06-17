@@ -6,7 +6,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
 }
 .sidebar{
@@ -162,7 +161,6 @@ ul li a.active{
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }
@@ -337,10 +335,6 @@ a:hover {
 a{
     color: #417AC9;
 }
-
-
-
-
 
 /* FOOTER */
 /*GO TO TOP*/

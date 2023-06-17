@@ -70,12 +70,6 @@
     overflow: visible;
     padding-top: 50px;
 }
-/*
-.sidebar .nav-links li:hover{
-    background-color: white;
-}
-*/
-/*ne radi color za tkes kad predjes preko njega (li)*/
 
 .sidebar .nav-links li{
     position: relative;
@@ -130,7 +124,6 @@
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }

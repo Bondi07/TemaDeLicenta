@@ -85,10 +85,6 @@ scrollToTopButton.addEventListener('click', () => {
 
 
 
-
-
-
-
 /* ZA POPUP MESAGE */
 
 let popup = document.getElementById("popup");
@@ -99,7 +95,6 @@ function openPopup(){
 function closePopup(){
     popup.classList.remove("open-popup");
 }
-
 
 
 
@@ -175,6 +170,7 @@ const next = () => {
     counter = (counter + 1) % phrases.length
 }
 next()
+
 
 
 /* TRIMITE MESAJ WITH FORM   */

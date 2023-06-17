@@ -81,8 +81,3 @@ function submitForm(event) {
     });
 }
 
-
-
-
-
-

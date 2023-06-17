@@ -10,9 +10,8 @@ for (let i = 0; i < menuLenght; i++){
 }
 
 
-
-
 /* PENTRU LINCURI DE LIMBI STRAINE */
+
 const limbiStraine = document.querySelectorAll('.limbi-straine a');
 const windowPathname = window.location.pathname;
 

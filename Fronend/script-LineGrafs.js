@@ -93,9 +93,6 @@ scrollToTopButton.addEventListener('click', () => {
 
 
 
-
-
-
 /*line charts */
 var xmlhttp = new XMLHttpRequest();
 var url = "https://localhost:7111/api/Magazin/VanzariSaptamanale";

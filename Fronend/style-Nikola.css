@@ -6,7 +6,6 @@
     padding: 0%;
     margin: 0%;
     text-decoration: none;
-    /* font-family: 'Poppins', sans-serif; */
     --transition: all 0.2s ease;
     scroll-behavior: smooth;
 }
@@ -17,7 +16,6 @@ a:link{
 a:visited{
     color: #367E18;
 }
-
 .sidebar{
     position: fixed;
     top: 0;
@@ -135,10 +133,7 @@ ul li a.active{
     margin-left: 10px;
 }
 
-
-
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }
@@ -342,8 +337,6 @@ ul li a.active{
 }
 /* OSNOVNE INFORMACIJE O OSOBI */
 .osnocneInformacije{
-    
-    /* font-size: 20px; */
     text-align: justify;
     margin-right: 50px;
     margin-top: 20px;
@@ -391,7 +384,6 @@ ul li a.active{
     font-size: 35px;
 }
 /* OSNOVNA SKOLA */
-/* MARGIN TOP KAD SU ISKLJUCENA PODEASVANJA IMAM PROBLEM SA MARGINE TOP !!!!??? */
 .osnovnaSkola{
     margin-top: 250px;
     margin-right: 50px;
@@ -539,7 +531,6 @@ ul li a.active{
     border-bottom: #000000 3px solid;
     margin-right: 400px;
     margin-left: 400px;
-
 }
 .animacijaFootball{
     display: inline-flex;
@@ -581,7 +572,6 @@ marquee{
 .imagesTravel img:hover{
     box-shadow: -10px 5px 10px #000000;
 }
-
 
 /* GENERAL TEXT */
 .generalText{

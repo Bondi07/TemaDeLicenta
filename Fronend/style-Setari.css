@@ -133,7 +133,6 @@ ul li a.active{
 }
 
 /*COOCKIE NESTAJE KAD JE SAIDABR ZATVOREN*/
-/*RESITI PROBLEM KAKO DA SE PRIKAZE KAO MANJI TEKST JEDAN ISPOD DRUGOG*/
 .sidebar.close .bottom-content{
     display: none;      
 }
@@ -735,10 +734,6 @@ ul li a.active{
 .tooltip7:hover .tooltiptext7 {
     visibility: visible;
 }
-
-
-
-
 
 /* FOOTER */
 /*GO TO TOP*/

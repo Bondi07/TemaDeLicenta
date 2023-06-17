@@ -1,4 +1,5 @@
 /*DEO U KOME SE UZIMAJU PODACI IZ BAZE PODATAKA */
+
 async function fetchData(){
   const url = 'https://localhost:7111/api/Magazin/VanzariSaptamanale';
   const response = await fetch(url);
@@ -76,11 +77,7 @@ const myChart = new Chart(
 
 
 /* Graf2 */
-/* uzimanje podataka */
 
-
-
-/*graf deo */
 $(document).ready(
   function(){
       showGraph();

@@ -24,11 +24,6 @@ fetch("https://localhost:7111/api/Magazin/Dashboard").then
     }   
 })  
 
-/* OVDE TREBA DA PREDSTAVIMO DVA GRAFIKA ISTO  POMOCU PODATAKA IZ BAZE PODATAKA */
-/*predsatvljeno u grafice.js */
-
-
-
 /*pentru html*/ 
 
 let sidebar = document.querySelector(".sidebar");
@@ -108,12 +103,5 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-
-
-
-
-
-
 
 
